@@ -1,6 +1,31 @@
+<!-- ---
+title: "Neumática e Hidráulica"
+author: "Alejandro Leyva"
+date: "26/08/2019"
+output: html_document
+bibliography: bibliografia.md
+references:
+- id: jalmx89
+  title: Neumática e Hidráulica
+  author:
+  - family: Fenner
+    given: Martin
+  container-title: Nature Materials
+  volume: 1
+  URL: 'https://www.alejandro-leyva.com/'
+  DOI: 10.1038/nmat3283
+  issue: 4
+  publisher: Xizuth
+  page: 1-n
+  type: book
+  issued:
+    year: 2019
+    month: 3 -->
+<!-- --- -->
+
 # Neumática e Hidráulica
 
-## Conceptos básicos
+## Capítulo 1. Conceptos básicos
 
 ### Neumática
 
@@ -22,32 +47,35 @@ En determinadas aplicaciones, tales como en movimientos de aproximación rápi
 
 ### Hidráulica
 
-a hidráulica utiliza básicamente los fluidos hidráulicos como medios de presión para mover los pistones de los cilindros. En la figura 1.2 se representa el movimiento típico de un pistón dentro del cilindro gracias a la energía proporcionada por un sistema hidráulico formado por una bomba, un depósito y un conjunto de tuberías que llevan el fluido a presión hasta los puntos de utilización.
-Dentro de estos sistemas se encuentran los motores hidráulicos con velocidades que abarcan desde 0,5 rpm hasta 10.000 rpm y el par que proporcionan va desde 1 Nm (baja velocidad) hasta 20.000 Nm (alta velocidad).
+La hidráulica utiliza básicamente los fluidos hidráulicos como medios de presión para mover los pistones de los cilindros. En la figura 1.2 se representa el movimiento típico de un pistón dentro del cilindro gracias a la energía proporcionada por un sistema hidráulico formado por una bomba, un depósito y un conjunto de tuberías que llevan el fluido a presión hasta los puntos de utilización.
 
-![fig 2](cap1/fig2.png)
+Dentro de estos sistemas se encuentran los motores hidráulicos con velocidades que abarcan desde 0,5 rpm hasta 10.000 rpm y el par que proporcionan va desde 1 N/m (baja velocidad) hasta 20.000 N/m (alta velocidad).
+
+![fig 2](cap1/fig2.png "pie de la foto")
 
 Los sistemas hidráulicos se aplican típicamente en dispositivos móviles tales como maquinaria de construcción, excavadoras, plataformas elevadoras, aparatos de elevación y transporte, maquinaria para agricultura y simuladores de vuelo.
+
 Sus aplicaciones en dispositivos fijos abarcan la fabricación y montaje de máquinas de todo tipo, líneas transfer, aparatos de elevación y transporte, prensas, máquinas de inyección y moldeo, máquinas de laminación, ascensores y montacargas.
-Tienen las siguientes ventajas:
+
+Tienen las siguientes **ventajas**:
 
 Gran potencia transmitida con pequeños componentes, posicionamiento preciso, arranque con cargas pesadas, movimientos lineales independientes de la carga ya que los líquidos son casi incompresibles y pueden emplearse válvulas de control, operación suave e inversa, buen control y regulación y disipación favorable de calor.
 
-Y entre sus desventajas figuran:
+Y entre sus **desventajas** figuran:
+
 Polución del ambiente con riesgo de incendio y accidentes en el caso de fuga de aceite, sensibilidad a la suciedad, peligro presente debido a las excesivas presiones, dependencia de la temperatura por cambios en la viscosidad.
 
 Análogamente a los sistemas neumáticos, los sistemas hidráulicos se complementan con los eléctricos y electrónicos mediante dispositivos tales como válvulas solenoide, señales de realimentación de interruptores magnéticos, sensores e interruptores eléctricos de final de carrera. Es fácil, en particular en sistemas complejos, acoplarles un PLC (programmable logic controller) que les permite programar la lógica de funcionamiento de varios cilindros.
+
 En determinadas aplicaciones, tales como en movimientos de aproximación rápido y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan los sistemas neumático, hidráulico y eléctrico en la forma siguiente:
 
 - *Circuito electroneumático* – Accionamiento eléctrico - Actuador neumático.
 - *Circuito oleoneumático* – Accionamiento neumático – Actuador hidráulico.
 - *Circuito electrohidráulico* – Accionamiento eléctrico – Actuador hidráulico.
-- *Principio del formulario.*
-
 
 ### Presión
 
-> A la fuerza normal por unidad de área se le llama presión.
+> A la fuerza normal aplicada por unidad de área.
 
 > La presión ejercida de un fluido sobre una superficie - y viserversa - el cociente entre la fuerza y la superficie que recibe su acción. Es decir,
 
@@ -65,29 +93,24 @@ Visto la definición deducimos que para aumentar la fuerza que ejerce un fluido
 - Aumentar la presión del fluido.
 - Aumentar la superficie sobre la que actúa el fluido.
 
+#### Equivalencias
 
-#### Equivalencia
+##### Fuerza
 
-$$1\text{ }N = 1 \text{ }Kgm/s^2$$
+$$1\text{ }N = 1 \text{ }kgm/s^2$$
 
-$$1 \text{pascal (Pa)} = 1 \text{ Newton por metro cuadrado} (N/m^2)$$
+$$1\text{ }kgf = 1 \text{ }kp = 9.81N$$
+
+$kgf = \text{kilogramo-fuerza}$
+$kp = \text{kilopondio}$
+
+##### Presión
+
+$$1 \text{ pascal (Pa)} = 1 \text{ Newton por metro cuadrado} (N/m^2)$$
 
 $$1kPa = 1,000 N/m^2$$
 
-$$1bar = 9800 Pa$$
-
-#### Ejemplos
-
-1. Un tubo contiene agua bajo una presión manométrica de 400 kPa. Si se cubre un orificio de 4 mm de diámetro en el tubo, con un trozo de cinta adhesiva, ¿Qué fuerza tendrá que ser capaz de resistir la cinta?
-
-2. Un pistón de 20kg descansa sobre una muestra de gas en un cilindro de 8cm de diámetro. ¿Cuál es la presión manométrica sobre el gas?
-
-TODO: **Desarrollar los ejemplos a detalle**
-
-#### Ejercicios
-
-TODO: **buscar ejercicios**
-
+$$\color{red}{\text{revisar->>} 1bar = 1MPa=0,9869 atm=1,01972 kgf/cm^2} $$
 
 #### Tipos de presión
 
@@ -120,17 +143,79 @@ Toma como base el 0 absoluto. Se utiliza para realizar cáculos teóricos.
 
 $$\text{Presión absoluta} = \text{presión manométrica} + \text{presión atmosférica}$$
 
-### Caudal TODO:  mover
+#### Ejemplos
 
-Es la cantidad de fluido en peso o volumen, que atraviesa una superficie en la unidad de tiempo. En neumática se usa habitualmente el volumen por unidad de tiempo.
+1. Un tubo contiene agua bajo una presión manométrica de 400 kPa. Si se cubre un orificio de 4 mm de diámetro en el tubo, con un trozo de cinta adhesiva, ¿Qué fuerza tendrá que ser capaz de resistir la cinta?
 
-$$Q = V/t$$
+**Datos:**
+$Presión=400kPa$
+$Diametro=4mm \rightarrow radio = 2mm$
+
+Tenemos las medidas en milímetros, entonces debemos convertirlo a metros para poder obterner el área.
+
+$$
+1m * \frac{2mm}{1000mm} = 0.002m
+$$
+Primero debemos obtener el área para poder calcular la fuerza que debe soportar la cinta. Por lo tanto,
+
+$Área = \pi r^2 \rightarrow (0.002m)^2(\pi)= 0.0000125664m^2$
+
+Despejando Fuerza en la fórmula de presión nos queda:
+
+$$F = P*A \rightarrow (400kPa)(0.0000125664m^2)=5.02656N$$
+
+> Nos da una fuerza resultande de $5.02656N$
+
+2. Un pistón de 20kg descansa sobre una muestra de gas en un cilindro de 8 cm de diámetro. ¿Cuál es la presión manométrica sobre el gas?
+
+Datos:
+$Masa=20kg$
+$Diametro=8cm \rightarrow radio = 4cm$
+
+Para obtener la presión necesitamos el área en donde la fuerza está aplicada, por lo tanto, debemos calcularla, pero primero debemos hacer la conversión de centímetros a metros:
+
+$$1m *\frac{4cm}{100cm}=0.04m$$
+
+Una vez tenemos el diamtro en metros, sustituimos para obtener el área donde está aplicada la presión:
+
+$$Área=\pi r^2 \rightarrow (\pi)(0.04m)^2= 0.00502656m^2$$
+
+Ahora necesitamos calcular la fuerza que genera el pistón que está en reposo; como sabemos que está en reposo, sabemos que le acelaración que se está aplicando es la gravedad; por ende,
+
+$Fuerza = masa * aceleración \rightarrow (20kg)(9.81m/s^2)=196.2N$
+
+Una vez contando con ambas variables, vamos a sustituir en la fórmula de presión:
+
+$$P = \frac{196.2N}{0.00502656m^2}=39,032.65Pa$$
+
+> Por lo tanto, nos da una presión manométrica de $39.032kPa$, sobre el gas.
+
+### Caudal
+
+> Es la cantidad de fluido en peso o volumen, que atraviesa una superficie en la unidad de tiempo. En neumática se usa habitualmente el volumen por unidad de tiempo.
+
+> Representa el volumen de un fluido ***V*** que pasa por una sección ***A***, transversal a la corriente, en una unidad de tiempo ***t***.
+
+$$Q = \frac{V}{t}(m^3/s)$$
+
+Como $V=A*l$, siendo:
+
+$A= \text{Sección transversal}$
+$l= \text{Espacio recorrido por el fluido}$
+
+$$Q= \frac{A*l}{t} \rightarrow Q=v*A$$
+
+Donde $v$ es la velocidad del fluido.
 
 El caudal viene expresado en $m^3/h$ o $l/s$, dependiendo de la magnitud de la que estemos hablando.
 
-### Ley de continuidad TODO:  mover
+Intrumento para medir *caudal* es el *Caudalimetro*, el cual puede sensar agua, gas, o cualquier otro tipo de fluido.
 
-En una instalación neumática el caudal es constante, por eso si reducimos la sección en un punto la velocidad tiene que aumentar en ese punto de forma que el caudal se conserve.
+![caudalimetro](cap1/caudalimetro.jpeg "Caudalimetro")
+
+### Ley de continuidad
+
+> En una instalación neumática el caudal es constante, por eso si reducimos la sección en un punto la velocidad tiene que aumentar en ese punto de forma que el caudal se conserve.
 
 $$Q1 = v1 \times S1 = v2 \times S2 = Q2$$
 
@@ -144,9 +229,13 @@ $$Q1 = v1 \times S1 = v2 \times S2 = Q2$$
 
 ### Ley de Pascal
 
-Cualquier líquido en un recipiente abierto, por ejemplo, está sujeto a la presión atmos­férica además de la presión debida a su propio peso. Puesto que el líquido es relativamente incompresible, la presión externa de la atmósfera se trasmite por igual a todo el volumen del líquido. El primero en enunciar este hecho fue el matemático francés Blas Pascal (1623- 1662), y se conoce como **ley de Pascal**. En general, se enuncia como sigue:
+Cualquier líquido en un recipiente abierto, por ejemplo, está sujeto a la presión atmos­férica además de la presión debida a su propio peso. Puesto que el líquido es relativamente incompresible, la presión externa de la atmósfera se trasmite por igual a todo el volumen del líquido. Se conoce como **ley de Pascal**. En general, se enuncia como sigue:
 
 > Una presión externa aplicada a un fluido confinado se transmite uniformemente a través del volumen de un líquido.
+
+![pascal](cap1/pascal.png "Ley de pascal")
+
+La figura 1-3 muestra la sección transversal de un recipiente de forma irregular, que tiene paredes rígidas El fluido confinado en el ejerce la misma presión en todas las direcciones, tal como lo indican las flechas. Si las paredes fueran flexibles, la sección asumiría forma circular. Es entonces la Ley de Pascal que hace que una manguera contra incendios asuma forma cilíndrica cuando es conectada al suministro. Es importante la diferencia entre cómo actúa la fuerza sobre un fluido y cómo lo hace sobre un sólido. Puesto que el sólido es un cuerpo rígido, puede soportar que se le aplique una fuerza sin que cambie apreciablemente su forma. Por otra parte, un líquido puede soportar una fuerza únicamente en una superficie o frontera cerrada.
 
 Este fenómeno nos permite amplificar/reducir fuerzas teniendo como contraprestación una reducción/amplificación de los desplazamientos.
 
@@ -167,7 +256,9 @@ Siendo **S** la sección o área del recipiente y **l** su altura.
 
 > Esta ley aplciada a gases perfectos dice que a tempratura constante, la presión absoluta es inversamente porpocional al volumen, O sea:
 
-> Siempre que la masa y la temperatura de una mues­ tra de gas se mantengan constantes, el volumen de dicho gas es inversamente proporcional a su presión absoluta.
+> Siempre que la masa y la temperatura de una mues­tra de gas se mantengan constantes, el volumen de dicho gas es inversamente proporcional a su presión absoluta.
+
+> La presión absoluta de un gas confinado en un recipiente varia en forma inversa a su volumen, cuando la temperatura permanece constante.
 
 $$P_1V_1 = P_2V_2=P_3V_3 = cte \text{ m y T constantes}$$
 
@@ -177,7 +268,7 @@ Siendo $P_1,P_2,P_3$ presiones absolutas y $V_1,V_2,V_3$ volúmnes a esas presio
 
 #### Ejemplo:
 
-El aire expuesto a la presión atmosferica es comprimido a la séptima para de su volumen. ¿Cuál es la presión si la temperatura se mantiene constante?
+1. El aire expuesto a la presión atmosferica es comprimido a la séptima para de su volumen. ¿Cuál es la presión si la temperatura se mantiene constante?
 
 $P_1V_1 = P_2V_2$
 
@@ -194,7 +285,23 @@ Para la presión 1, tnemos que es la presión atmosférica
 $P_1= 100kPa = 1 bar$
 $P_2= 1 *7 = 700kPa = 7\text{ bar absoluto}$
 
+2. Partiendo con $40 cm^3$ de gas confinado a una presión manométrica de $3 kg/cm^2$, fig. 1-5 A, ¿Cuál será la presión final después de que el gas haya sido comprimido a un volumen cuatro veces menor?
 
+$P_1V_1 = P_2V_2$
+
+Sabemos que la presión inicial es de $3kg/cm^2$ y ésta incrementa 4 veces; por ende, nos queda:
+
+$P_2= (3kg/cm^2)(4)= 12kg/cm^2$
+
+Despejando $V_2$ de la ecuación inicial:
+
+$$
+V_2 = \frac{P_1V_1}{P_2} = \frac{(3kg/cm^2)(40cm^3)}{12kg/cm^2} = 10cm^3
+$$
+
+> Tenemos que el volumen final es de **$10cm^3$**
+
+![fig 1-5](cap1/ejerc2.png "Ejercicio 2")
 
 ### Ley de Charles-Gay Lussac
 
@@ -205,8 +312,11 @@ La relación entre el volumen de un gas y su temperatura, al pasar de un estado 
 
 > A presión constante, la razón entre el volumen y la temperatura absoluta de un gas se mantiene constante. O lo que es lo mismo, el volumen es directamente proporcional a la temperatura absoluta.
 
+> Si la temperatura de un gas se incrementa su volumen se incrementa en la misma proporción, permaneciendo su presión constante, o si la temperatura del gas se incrementa, se incrementa también su presión en la misma proporción, cuando permanece el volumen constante.
+
+
 $$
-\frac{V_1}{T1} = \frac{V_2}{T2} =\frac{V_3}{T3} = etc \text{ m y P constantes}
+\frac{V_1}{T_1} = \frac{V_2}{T_2} =\frac{V_3}{T_3} = etc \text{ m y P constantes}
 $$
 
 $m = masa$
@@ -223,70 +333,11 @@ $$
 $m = masa$
 $V= volumen$
 
-TODO: **agregar unos ejemplos y ejercicios**
+### Ejercicios
 
-### Ley de los gases ideales:
+#### Presión
 
-El volumen de un gas, a una temperatura y presión dada, es directamnete proporcional al número de *moles* que contiene, siendo un *mol* una cantidad de gramos del gas ideal a su peso molecular. Es decir, si n esl número de moles se escribirá:
+1. ¿Cuál será la fuerza teórica que desarrolla un cilindro de 50 mm de diámetro a una presión de 6 bar?
+2.
 
-$$V=kn$$
-
-Pues bien, la combinación de esta ley con las anterioes nos permite formular una importan ecuación llamada *ley de los gases ideales*, según la cual el volumen de un gas es:
-
-- directamente proporcional a la temperatura absoluta y al número de moles
-- e inversamente proporcional a su presión
-
-$$
-V = R \frac{nT}{P}
-$$
-
-En donde:
-
-$$
-PV = nRT
-$$
-
-La constante de porporcionalidad **R**, es la constate de os gaese.
-
-![fig 5](cap1/fig5.png)
-
-De la ley de los gases ideales podemos deducir que si el volumen del gas se mantiene invariable, la presión es directamente porpocional a la temperatura absoluta, o lo que es igual, que la relacioón presión/temperatura es constante.
-
-A esta conclusión también había llegando experimentalme Gay Lussac
-
-$$
-\frac{P_1}{T_1} = \frac{P_2}{T_2} = cte.
-$$
-
-TODO: buscar problemas sobre el tema aplicacdo a neumatica, de lo contario se elimina esta parte, o se deja solo por mencionar
-
-
-
-
-
-
-
-
-
-
-
-
-___
-
-## Neumática
-
-### Características del aire comprido
-
-TODO: pagina 19 - Neumatica practica de Nicolas
-
-### Unidades empleadas y equivalencias
-
-TODO: Neumatica practica pagina 21
-
-### Compresores
-
-TODO: introducción a la neumatica antonio guillen pagina 17
-
-## Circuitos neumáticos e hidráulicos
-
-TODO: principios de neumatica e hidraulica pagina 5
+[Capítulo 2](./index2.html)
