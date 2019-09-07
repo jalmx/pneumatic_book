@@ -137,6 +137,14 @@ Medida de presión por encima de la presión atmosférica.
 
 ![presion manometrica](cap1/presion_mano.jpg)
 
+###### Manométro
+
+Es un instrumento de medición para la presión de fluidos contenidos en recipientes cerrados. Se distinguen dos tipos de manómetros, según se empleen para medir la presión de líquidos o de gases.
+
+En la siguiente figura tenemos un manométro convencional, graduado en bar y psi
+
+![manometro](cap1/manometro.jpeg "manométro")
+
 ##### Presión absoluta
 
 Toma como base el 0 absoluto. Se utiliza para realizar cáculos teóricos.
@@ -217,7 +225,14 @@ Intrumento para medir *caudal* es el *Caudalimetro*, el cual puede sensar agua, 
 
 > En una instalación neumática el caudal es constante, por eso si reducimos la sección en un punto la velocidad tiene que aumentar en ese punto de forma que el caudal se conserve.
 
-$$Q1 = v1 \times S1 = v2 \times S2 = Q2$$
+> La masa de un fluido en movimiento no cambia al fluir. Esto conduce a una relación cuantitativa importante llamada ecuación de continuidad.
+
+$$V_1 \times A_1 = V_2 \times A_2$$
+
+$V= \text{Rapidez del fluido}$
+$A= \text{Área transversal}$
+
+![continuidad](cap1/continuidad.png)
 
 ### Presión de un fluido
 
@@ -241,16 +256,17 @@ Este fenómeno nos permite amplificar/reducir fuerzas teniendo como contraprest
 
 Igualando las presiones tenemos
 
-$P_1 =F_1 /S_1$
-$P_2= F_2 / S_2$
+$P_1 =F_1 /A_1$
+$P_2= F_2 / A_2$
 
-$$F_1 /S_1 = F_2 / S_2$$
+$$F_1 /A_1 = F_2 / A_2$$
 
 Como el volumen desplazado es el mismo $V_1 = V_2$, Luego:
 
-$$l1* S1=l2*S2$$
+$$l1 \times A1=l2 \times A2$$
 
-Siendo **S** la sección o área del recipiente y **l** su altura.
+$A= \text{Área de la sección del recipiente}$
+$l = Altura$
 
 ### Ley de Boyle-Mariotte
 
@@ -285,7 +301,7 @@ Para la presión 1, tnemos que es la presión atmosférica
 $P_1= 100kPa = 1 bar$
 $P_2= 1 *7 = 700kPa = 7\text{ bar absoluto}$
 
-2. Partiendo con $40 cm^3$ de gas confinado a una presión manométrica de $3 kg/cm^2$, fig. 1-5 A, ¿Cuál será la presión final después de que el gas haya sido comprimido a un volumen cuatro veces menor?
+1. Partiendo con $40 cm^3$ de gas confinado a una presión manométrica de $3 kg/cm^2$, fig. 1-5 A, ¿Cuál será el volumen final después de que el gas haya sido comprimido cuatro veces menor?
 
 $P_1V_1 = P_2V_2$
 
@@ -333,11 +349,5 @@ $$
 $m = masa$
 $V= volumen$
 
-### Ejercicios
-
-#### Presión
-
-1. ¿Cuál será la fuerza teórica que desarrolla un cilindro de 50 mm de diámetro a una presión de 6 bar?
-2.
-
+[Ejercicios Cap 1](./ejercicios1.html)
 [Capítulo 2](./index2.html)
