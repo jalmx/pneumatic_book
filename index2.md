@@ -160,14 +160,29 @@ En este punto tendremos una caudal de aire a presión en condiciones de abastec
 
 ![lubricador](cap2/lubricador.png "Lubricador")
 
+## Manómetro
+
+Los manómetros son aparatos de control que sirven para medir la presión existente en un circuito en un momento dado.
+La presión P del circuito tiende a rectificar el muelle tubular (2), el cual mueve el sector (4) que hace girar el piñón (5) unido a la aguja indicadora (6). En la escala (7) puede leerse entonces la presión registrada. La caña (10) del aparato lleva un estrangulador (8) que amortigua el impacto de la presión sobre la aguja.
+
+![Manométro](cap2/manometro_descr.png "Manométro")
+
+![Manométro](cap2/manometro.jpg "Manométro")
+
 ## Elementos neumáticos
 
 ### Cilindro
 
+*Los cilindros naumáticos son, por regla general, los elementos que realizan el trabajo. Su función es la de transformar la energóa neumática en trabajo mecánico de movimiento rectilíneo, que consta de carrera de avance y carrera de retroceso.*
+
+De acuerdo a esta teoría física, si dentro del sistema se presenta una diferencia de áreas y la fuerza es igual en cualquier punto, entonces se tendrá una diferencia de presiones. Este principio se aplica en un dispositivo hidráulico denominado cilindro.
+
+![Cilindro](cap2/cilindro_descrp.png "Cilindro")
+
 - Tubo de sección circular constante, cerrado por sus extremos
 - En su interior se desliza un émbolo solidario con un vástago
 - El émbolo divide al cilindro en dos volúmenes llamados cámaras
-- Hay un abertura en cada cámara para que entre y salga el aire
+- Hay una abertura en cada cámara para que entre y salga el aire.
 
 **Capacidad de trabajo:**
 
@@ -180,16 +195,69 @@ superficie del émbolo, mayor será la fuerza que ejerce el vástago, ya que:
 
 ![cilindro parts](cap2/cilindro_parts.jpg "Partes de un cilindro")
 
+### Cilindro de simple efecto
+
+**Estos cilindros tienen una sola conexión de aire.** No pueden realizar trabajos más que en un sentido. Entonces para que el vástago (o pistón) salga se aplica el aire y para que el vástago retorne se dispone de un muelle incorporado o de una fuerza externa.
+El muelle incorporado se calcula de modo que haga regresar el émbolo a su posición inicial a una velocidad suficientemente grande.
+En los cilindros de simple efecto con muelle incorporado, su longitud limita la carrera (el desplazamiento efectivo del vástago). Por eso, estos cilindros no sobrepasan una carrera de unos 100mm.
+Se utilizan principalmente para sujetar, expulsar, apretar, levantar, alimentar, etc.
+En la figura 8.1 se ilustra un esquema de la estructura interna, indicando las partes que lo componen. Como se observa en la figura, el fluido (aire o aceite) entra por la cámara izquierda y empuja al émbolo venciendo la resistencia del muelle haciendo que el vástago salga.
+
+![cilindro de simple efecto](cap2/cilindro_simple_efecto.png "Cilindro de simple efecto")
+
+
+La figura 8.3 muestra el símbolo del cilindro de simple efecto. En la figura se tiene:
+
+- (A) Cilindro de simple efecto con retorno por acción de fuerza externa
+- (B) Cilindro de simple efecto con retorno por muelle
+- (C) Inyecta fluido en la cámara izquierda del cilindro; las flechas indican que por efecto del fluido se ejerce una fuerza sobre el émbolo empujando el sistema hacia la derecha.
+
+![cilindros de simple efecto](cap2/cilindros_simple_efecto.png "Cilindros de simple efecto")
+
+### Cilindro de doble efecto
+
+*Son los más empleados y el fluido actúa en ambas cámaras*
+
+La fuerza ejercida por el fluido en cilindros de doble efecto, permite que el vástago pueda realizar un movimiento de traslación en los dos sentidos. Se dispone de una fuerza útil tanto en la ida como en el retorno. La figura 8.4 muestra un esquema interno del cilindro. Para que el vástago se desplace en ambas direcciones es necesario que una de las cámaras esté alimentada y la otra esté en estado de escape (para el aire) o tanque (para el aceite)
+
+![cilindro de doble efecto](cap2/cilindro_doble_efecto.png "cilindro de doble efecto")
+
+Los cilindros de doble efecto comparados con los de simple efecto presentan algunas ventajas:
+
+1. Pueden realizar esfuerzos en ambas cámaras.
+2. Las carreras son mayores, pues se aprovecha prácticamente toda la longitud del cuerpo del cilindro.
+3. No necesita de esfuerzo para comprimir un muelle por no tenerlo.
+4. El retroceso del vástago no depende de las cargas o elementos mecánicos.
+5. El funcionamiento y su posicionamiento se pueden ajustar con mayor precisión.
+
 ## Valvulas
 
+Son muy similares para los circuitos neumáticos e hidráulicos. Están compuestos por válvulas distribuidoras encargadas de enviar el aire a presión a un lugar u otro por los diferentes conductos, o impedir su paso.
+Todas las válvulas distribuidoras tienen un determinado número de conexiones que llamamos vías. A estas conexiones se conectan las tuberías de la red.
+Cada válvula distribuidora tiene varias posiciones de funcionamiento, en función de las vías que conecte internamente.
+Cada válvula viene caracterizada por esos dos números, y de esa forma la nombraremos:
+No vías/no posiciones
+Así una válvula 3/2, será una distribuidora con 3 vías y 2 posiciones.
+Para representarla se hace en la posición de reposo por medio de un rectángulo dividido en tantos cuadrados como posiciones tenga la válvula, exteriormente se dibujan la vías en una de las posiciones y en cada cuadrado las conexiones entre vías.
+
+![valvula](cap2/valvula_ejem.png "valvula")
+
 ### Accionamiento de las valvulas
-TODO: Neumatica practica pag 51
+
+![Accionamiento de valvulas](cap2/accionamiento_valvula.png "Accionamiento de valvulas")
+
 ### Valvulas distribuidoras
+
 ### Valvula 2/2
 ### Valvula 3/2
 ### Valvula 4/2
 ### Valvula 5/2
 ### Valvula 4/3
+### Válvula antirretorno
+### Válvula reguladora de caudal bidireccional
+### Válvula selectora o válvula “OR”
+### Válvula simultaniedad o válvula “AND”
 
+[Ejercicios 2](ejercicios2.html)
 
 [Capítulo 1](index.html)
