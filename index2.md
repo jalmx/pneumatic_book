@@ -248,15 +248,86 @@ Para representarla se hace en la posición de reposo por medio de un rectángu
 
 ### Valvulas distribuidoras
 
+#### Conceptos de vías y posiciones
+
+Las valvulas de vías se designan en los catálogos de los fabricantes por el número de las vías controladas y de las posiciones de maniobra estable. Así, una valvula 3/2 vías quier decir que posee tres vías y dos posiciones de maniobra. Hay que observar que la primera cifra es simplemente indicativa de número de vías, indicando la segunda el número de posiciones.
+
+Para evitar errores durante el montaje y además para identificarlos, se indican con letras mayúsculas o números.
+
+Según DIN 24300, se indica así:
+
+P = Alimentaciónde aire comprimido.
+A,B,C = Salida de trabajo.
+R,S,T = Escape de aire.
+X,Y,Z = Conexiones de mando.
+
+Segun normas CETOP, es:
+
+1 = Alimentación de aire comprimido
+2 y 4 = Salidas de trabajo
+3 y 5 = Escape de aire
+12 y 14 = Conexiones de mando
+
+![ejemplo de nomenclatura](cap2/nomenclatura.png "Nomenclatura de valvulas")
+
 ### Valvula 2/2
+
+Las válvulas 2/2 sirven para gobernar el paso del fluido. La denominación 2/2 significa que este elemento adopta dos posiciones -paso y cierre- y tiene dos vías, P y A.
+La Figura 15.12, A) representa una de estas válvulas en reposo. En esta posición el paso de P hacia A está cerrado.
+Cuando se acciona el pulsador, el distribuidor pone en comu­ nicación la entrada P con la utilización A (Figura 15.12, B);
+entonces se dice que la válvula está abierta.
+
+
 ### Valvula 3/2
+
+Estas válvulas permiten la circulación de aceite en una dirección y, al mismo tiempo, cortan el paso en la otra direc­ ción. Su símbolo aparece en la Figura 15.14.
+Se emplean para gobernar cilindros de simple efecto.
+
 ### Valvula 4/2
 ### Valvula 5/2
 ### Valvula 4/3
-### Válvula antirretorno
-### Válvula reguladora de caudal bidireccional
-### Válvula selectora o válvula “OR”
-### Válvula simultaniedad o válvula “AND”
+
+
+### Válvula antirretorno o válvula Check
+
+Permite el paso del fluido en un sentido, impidiendo su circulación en el opuesto.
+Está constituida por un cierre presionado por un muelle. Sólo cuando la presión del aire es capaz de generar una fuerza que venza la ejercida por el muelle el fluido puede pasar.
+
+![valvula check](cap2/valvula_check.png)
+
+### Válvula reguladora de caudal bidireccional o válvula de estrangulamiento
+
+Mediante un estrechamiento en la red regulamos el caudal de fluido que pasa. Si el estrechamiento es regulable mediante un tornillo la regulación del caudal será variable.
+
+![valvula de estrangulamiento](cap2/valvula_estrangulamiento.png)
+
+### Válvula reguladora de caudal unidireccional o Válvula de estrangulamiento y antirretorno
+
+La válvula de estrangulamiento y antiretorno reduce el caudal de aire solamente en un sentido. La valvula de anterretorni cierra el paso del aire en un sentido y el aire sólo puede pasar a través de la sección regulada. El aire puede pasar libremente en la dirección contraria a traves de la valvula de anterretorno abierta. Estas válvulas son utilizadas para regular la velocidad de cilindros neumáticos.
+
+![valvula de estrangulamiento](cap2/valvula_estrangulamiento_antiretorno.png)
+
+### Válvula selectora o válvula “OR” o válvula O
+
+Tiene dos vías de entrada y una de salida.
+Tenemos presión de salida si tenemos presión en una de las entradas o en la otra
+
+![valvula OR](cap2/valvula_or.png "valvula or")
+
+### Válvula simultaniedad o válvula “AND” o válvula Y
+
+Tiene dos vías de entrada y una de salida.
+Tenemos presión de salida si tenemos presión en una de las entradas y en la otra simultáneamente.
+
+![valvula AND](cap2/valvula_and.jpg "Valvula AND")
+
+### Valvula reguladora de presión
+
+Las valvulas reguladoras de presión se encargan en un circuito de controlar la presión del fluido, desde un valor cero hasta el máximo que proporcione la red de distribución.
+
+![valvula reguladora de presión simbolo](cap2/v_regu_simbolo.png)
+
+![valvula reguladora](cap2/valvula_reguladora.gif "valvula reguladora de presión")
 
 [Ejercicios 2](ejercicios2.html)
 
