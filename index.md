@@ -43,7 +43,7 @@ Los sistemas neumáticos se complementan con los eléctricos y electrónicos 
 
 ![fig 1](cap1/fig1.png)
 
-En determinadas aplicaciones, tales como en movimientos de aproximación rápido y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan la neumática y la hidráulica en un *circuito oleoneumático*, utilizando la parte neumática para el accionamiento y control y la parte hidráulica para el actuador.
+En determinadas aplicaciones, tales como en movimientos de aproximación rápido y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan la neumática y la hidráulica en un _circuito oleoneumático_, utilizando la parte neumática para el accionamiento y control y la parte hidráulica para el actuador.
 
 ### Hidráulica
 
@@ -51,7 +51,7 @@ La hidráulica utiliza básicamente los fluidos hidráulicos como medios de p
 
 Dentro de estos sistemas se encuentran los motores hidráulicos con velocidades que abarcan desde 0,5 rpm hasta 10.000 rpm y el par que proporcionan va desde 1 N/m (baja velocidad) hasta 20.000 N/m (alta velocidad).
 
-![fig 2](cap1/fig2.png "pie de la foto")
+![fig 2](cap1/fig2.png 'pie de la foto')
 
 Los sistemas hidráulicos se aplican típicamente en dispositivos móviles tales como maquinaria de construcción, excavadoras, plataformas elevadoras, aparatos de elevación y transporte, maquinaria para agricultura y simuladores de vuelo.
 
@@ -69,17 +69,17 @@ Análogamente a los sistemas neumáticos, los sistemas hidráulicos se comple
 
 En determinadas aplicaciones, tales como en movimientos de aproximación rápido y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan los sistemas neumático, hidráulico y eléctrico en la forma siguiente:
 
-- *Circuito electroneumático* – Accionamiento eléctrico - Actuador neumático.
-- *Circuito oleoneumático* – Accionamiento neumático – Actuador hidráulico.
-- *Circuito electrohidráulico* – Accionamiento eléctrico – Actuador hidráulico.
+- _Circuito electroneumático_ – Accionamiento eléctrico - Actuador neumático.
+- _Circuito oleoneumático_ – Accionamiento neumático – Actuador hidráulico.
+- _Circuito electrohidráulico_ – Accionamiento eléctrico – Actuador hidráulico.
 
 ### Presión
 
-> A la fuerza normal aplicada por unidad de área.
+> La fuerza normal aplicada por unidad de área.
 
 > La presión ejercida de un fluido sobre una superficie - y viserversa - el cociente entre la fuerza y la superficie que recibe su acción. Es decir,
 
-$$P = \frac{F}{A}
+$$
 $$
 
 **En donde:**
@@ -119,13 +119,13 @@ $$\color{red}{\text{revisar->>} 1bar = 1MPa=0,9869 atm=1,01972 kgf/cm^2} $$
 - Peso de la atmósfera sobre la superficie de la tierra.
 - Se originia debido al peso del aire que actúa sobre todo cuerpo ubicado en la superficie terrestre.
 - Se manifiesta con la misma intensidad en todas las direcciones.
-- El instrumento que mide la presión atmosférica se llama barómetro debido a lo cual se le denomina ***presión barométrica***.
+- El instrumento que mide la presión atmosférica se llama barómetro debido a lo cual se le denomina **_presión barométrica_**.
 
 $$\text{Presión atmosférica} = \text{presión barométrica}$$
 
-La presión atmosférica al nivel del mar es $101.325 kPa$, o $14.7 lb/in^2$. Debido a que la presión atmosférica participa en gran número de cálculos, con frecuencia se usa una unidad de pre­sión de 1 ***atmósfera*** (atm), definida como la presión media que la atmósfera ejerce al nivel del mar, es decir, $101.3 kPa$.
+La presión atmosférica al nivel del mar es $101.325 kPa$, o $14.7 lb/in^2$. Debido a que la presión atmosférica participa en gran número de cálculos, con frecuencia se usa una unidad de pre­sión de 1 **_atmósfera_** (atm), definida como la presión media que la atmósfera ejerce al nivel del mar, es decir, $101.3 kPa$.
 
-###### Equivalencias
+###### **Equivalencias**
 
 $$1 atm = 14.7 psi =1,013 bar = 101.325kPa$$
 
@@ -137,13 +137,13 @@ Medida de presión por encima de la presión atmosférica.
 
 ![presion manometrica](cap1/presion_mano.jpg)
 
-###### Manométro
+###### **Manométro**
 
 Es un instrumento de medición para la presión de fluidos contenidos en recipientes cerrados. Se distinguen dos tipos de manómetros, según se empleen para medir la presión de líquidos o de gases.
 
 En la siguiente figura tenemos un manométro convencional, graduado en bar y psi
 
-![manometro](cap1/manometro.jpeg "manométro")
+![manometro](cap1/manometro.jpeg 'manométro')
 
 ##### Presión absoluta
 
@@ -164,6 +164,7 @@ Tenemos las medidas en milímetros, entonces debemos convertirlo a metros para p
 $$
 1m * \frac{2mm}{1000mm} = 0.002m
 $$
+
 Primero debemos obtener el área para poder calcular la fuerza que debe soportar la cinta. Por lo tanto,
 
 $Área = \pi r^2 \rightarrow (0.002m)^2(\pi)= 0.0000125664m^2$
@@ -202,7 +203,7 @@ $$P = \frac{196.2N}{0.00502656m^2}=39,032.65Pa$$
 
 > Es la cantidad de fluido en peso o volumen, que atraviesa una superficie en la unidad de tiempo. En neumática se usa habitualmente el volumen por unidad de tiempo.
 
-> Representa el volumen de un fluido ***V*** que pasa por una sección ***A***, transversal a la corriente, en una unidad de tiempo ***t***.
+> Representa el volumen de un fluido **_V_** que pasa por una sección **_A_**, transversal a la corriente, en una unidad de tiempo **_t_**.
 
 $$Q = \frac{V}{t}(m^3/s)$$
 
@@ -217,9 +218,9 @@ Donde $v$ es la velocidad del fluido.
 
 El caudal viene expresado en $m^3/h$ o $l/s$, dependiendo de la magnitud de la que estemos hablando.
 
-Intrumento para medir *caudal* es el *Caudalimetro*, el cual puede sensar agua, gas, o cualquier otro tipo de fluido.
+Intrumento para medir _caudal_ es el _Caudalimetro_, el cual puede sensar agua, gas, o cualquier otro tipo de fluido.
 
-![caudalimetro](cap1/caudalimetro.jpeg "Caudalimetro")
+![caudalimetro](cap1/caudalimetro.jpeg 'Caudalimetro')
 
 ### Ley de continuidad
 
@@ -248,7 +249,7 @@ Cualquier líquido en un recipiente abierto, por ejemplo, está sujeto a la pr
 
 > Una presión externa aplicada a un fluido confinado se transmite uniformemente a través del volumen de un líquido.
 
-![pascal](cap1/pascal.png "Ley de pascal")
+![pascal](cap1/pascal.png 'Ley de pascal')
 
 La figura 1-3 muestra la sección transversal de un recipiente de forma irregular, que tiene paredes rígidas El fluido confinado en el ejerce la misma presión en todas las direcciones, tal como lo indican las flechas. Si las paredes fueran flexibles, la sección asumiría forma circular. Es entonces la Ley de Pascal que hace que una manguera contra incendios asuma forma cilíndrica cuando es conectada al suministro. Es importante la diferencia entre cómo actúa la fuerza sobre un fluido y cómo lo hace sobre un sólido. Puesto que el sólido es un cuerpo rígido, puede soportar que se le aplique una fuerza sin que cambie apreciablemente su forma. Por otra parte, un líquido puede soportar una fuerza únicamente en una superficie o frontera cerrada.
 
@@ -317,19 +318,19 @@ $$
 
 > Tenemos que el volumen final es de **$10cm^3$**
 
-![fig 1-5](cap1/ejerc2.png "Ejercicio 2")
+![fig 1-5](cap1/ejerc2.png 'Ejercicio 2')
 
 ### Ley de Charles-Gay Lussac
 
 La relación entre el volumen de un gas y su temperatura, al pasar de un estado a otro a presión constante.
 
 **Ley de Charles**
+
 > Mientras la masa y la presión de un gas se mantengan cons­ tantes, el volumen de dicho gas es directamente proporcional a su tempera­ tura absoluta.
 
 > A presión constante, la razón entre el volumen y la temperatura absoluta de un gas se mantiene constante. O lo que es lo mismo, el volumen es directamente proporcional a la temperatura absoluta.
 
 > Si la temperatura de un gas se incrementa su volumen se incrementa en la misma proporción, permaneciendo su presión constante, o si la temperatura del gas se incrementa, se incrementa también su presión en la misma proporción, cuando permanece el volumen constante.
-
 
 $$
 \frac{V_1}{T_1} = \frac{V_2}{T_2} =\frac{V_3}{T_3} = etc \text{ m y P constantes}
@@ -349,5 +350,9 @@ $$
 $m = masa$
 $V= volumen$
 
-[Ejercicios Cap 1](./ejercicios1.html)
-[Capítulo 2](./index2.html)
+- Índice:
+- [Ejercicios Cap 1](./ejercicios1.html)
+- [Capítulo 1](#)
+- [Capítulo 2](index2.html)
+- [Capítulo 3](index3.html)
+- [Capítulo 4](index4.html)
