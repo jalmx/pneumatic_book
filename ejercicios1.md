@@ -37,3 +37,5 @@
 18. Cuál es la ley de continuidad
 19. Cuál es la ley de Boyle-Mariotte
 20. Cuál es la ley de Gay-Lussac
+
+[Bibliografía](bibliografia.html)

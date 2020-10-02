@@ -84,9 +84,9 @@ $$
 
 **En donde:**
 
-$P = Presión \text{ } (N/m^2)$
-$F = Fuerza \text{ } (N)$
-$A = Área \text{ } (m^2)$
+- $P = Presión \text{ } (N/m^2)$
+- $F = Fuerza \text{ } (N)$
+- $A = Área \text{ } (m^2)$
 
 Visto la definición deducimos que para aumentar la fuerza que ejerce un fluido tenemos dos opciones.
 
@@ -156,8 +156,9 @@ $$\text{Presión absoluta} = \text{presión manométrica} + \text{presión atmos
 1. Un tubo contiene agua bajo una presión manométrica de 400 kPa. Si se cubre un orificio de 4 mm de diámetro en el tubo, con un trozo de cinta adhesiva, ¿Qué fuerza tendrá que ser capaz de resistir la cinta?
 
 **Datos:**
-$Presión=400kPa$
-$Diametro=4mm \rightarrow radio = 2mm$
+
+- $Presión=400kPa$
+- $Diametro=4mm \rightarrow radio = 2mm$
 
 Tenemos las medidas en milímetros, entonces debemos convertirlo a metros para poder obterner el área.
 
@@ -177,9 +178,10 @@ $$F = P*A \rightarrow (400kPa)(0.0000125664m^2)=5.02656N$$
 
 2. Un pistón de 20kg descansa sobre una muestra de gas en un cilindro de 8 cm de diámetro. ¿Cuál es la presión manométrica sobre el gas?
 
-Datos:
-$Masa=20kg$
-$Diametro=8cm \rightarrow radio = 4cm$
+**Datos:**
+
+- $Masa=20kg$
+- $Diametro=8cm \rightarrow radio = 4cm$
 
 Para obtener la presión necesitamos el área en donde la fuerza está aplicada, por lo tanto, debemos calcularla, pero primero debemos hacer la conversión de centímetros a metros:
 
@@ -209,10 +211,10 @@ $$Q = \frac{V}{t}(m^3/s)$$
 
 Como $V=A*l$, siendo:
 
-$A= \text{Sección transversal}$
-$l= \text{Espacio recorrido por el fluido}$
+- $A= \text{Sección transversal}$
+- $l= \text{Espacio recorrido por el fluido}$
 
-$$Q= \frac{A*l}{t} \rightarrow Q=v*A$$
+$$Q= \frac{A \times l}{t} \rightarrow Q=v \times A$$
 
 Donde $v$ es la velocidad del fluido.
 
@@ -336,8 +338,8 @@ $$
 \frac{V_1}{T_1} = \frac{V_2}{T_2} =\frac{V_3}{T_3} = etc \text{ m y P constantes}
 $$
 
-$m = masa$
-$P= presión$
+- $m = masa$
+- $P= presión$
 
 **Ley de Gay-Lussac**
 
@@ -347,8 +349,8 @@ $$
 \frac{P_1}{T1} = \frac{P_2}{T2} =\frac{P_3}{T3} = etc \text{ m y V constantes}
 $$
 
-$m = masa$
-$V= volumen$
+- $m = masa$
+- $V= volumen$
 
 - Índice:
 - [Ejercicios Cap 1](./ejercicios1.html)
@@ -356,3 +358,4 @@ $V= volumen$
 - [Capítulo 2](index2.html)
 - [Capítulo 3](index3.html)
 - [Capítulo 4](index4.html)
+- [Bibliógrafía](bibliografia.html)

@@ -1,421 +1,441 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [['$','$'], ['\\(','\\)']]}});</script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS": {"availableFonts":["TeX"],"scale": 150}});</script>
 
-<style>
-/*---------------------------------------------------------------------------------------------
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<script type="text/javascript"
+		src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+	<script
+		type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [['$','$'], ['\\(','\\)']]}});</script>
+	<script
+		type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS": {"availableFonts":["TeX"],"scale": 150}});</script>
+
+	<style>
+		/*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-body {
-	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
-	font-size: 14px;
-	padding: 0 12px;
-	line-height: 22px;
-	word-wrap: break-word;
-}
+		body {
+			font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+			font-size: 14px;
+			padding: 0 12px;
+			line-height: 22px;
+			word-wrap: break-word;
+		}
 
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
+		#code-csp-warning {
+			position: fixed;
+			top: 0;
+			right: 0;
+			color: white;
+			margin: 16px;
+			text-align: center;
+			font-size: 12px;
+			font-family: sans-serif;
+			background-color: #444444;
+			cursor: pointer;
+			padding: 6px;
+			box-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+		}
 
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
+		#code-csp-warning:hover {
+			text-decoration: none;
+			background-color: #007acc;
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+		}
 
 
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
-}
+		body.scrollBeyondLastLine {
+			margin-bottom: calc(100vh - 22px);
+		}
 
-body.showEditorSelection .code-line {
-	position: relative;
-}
+		body.showEditorSelection .code-line {
+			position: relative;
+		}
 
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
-}
+		body.showEditorSelection .code-active-line:before,
+		body.showEditorSelection .code-line:hover:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: -12px;
+			height: 100%;
+		}
 
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
-}
+		body.showEditorSelection li.code-active-line:before,
+		body.showEditorSelection li.code-line:hover:before {
+			left: -30px;
+		}
 
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
-}
+		.vscode-light.showEditorSelection .code-active-line:before {
+			border-left: 3px solid rgba(0, 0, 0, 0.15);
+		}
 
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
-}
+		.vscode-light.showEditorSelection .code-line:hover:before {
+			border-left: 3px solid rgba(0, 0, 0, 0.40);
+		}
 
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
-}
+		.vscode-dark.showEditorSelection .code-active-line:before {
+			border-left: 3px solid rgba(255, 255, 255, 0.4);
+		}
 
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
-}
+		.vscode-dark.showEditorSelection .code-line:hover:before {
+			border-left: 3px solid rgba(255, 255, 255, 0.60);
+		}
 
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
-}
+		.vscode-high-contrast.showEditorSelection .code-active-line:before {
+			border-left: 3px solid rgba(255, 160, 0, 0.7);
+		}
 
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
-}
+		.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+			border-left: 3px solid rgba(255, 160, 0, 1);
+		}
 
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
 
-a {
-	color: #4080D0;
-	text-decoration: none;
-}
+		a {
+			color: #4080D0;
+			text-decoration: none;
+		}
 
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
+		a:focus,
+		input:focus,
+		select:focus,
+		textarea:focus {
+			outline: 1px solid -webkit-focus-ring-color;
+			outline-offset: -1px;
+		}
 
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
-}
+		hr {
+			border: 0;
+			height: 2px;
+			border-bottom: 2px solid;
+		}
 
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
+		h1 {
+			padding-bottom: 0.3em;
+			line-height: 1.2;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+		}
 
-h1, h2, h3 {
-	font-weight: normal;
-}
+		h1,
+		h2,
+		h3 {
+			font-weight: normal;
+		}
 
-h1 code,
-h2 code,
-h3 code,
-h4 code,
-h5 code,
-h6 code {
-	font-size: inherit;
-	line-height: auto;
-}
+		h1 code,
+		h2 code,
+		h3 code,
+		h4 code,
+		h5 code,
+		h6 code {
+			font-size: inherit;
+			line-height: auto;
+		}
 
-a:hover {
-	color: #4080D0;
-	text-decoration: underline;
-}
+		a:hover {
+			color: #4080D0;
+			text-decoration: underline;
+		}
 
-table {
-	border-collapse: collapse;
-}
+		table {
+			border-collapse: collapse;
+		}
 
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
+		table>thead>tr>th {
+			text-align: left;
+			border-bottom: 1px solid;
+		}
 
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
+		table>thead>tr>th,
+		table>thead>tr>td,
+		table>tbody>tr>th,
+		table>tbody>tr>td {
+			padding: 5px 10px;
+		}
 
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
+		table>tbody>tr+tr>td {
+			border-top: 1px solid;
+		}
 
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left: 5px solid;
-}
+		blockquote {
+			margin: 0 7px 0 5px;
+			padding: 0 16px 0 10px;
+			border-left: 5px solid;
+		}
 
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 14px;
-	line-height: 19px;
-}
+		code {
+			font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+			font-size: 14px;
+			line-height: 19px;
+		}
 
-body.wordWrap pre {
-	white-space: pre-wrap;
-}
+		body.wordWrap pre {
+			white-space: pre-wrap;
+		}
 
-.mac code {
-	font-size: 12px;
-	line-height: 18px;
-}
+		.mac code {
+			font-size: 12px;
+			line-height: 18px;
+		}
 
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-}
+		pre:not(.hljs),
+		pre.hljs code>div {
+			padding: 16px;
+			border-radius: 3px;
+			overflow: auto;
+		}
 
-/** Theming */
+		/** Theming */
 
-.vscode-light,
-.vscode-light pre code {
-	color: rgb(30, 30, 30);
-}
+		.vscode-light,
+		.vscode-light pre code {
+			color: rgb(30, 30, 30);
+		}
 
-.vscode-dark,
-.vscode-dark pre code {
-	color: #DDD;
-}
+		.vscode-dark,
+		.vscode-dark pre code {
+			color: #DDD;
+		}
 
-.vscode-high-contrast,
-.vscode-high-contrast pre code {
-	color: white;
-}
+		.vscode-high-contrast,
+		.vscode-high-contrast pre code {
+			color: white;
+		}
 
-.vscode-light code {
-	color: #A31515;
-}
+		.vscode-light code {
+			color: #A31515;
+		}
 
-.vscode-dark code {
-	color: #D7BA7D;
-}
+		.vscode-dark code {
+			color: #D7BA7D;
+		}
 
-.vscode-light pre:not(.hljs),
-.vscode-light code > div {
-	background-color: rgba(220, 220, 220, 0.4);
-}
+		.vscode-light pre:not(.hljs),
+		.vscode-light code>div {
+			background-color: rgba(220, 220, 220, 0.4);
+		}
 
-.vscode-dark pre:not(.hljs),
-.vscode-dark code > div {
-	background-color: rgba(10, 10, 10, 0.4);
-}
+		.vscode-dark pre:not(.hljs),
+		.vscode-dark code>div {
+			background-color: rgba(10, 10, 10, 0.4);
+		}
 
-.vscode-high-contrast pre:not(.hljs),
-.vscode-high-contrast code > div {
-	background-color: rgb(0, 0, 0);
-}
+		.vscode-high-contrast pre:not(.hljs),
+		.vscode-high-contrast code>div {
+			background-color: rgb(0, 0, 0);
+		}
 
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
-}
+		.vscode-high-contrast h1 {
+			border-color: rgb(0, 0, 0);
+		}
 
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
-}
+		.vscode-light table>thead>tr>th {
+			border-color: rgba(0, 0, 0, 0.69);
+		}
 
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
-}
+		.vscode-dark table>thead>tr>th {
+			border-color: rgba(255, 255, 255, 0.69);
+		}
 
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
-}
+		.vscode-light h1,
+		.vscode-light hr,
+		.vscode-light table>tbody>tr+tr>td {
+			border-color: rgba(0, 0, 0, 0.18);
+		}
 
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
-}
+		.vscode-dark h1,
+		.vscode-dark hr,
+		.vscode-dark table>tbody>tr+tr>td {
+			border-color: rgba(255, 255, 255, 0.18);
+		}
 
-.vscode-light blockquote,
-.vscode-dark blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
+		.vscode-light blockquote,
+		.vscode-dark blockquote {
+			background: rgba(127, 127, 127, 0.1);
+			border-color: rgba(0, 122, 204, 0.5);
+		}
 
-.vscode-high-contrast blockquote {
-	background: transparent;
-	border-color: #fff;
-}
-</style>
+		.vscode-high-contrast blockquote {
+			background: transparent;
+			border-color: #fff;
+		}
+	</style>
 
-<style>
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+	<style>
+		/* Tomorrow Theme */
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		/* Original theme - https://github.com/chriskempson/tomorrow-theme */
 
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #8e908c;
-}
+		/* Tomorrow Comment */
+		.hljs-comment,
+		.hljs-quote {
+			color: #8e908c;
+		}
 
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: #c82829;
-}
+		/* Tomorrow Red */
+		.hljs-variable,
+		.hljs-template-variable,
+		.hljs-tag,
+		.hljs-name,
+		.hljs-selector-id,
+		.hljs-selector-class,
+		.hljs-regexp,
+		.hljs-deletion {
+			color: #c82829;
+		}
 
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #f5871f;
-}
+		/* Tomorrow Orange */
+		.hljs-number,
+		.hljs-built_in,
+		.hljs-builtin-name,
+		.hljs-literal,
+		.hljs-type,
+		.hljs-params,
+		.hljs-meta,
+		.hljs-link {
+			color: #f5871f;
+		}
 
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #eab700;
-}
+		/* Tomorrow Yellow */
+		.hljs-attribute {
+			color: #eab700;
+		}
 
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #718c00;
-}
+		/* Tomorrow Green */
+		.hljs-string,
+		.hljs-symbol,
+		.hljs-bullet,
+		.hljs-addition {
+			color: #718c00;
+		}
 
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #4271ae;
-}
+		/* Tomorrow Blue */
+		.hljs-title,
+		.hljs-section {
+			color: #4271ae;
+		}
 
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #8959a8;
-}
+		/* Tomorrow Purple */
+		.hljs-keyword,
+		.hljs-selector-tag {
+			color: #8959a8;
+		}
 
-.hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-}
+		.hljs {
+			display: block;
+			overflow-x: auto;
+			color: #4d4d4c;
+			padding: 0.5em;
+		}
 
-.hljs-emphasis {
-	font-style: italic;
-}
+		.hljs-emphasis {
+			font-style: italic;
+		}
 
-.hljs-strong {
-	font-weight: bold;
-}
-</style>
+		.hljs-strong {
+			font-weight: bold;
+		}
+	</style>
 
-<style>
-/*
+	<style>
+		/*
  * Markdown PDF CSS
  */
 
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
+		pre {
+			background-color: #f8f8f8;
+			border: 1px solid #cccccc;
+			border-radius: 3px;
+			overflow-x: auto;
+			white-space: pre-wrap;
+			overflow-wrap: break-word;
+		}
 
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
+		pre:not(.hljs) {
+			padding: 23px;
+			line-height: 19px;
+		}
 
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
+		blockquote {
+			background: rgba(127, 127, 127, 0.1);
+			border-color: rgba(0, 122, 204, 0.5);
+		}
 
-.emoji {
-	height: 1.4em;
-}
+		.emoji {
+			height: 1.4em;
+		}
 
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-</style>
+		/* for inline code */
+		:not(pre):not(.hljs)>code {
+			color: #C9AE75;
+			/* Change the old color so it seems less like an error */
+			font-size: inherit;
+		}
+	</style>
 
 </head>
+
 <body>
-<h1 id="ejercicios">Ejercicios</h1>
-<h2 id="presi%C3%B3n">Presión</h2>
-<ol>
-<li>Tenemos una tuberia de PVC en la cual está corriendo un fluido con presión manométria de 100kPa. Si dicha tuberia tiene una perforación rectangular de 1cm de alto y 2 cm de ancho, y queremos tapar dicha área. ¿Como mínimo cuanta presión debe ser capaz de resistir?</li>
-<li>¿Cuál será la fuerza teórica que desarrolla un cilindro de 50mm de diámetro a una presión de 6 bar?</li>
-<li>Un pistón de 12kg de aluminio descansa sobre una muestra de aire en un cilindro de 5cm de diámetro. ¿Cuál es la presión manométrica sobre el gas?</li>
-<li>Un cilindro metálico de 80 kg, 2m de longitud y un área de $25cm^2$ en cada base. Si una de sus bases está en contacto con el piso, ¿qué presión ejerce el cilindro sobre el suelo?</li>
-<li>La presión atmosférica tiene un valor aproximado de $1.0 \times 10^5$ Pa. ¿Qué fuerza ejerce el aire confinado en una habitación sobre una ventana de 40 cm $\times$ $80 cm$?</li>
-</ol>
-<h2 id="ley-de-boyle-mariotte">Ley de Boyle-Mariotte</h2>
-<ol>
-<li>Un pistón de una bomba hermética se retira de modo que el volumen de la cámara de aire aumenta tres veces. Tomando en cuenta que la presión inicial es de 100kPa ¿Cuál es el cambio de presión?</li>
-<li>Un gas ideal ocupa un volumen de $4m^3$ a una presión absoluta de 200 kPa. ¿Cuál será la nueva presión si el gas es comprimido lentamente hasta $2m^3$ a temperatura constante?</li>
-<li>La presión absoluta de una muestra de un gas ideal es de 300 kPa a un volumen de $2.6 m^3$. Si la presión disminuyera a 101 kPa a temperatura constante, ¿cuál sería el nuevo volumen?</li>
-<li>Un recipiente herméticamente cerrado contiene aire a una presión relativa de 2 bar. El volumen de dicho recipiente es de 5 litros. Si el volumen se reduce hasta 1.5listro. ¿Cuál será la presión absoluta y relativa del gas para la misma temperatura?</li>
-</ol>
-<h2 id="cuestionario">Cuestionario</h2>
-<ol>
-<li>Qué es neumática?</li>
-<li>Qué es hidráulica?</li>
-<li>Ejemplos de herramientas neumáticas</li>
-<li>Aplicaciones de la neumática</li>
-<li>Función de una válvula</li>
-<li>Verifica la siguiente aseveración, El elemento que usa la hidráulica es el aire</li>
-<li>Verifica la siguiente aseveración, El elemento que usa la neumática es un liquido</li>
-<li>Ventajas del uso de neumática</li>
-<li>Desventajas de la neumática</li>
-<li>Ventajas del uso de hidráulica</li>
-<li>Desventajas de la hidráulica</li>
-<li>Qué es presión</li>
-<li>Cuál es la presión atmosférica</li>
-<li>Verifica la siguiente aseveración, La presión absoluta es igual a la suma de presión atmosférica más la presión relativa</li>
-<li>Verifica la siguiente aseveración, La presión atmosférica es lo mismo que presión barométrica</li>
-<li>Qué es un manómetro</li>
-<li>Qué es caudal</li>
-<li>Cuál es la ley de continuidad</li>
-<li>Cuál es la ley de Boyle-Mariotte</li>
-<li>Cuál es la ley de Gay-Lussac</li>
-</ol>
+	<h1 id="ejercicios">Ejercicios</h1>
+	<h2 id="presi%C3%B3n">Presión</h2>
+	<ol>
+		<li>Tenemos una tuberia de PVC en la cual está corriendo un fluido con presión manométria de 100kPa. Si dicha
+			tuberia tiene una perforación rectangular de 1cm de alto y 2 cm de ancho, y queremos tapar dicha área. ¿Como
+			mínimo cuanta presión debe ser capaz de resistir?</li>
+		<li>¿Cuál será la fuerza teórica que desarrolla un cilindro de 50mm de diámetro a una presión de 6 bar?</li>
+		<li>Un pistón de 12kg de aluminio descansa sobre una muestra de aire en un cilindro de 5cm de diámetro. ¿Cuál es
+			la presión manométrica sobre el gas?</li>
+		<li>Un cilindro metálico de 80 kg, 2m de longitud y un área de $25cm^2$ en cada base. Si una de sus bases
+			está en contacto con el piso, ¿qué presión ejerce el cilindro sobre el suelo?</li>
+		<li>La presión atmosférica tiene un valor aproximado de $1.0 \times 10^5$ Pa. ¿Qué fuerza ejerce el aire
+			confinado en una habitación sobre una ventana de 40 cm $\times$ $80 cm$?</li>
+	</ol>
+	<h2 id="ley-de-boyle-mariotte">Ley de Boyle-Mariotte</h2>
+	<ol>
+		<li>Un pistón de una bomba hermética se retira de modo que el volumen de la cámara de aire aumenta tres
+			veces. Tomando en cuenta que la presión inicial es de 100kPa ¿Cuál es el cambio de presión?</li>
+		<li>Un gas ideal ocupa un volumen de $4m^3$ a una presión absoluta de 200 kPa. ¿Cuál será la nueva presión
+			si el gas es comprimido lentamente hasta $2m^3$ a temperatura constante?</li>
+		<li>La presión absoluta de una muestra de un gas ideal es de 300 kPa a un volumen de $2.6 m^3$. Si la presión
+			disminuyera a 101 kPa a temperatura constante, ¿cuál sería el nuevo volumen?</li>
+		<li>Un recipiente herméticamente cerrado contiene aire a una presión relativa de 2 bar. El volumen de dicho
+			recipiente es de 5 litros. Si el volumen se reduce hasta 1.5listro. ¿Cuál será la presión absoluta y
+			relativa del gas para la misma temperatura?</li>
+	</ol>
+	<h2 id="cuestionario">Cuestionario</h2>
+	<ol>
+		<li>Qué es neumática?</li>
+		<li>Qué es hidráulica?</li>
+		<li>Ejemplos de herramientas neumáticas</li>
+		<li>Aplicaciones de la neumática</li>
+		<li>Función de una válvula</li>
+		<li>Verifica la siguiente aseveración, El elemento que usa la hidráulica es el aire</li>
+		<li>Verifica la siguiente aseveración, El elemento que usa la neumática es un liquido</li>
+		<li>Ventajas del uso de neumática</li>
+		<li>Desventajas de la neumática</li>
+		<li>Ventajas del uso de hidráulica</li>
+		<li>Desventajas de la hidráulica</li>
+		<li>Qué es presión</li>
+		<li>Cuál es la presión atmosférica</li>
+		<li>Verifica la siguiente aseveración, La presión absoluta es igual a la suma de presión atmosférica más la
+			presión relativa</li>
+		<li>Verifica la siguiente aseveración, La presión atmosférica es lo mismo que presión barométrica</li>
+		<li>Qué es un manómetro</li>
+		<li>Qué es caudal</li>
+		<li>Cuál es la ley de continuidad</li>
+		<li>Cuál es la ley de Boyle-Mariotte</li>
+		<li>Cuál es la ley de Gay-Lussac</li>
+	</ol>
+	<p><a href="bibliografia.html">Bibliografía</a></p>
 
 </body>
+
 </html>

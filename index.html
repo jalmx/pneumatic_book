@@ -271,7 +271,7 @@
 
 	<style>
 		/* Tomorrow Theme */
-		/* https://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
 		/* Original theme - https://github.com/chriskempson/tomorrow-theme */
 
 		/* Tomorrow Comment */
@@ -435,7 +435,7 @@ references:
 		interruptores magnéticos, sensores e interruptores eléctricos de final de carrera. El PLC (programmable logic
 		controller) les permite programar la lógica de funcionamiento de un cilindro o de un conjunto de cilindros
 		realizando una tarea específica.</p>
-	<p><img src="cap1/fig1.png" alt="fig 1"></p>
+	<p style="text-align: center;"><img src="cap1/fig1.png" alt="fig 1"></p>
 	<p>En determinadas aplicaciones, tales como en movimientos de aproximación rápido y avance lento, típicos de las
 		fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales
 		duros y en la automatización de procesos de producción, se combinan la neumática y la hidráulica en un
@@ -448,7 +448,7 @@ references:
 		tuberías que llevan el fluido a presión hasta los puntos de utilización.</p>
 	<p>Dentro de estos sistemas se encuentran los motores hidráulicos con velocidades que abarcan desde 0,5 rpm hasta
 		10.000 rpm y el par que proporcionan va desde 1 N/m (baja velocidad) hasta 20.000 N/m (alta velocidad).</p>
-	<p><img src="cap1/fig2.png" alt="fig 2" title="pie de la foto"></p>
+	<p style="text-align: center;"><img src="cap1/fig2.png" alt="fig 2" title="pie de la foto"></p>
 	<p>Los sistemas hidráulicos se aplican típicamente en dispositivos móviles tales como maquinaria de
 		construcción, excavadoras, plataformas elevadoras, aparatos de elevación y transporte, maquinaria para
 		agricultura y simuladores de vuelo.</p>
@@ -489,9 +489,11 @@ references:
 	<p>$$
 		$$</p>
 	<p><strong>En donde:</strong></p>
-	<p>$P = Presión \text{ } (N/m^2)$
-		$F = Fuerza \text{ } (N)$
-		$A = Área \text{ } (m^2)$</p>
+	<ul>
+		<li>$P = Presión \text{ } (N/m^2)$</li>
+		<li>$F = Fuerza \text{ } (N)$</li>
+		<li>$A = Área \text{ } (m^2)$</li>
+	</ul>
 	<p>Visto la definición deducimos que para aumentar la fuerza que ejerce un fluido tenemos dos opciones.</p>
 	<ul>
 		<li>Aumentar la presión del fluido.</li>
@@ -526,12 +528,12 @@ references:
 	<p>$$ 1N/m^2 = 9.869 \times 10^{-6} atm = 10^{-5} bar$$</p>
 	<h5 id="presi%C3%B3n-manom%C3%A9trica-o-presi%C3%B3n-relativa">Presión manométrica o Presión relativa</h5>
 	<p>Medida de presión por encima de la presión atmosférica.</p>
-	<p><img src="cap1/presion_mano.jpg" alt="presion manometrica"></p>
+	<p style="text-align: center;"><img src="cap1/presion_mano.jpg" alt="presion manometrica"></p>
 	<h6 id="manom%C3%A9tro"><strong>Manométro</strong></h6>
 	<p>Es un instrumento de medición para la presión de fluidos contenidos en recipientes cerrados. Se distinguen dos
 		tipos de manómetros, según se empleen para medir la presión de líquidos o de gases.</p>
 	<p>En la siguiente figura tenemos un manométro convencional, graduado en bar y psi</p>
-	<p><img src="cap1/manometro.jpeg" alt="manometro" title="manométro"></p>
+	<p style="text-align: center;"><img src="cap1/manometro.jpeg" alt="manometro" title="manométro"></p>
 	<h5 id="presi%C3%B3n-absoluta">Presión absoluta</h5>
 	<p>Toma como base el 0 absoluto. Se utiliza para realizar cáculos teóricos.</p>
 	<p>$$\text{Presión absoluta} = \text{presión manométrica} + \text{presión atmosférica}$$</p>
@@ -540,9 +542,11 @@ references:
 		<li>Un tubo contiene agua bajo una presión manométrica de 400 kPa. Si se cubre un orificio de 4 mm de diámetro
 			en el tubo, con un trozo de cinta adhesiva, ¿Qué fuerza tendrá que ser capaz de resistir la cinta?</li>
 	</ol>
-	<p><strong>Datos:</strong>
-		$Presión=400kPa$
-		$Diametro=4mm \rightarrow radio = 2mm$</p>
+	<p><strong>Datos:</strong></p>
+	<ul>
+		<li>$Presión=400kPa$</li>
+		<li>$Diametro=4mm \rightarrow radio = 2mm$</li>
+	</ul>
 	<p>Tenemos las medidas en milímetros, entonces debemos convertirlo a metros para poder obterner el área.</p>
 	<p>$$
 		1m * \frac{2mm}{1000mm} = 0.002m
@@ -558,9 +562,11 @@ references:
 		<li>Un pistón de 20kg descansa sobre una muestra de gas en un cilindro de 8 cm de diámetro. ¿Cuál es la presión
 			manométrica sobre el gas?</li>
 	</ol>
-	<p>Datos:
-		$Masa=20kg$
-		$Diametro=8cm \rightarrow radio = 4cm$</p>
+	<p><strong>Datos:</strong></p>
+	<ul>
+		<li>$Masa=20kg$</li>
+		<li>$Diametro=8cm \rightarrow radio = 4cm$</li>
+	</ul>
 	<p>Para obtener la presión necesitamos el área en donde la fuerza está aplicada, por lo tanto, debemos calcularla,
 		pero primero debemos hacer la conversión de centímetros a metros:</p>
 	<p>$$1m *\frac{4cm}{100cm}=0.04m$$</p>
@@ -586,14 +592,16 @@ references:
 	</blockquote>
 	<p>$$Q = \frac{V}{t}(m^3/s)$$</p>
 	<p>Como $V=A*l$, siendo:</p>
-	<p>$A= \text{Sección transversal}$
-		$l= \text{Espacio recorrido por el fluido}$</p>
-	<p>$$Q= \frac{A<em>l}{t} \rightarrow Q=v</em>A$$</p>
+	<ul>
+		<li>$A= \text{Sección transversal}$</li>
+		<li>$l= \text{Espacio recorrido por el fluido}$</li>
+	</ul>
+	<p>$$Q= \frac{A \times l}{t} \rightarrow Q=v \times A$$</p>
 	<p>Donde $v$ es la velocidad del fluido.</p>
 	<p>El caudal viene expresado en $m^3/h$ o $l/s$, dependiendo de la magnitud de la que estemos hablando.</p>
 	<p>Intrumento para medir <em>caudal</em> es el <em>Caudalimetro</em>, el cual puede sensar agua, gas, o cualquier
 		otro tipo de fluido.</p>
-	<p><img src="cap1/caudalimetro.jpeg" alt="caudalimetro" title="Caudalimetro"></p>
+	<p style="text-align: center;"><img src="cap1/caudalimetro.jpeg" alt="caudalimetro" title="Caudalimetro"></p>
 	<h3 id="ley-de-continuidad">Ley de continuidad</h3>
 	<blockquote>
 		<p>En una instalación neumática el caudal es constante, por eso si reducimos la sección en un punto la
@@ -606,7 +614,7 @@ references:
 	<p>$$V_1 \times A_1 = V_2 \times A_2$$</p>
 	<p>$V= \text{Rapidez del fluido}$
 		$A= \text{Área transversal}$</p>
-	<p><img src="cap1/continuidad.png" alt="continuidad"></p>
+	<p style="text-align: center;"><img src="cap1/continuidad.png" alt="continuidad"></p>
 	<h3 id="presi%C3%B3n-de-un-fluido">Presión de un fluido</h3>
 	<blockquote>
 		<p>La fuerza que ejerce un fluido sobre las paredes de un recipiente que lo contiene siempre actúa en forma
@@ -615,7 +623,7 @@ references:
 	<blockquote>
 		<p>Los fluidos ejercen presión en todas las direcciones.</p>
 	</blockquote>
-	<p><img src="cap1/fig3.png" alt="fig 3"></p>
+	<p style="text-align: center;"><img src="cap1/fig3.png" alt="fig 3"></p>
 	<h3 id="ley-de-pascal">Ley de Pascal</h3>
 	<p>Cualquier líquido en un recipiente abierto, por ejemplo, está sujeto a la presión atmos­férica además de la
 		presión debida a su propio peso. Puesto que el líquido es relativamente incompresible, la presión externa de
@@ -625,7 +633,7 @@ references:
 		<p>Una presión externa aplicada a un fluido confinado se transmite uniformemente a través del volumen de un
 			líquido.</p>
 	</blockquote>
-	<p><img src="cap1/pascal.png" alt="pascal" title="Ley de pascal"></p>
+	<p style="text-align: center;"><img src="cap1/pascal.png" alt="pascal" title="Ley de pascal"></p>
 	<p>La figura 1-3 muestra la sección transversal de un recipiente de forma irregular, que tiene paredes rígidas El
 		fluido confinado en el ejerce la misma presión en todas las direcciones, tal como lo indican las flechas. Si
 		las paredes fueran flexibles, la sección asumiría forma circular. Es entonces la Ley de Pascal que hace que
@@ -658,7 +666,7 @@ references:
 	</blockquote>
 	<p>$$P_1V_1 = P_2V_2=P_3V_3 = cte \text{ m y T constantes}$$</p>
 	<p>Siendo $P_1,P_2,P_3$ presiones absolutas y $V_1,V_2,V_3$ volúmnes a esas presiones.</p>
-	<p><img src="cap1/fig4.png" alt="fig 4"></p>
+	<p style="text-align: center;"><img src="cap1/fig4.png" alt="fig 4"></p>
 	<h4 id="ejemplo">Ejemplo:</h4>
 	<ol>
 		<li>El aire expuesto a la presión atmosferica es comprimido a la séptima para de su volumen. ¿Cuál es la presión
@@ -686,7 +694,7 @@ references:
 	<blockquote>
 		<p>Tenemos que el volumen final es de <strong>$10cm^3$</strong></p>
 	</blockquote>
-	<p><img src="cap1/ejerc2.png" alt="fig 1-5" title="Ejercicio 2"></p>
+	<p style="text-align: center;"><img src="cap1/ejerc2.png" alt="fig 1-5" title="Ejercicio 2"></p>
 	<h3 id="ley-de-charles-gay-lussac">Ley de Charles-Gay Lussac</h3>
 	<p>La relación entre el volumen de un gas y su temperatura, al pasar de un estado a otro a presión constante.</p>
 	<p><strong>Ley de Charles</strong></p>
@@ -706,8 +714,10 @@ references:
 	<p>$$
 		\frac{V_1}{T_1} = \frac{V_2}{T_2} =\frac{V_3}{T_3} = etc \text{ m y P constantes}
 		$$</p>
-	<p>$m = masa$
-		$P= presión$</p>
+	<ul>
+		<li>$m = masa$</li>
+		<li>$P= presión$</li>
+	</ul>
 	<p><strong>Ley de Gay-Lussac</strong></p>
 	<blockquote>
 		<p>Si el volumen de una muestra de gas permanece constan­te, la presión absoluta de dicho gas es directamente
@@ -716,15 +726,34 @@ references:
 	<p>$$
 		\frac{P_1}{T1} = \frac{P_2}{T2} =\frac{P_3}{T3} = etc \text{ m y V constantes}
 		$$</p>
-	<p>$m = masa$
-		$V= volumen$</p>
 	<ul>
-		<li>Índice:</li>
-		<li><a href="./ejercicios1.html">Ejercicios Cap 1</a></li>
-		<li><a href="#">Capítulo 1</a></li>
-		<li><a href="index2.html">Capítulo 2</a></li>
-		<li><a href="index3.html">Capítulo 3</a></li>
-		<li><a href="index4.html">Capítulo 4</a></li>
+		<li>
+			<p>$m = masa$</p>
+		</li>
+		<li>
+			<p>$V= volumen$</p>
+		</li>
+		<li>
+			<p>Índice:</p>
+		</li>
+		<li>
+			<p><a href="./ejercicios1.html">Ejercicios Cap 1</a></p>
+		</li>
+		<li>
+			<p><a href="#">Capítulo 1</a></p>
+		</li>
+		<li>
+			<p><a href="index2.html">Capítulo 2</a></p>
+		</li>
+		<li>
+			<p><a href="index3.html">Capítulo 3</a></p>
+		</li>
+		<li>
+			<p><a href="index4.html">Capítulo 4</a></p>
+		</li>
+		<li>
+			<p><a href="bibliografia.html">Bibliógrafía</a></p>
+		</li>
 	</ul>
 
 </body>
