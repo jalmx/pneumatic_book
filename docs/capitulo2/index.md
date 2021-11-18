@@ -1,6 +1,6 @@
-## Capítulo 2. Neumática
+# Capítulo 2. Neumática
 
-### Características del aire comprido
+## Características del aire comprido
 
 El aire, como todos los gases, es comprimible y comprensible; es decir, es elastico. Dentro de un recipiente con capacidad de 1 litro, es posible introducir varios litros de aire gracias a que se puede comprimir y al liberarlo, vuelve a su volumen normal.
 
@@ -8,15 +8,15 @@ Para comprimir el aire, se tiene que realizar un esfuerzo y será mayor cuanto 
 
 El aire, como se sabe, es un gas casi perfectamente cartacterizándose esencialmente por su **fluidez, compresibildiad y elasticidad**. La fluidez permite a sus partículas no ofrecer resistencia apenas al deslizamiento; la compresibilidad (Fig. 1.1) hace que una determinada cantidad de gas pueda reducir su volumen si éste se encuentra en un recinto hermeticamente cerrado; la elasticidad permite que al comprimirlo en ese mismo recinto, ejerza sobre sus paredes una determinada presión, normal a las superficies en contacto (Fig. 1.2).
 
-!["propiedades del aire comprimido"](cap2/aire_compr.png "propiedades del aire comprimido")
+!["propiedades del aire comprimido"](aire_compr.png "propiedades del aire comprimido")
 
-#### Unidades empleadas y equivalencias
+### Unidades empleadas y equivalencias
 
 $$1 atm = 14.7 psi =1,013 bar = 101.325kPa$$
 
 $$ 1N/m^2 = 9.869 \times 10^{-6} atm = 10^{-5} bar$$
 
-## Circuitos neumáticos
+## Sistema de compresion de aire
 
 ### Compresor
 
@@ -26,51 +26,51 @@ Los compresores son máquinas que se utilizan para comprimir el aire. El más 
 
 Se compone de un cilindro y su culata con las correspondientes válvulas, una de admisión y otra de expulsión; un pistón provisto de segmentos para asegurar la compresión; una biela manivela (*conversión de un movimiento circular en rectilíneo alternativo*) y un cigüeñal. Todo montado en un cárter que, a su vez, hace de depósito para el aceite lubricante.
 
-!["compresor"](cap2/compresores.png "Compresor")
+!["compresor"](compresores.png "Compresor")
 
-#### Tipos de compresores
+### Tipos de compresores
 
-![Diagrama de compresores](cap2/compresores_diagrama.png "Diagrama de compresores")
+![Diagrama de compresores](compresores_diagrama.png "Diagrama de compresores")
 
 Dependiendo del tipo de compresor que utilicemos distinguimos varios tipos.
 
 - Compresores Volumétricos.
 - Compresores Centrífugos.
 
-##### Compresores Volumétricos
+#### Compresores Volumétricos
 
 Dentro de este grupo destacan los compresores de pistón, que son los más difundidos. Se construyen de baja, media y alta presión, aunque en este caso deben disponer de varias eta­ pas compresoras.
 
-###### Compresor de pistón de una sola etapa
+#### Compresor de pistón de una sola etapa
 
 La Figura 13.2 muestra un compresor de pistón clásico de
 una sola etapa. El aire aspirado por el pistón en su carrera des­ cendente penetra en la cámara de compresión a través de la
 válvula de admisión y después es inmediatamente comprimi­ do hasta la presión de trabajo, momento en el que se abre la válvula de escape. Durante el trabajo de compresión se gene­ ra calor -según previene la ley de Gay-Lussac- lo que obli­ga a una refrigeración del cilindro proporcional a la cantidad de calor producida. En los compresores pequeños bastan las aletas que lleva el cilindro por la parte exterior. En los mayo­ res se instala además un ventilador y en los de alta presión es necesaria la refrigeración por agua.
 
-![Compresor de pistón 1 etapa](cap2/compresor_1piston_1.png "Compresor de 1 pistón 1 etapa")
+![Compresor de pistón 1 etapa](compresor_1piston_1.png "Compresor de 1 pistón 1 etapa")
 
-![Compresor de pistón 1 etapa](cap2/compresor_1piston_2.png "Compresor de 1 pistón 1 etapa")
+![Compresor de pistón 1 etapa](compresor_1piston_2.png "Compresor de 1 pistón 1 etapa")
 
-![Compresor de pistón 1 etapa](cap2/compresor_1piston_3.jpg "Compresor de 1 pistón 1 etapa")
+![Compresor de pistón 1 etapa](compresor_1piston_3.jpg "Compresor de 1 pistón 1 etapa")
 
-###### Compresor de pistón 2 etapas montaje en V
+### Compresor de pistón 2 etapas montaje en V
 
 En la Figura 13.3 aparece un compresor de pistón de dos etapas y montaje en V. El aire comprimido en el primer pistón, después de refrigerado, se introduce en un segundo cilindro de volumen inferior que lo vuelve a comprimir. Así se obtienen presiones de 1 a 20 bar y con tres etapas se puede llegar hasta 220 bar.
 
-![Compresor de pistón de 2 etapas](cap2/compresor_2etapas_2.png "Compresor de pistón de 2 etapas")
+![Compresor de pistón de 2 etapas](compresor_2etapas_2.png "Compresor de pistón de 2 etapas")
 
-![Compresor de pistón de 2 etapas](cap2/compresor_2etapas_1.png "Compresor de pistón de 2 etapas")
+![Compresor de pistón de 2 etapas](compresor_2etapas_1.png "Compresor de pistón de 2 etapas")
 
-![Compresor de pistón de 2 etapas](cap2/compresor_2etapas_3.jpg "Compresor de pistón de 2 etapas")
+![Compresor de pistón de 2 etapas](compresor_2etapas_3.jpg "Compresor de pistón de 2 etapas")
 
-##### Compresores Centrífugos
+### Compresores Centrífugos
 
 Se basan en aumentar la presión aprovechando la fuerza centrífuga. Para ello, lanzan el aire captado por el centro de una turbina hacia el exterior, donde lo recogen.
 De este tipo son la mayoría de los extractores de aire que tienen las campanas extractoras de las cocinas.
 
-![Compresor centrífugo](cap2/compresor_centrifugo.png "Compresor centrífugo")
+![Compresor centrífugo](compresor_centrifugo.png "Compresor centrífugo")
 
-### Tanque
+## El tanque o unidad de almacenamiento
 
 Es un depósito de reserva de aire comprimido cuya misión es mantener el consumo de la red y evitar pérdidas de carga bruscas en la misma, en caso de fallo o accidente. En este ele­mento se elimina parte del agua  -que se condensa en su parte inferior- por medio de un orificio de purga.
 
@@ -80,40 +80,40 @@ Cumple varias funciones en una instalación de aire comprimido:
 - Permitir que los motorores de arrastre de los compresores no tengan que trabajar de manera continua, sino intermitente.
 - Hacer frente a las demandas punta de caudal sin que se provoquen caídas de presión en la red.
 
-![Tanque Horizontal](cap2/tanque1.jpeg "Tanque horizontal")
+![Tanque Horizontal](tanque1.jpeg "Tanque horizontal")
 
-![Tanque Vertical](cap2/tanque2.jpeg "Tanque vertical")
+![Tanque Vertical](tanque2.jpeg "Tanque vertical")
 
-### Presostato (Switch de presión)
+## Presostato (Switch de presión)
 
 Si has observado los compresores no están funcionando continuamente. Esto es debido a que es posible acumular la energía neumática. El depósito se va a llenar hasta que alcance una determinada presión máxima, en ese momento el motor que acciona el compresor para. A medida que vamos consumiendo aire vamos extrayéndolo del depósito, con lo cual va bajando su presión. Al llegar a una presión mínima el compresor vuelve a arrancar para recuperar la presión perdida.
 Vemos que el depósito varía entre un valor máximo y uno mínimo. El elemento que mide esas presiones y regula el funcionamiento del compresor es el presostato o manocontacto. **Básicamente es un interruptor regulado por presión**.
 
-![Presostato](cap2/presostato1.jpeg "Presostato")
+![Presostato](presostato1.jpeg "Presostato")
 
-![Presostato](cap2/presostato2.jpeg "Presostato")
+![Presostato](presostato2.jpeg "Presostato")
 
-![Presostato](cap2/presostato3.jpeg "Presostato")
+![Presostato](presostato3.jpeg "Presostato")
 
-### Válvula de Seguridad
+## Válvula de Seguridad
 
 Si por alguna razón el presostato que regula el funcionamiento del compresor fallase, pueden ocurrir dos cosas.
 Si falla el mecanismo que regula el arranque cuando baja la presión, el compresor no funcionaría, pero no pasaría nada más.
 Si falla el mecanismo de paro cuando alcanza la presión de trabajo, el compresor continuaría aumentando la presión en el interior del depósito y éste podría estallar al no aguantar a presión.
 
-![valvula de seguridad](cap2/valvula_seg1.jpeg "valvula de seguridad")
+![valvula de seguridad](valvula_seg1.jpeg "valvula de seguridad")
 
-![valvula de seguridad](cap2/valvula_seg2.jpeg "valvula de seguridad")
+![valvula de seguridad](valvula_seg2.jpeg "valvula de seguridad")
 
-![valvula de seguridad](cap2/valvula_seg3.jpeg "valvula de seguridad")
+![valvula de seguridad](valvula_seg3.jpeg "valvula de seguridad")
 
-### Válvula de purga
+## Válvula de purga
 
 Debido a las presiones a las que es sometido el aire durante la compresión, parte del vapor de agua que contiene el aire puede licuar. Esta agua condensada se acumula en la parte inferior del depósito y periódicamente hay que purgarla para evitar que pase a la instalación.
 
-![valvula de purga](cap2/valvula_purga1.jpeg "Valvula de purga")
+![valvula de purga](valvula_purga1.jpeg "Valvula de purga")
 
-### Unidad de Mantenimiento
+## Unidad de Mantenimiento
 
 Hasta ahora lo que hemos hecho ha sido comprimir el aire y almacenarlo para poder utilizarlo. El almacenamiento se realiza, como hemos visto, entre dos presiones determinadas. Estas variaciones perturbarían el funcionamiento de la instalación ya que funcionaría de manera distinta para cada presión. Es por ello que debemos realizar un acondicionamiento final que estabilice esa presión en un valor fijo. Este acondicionamiento es lo que hacemos en la unidad de mantenimiento.
 
@@ -129,49 +129,55 @@ Así que la unidad de mantenimiento representa una combinación de los siguien
 - Regulador de presión
 - Lubricador de aire comprimido
 
-![unidad de mantenimiento](cap2/unidad_mantto_desc.png "unidad de mantenimiento")
+![unidad de mantenimiento](unidad_mantto_desc.png "unidad de mantenimiento")
 
-![unidad de mantenimiento](cap2/unidad_mantto.png "unidad de mantenimiento")
+![unidad de mantenimiento](unidad_mantto.png "unidad de mantenimiento")
 
-![unidad de mantenimiento](cap2/unidad_mantto2.jpeg "unidad de mantenimiento")
+![unidad de mantenimiento](unidad_mantto2.jpeg "unidad de mantenimiento")
 
-![unidad de mantenimiento](cap2/unidad_mantto3.jpeg "unidad de mantenimiento")
+![unidad de mantenimiento](unidad_mantto3.jpeg "unidad de mantenimiento")
 
-#### Filtro
+### Filtro
 
 Su misión es retener las impurezas que pudiera contener el aire procedente del depósito y que podrían deteriorar la instalación posterior.
 Está formado por un elemento filtrante, que puede
 ser de papel, una chapa metálica taladrada o una malla de alambre, encargado de retener las impurezas. Aquí quedan retenidas las partículas de tamaño mayor que las de la malla.
 El recipiente del filtro tiene también un diseño especial para que el aire en su recorrido realice un movimiento helicoidal que favorece que por efecto de las fuerzas centrífugas las gotas de agua y las partículas más grandes salgan proyectadas contra las paredes del filtro y sean recogidas en la parte inferior del filtro. Esta parte inferior del filtro es desmontable y periódicamente es necesario limpiarla.
 
-![filtro](cap2/flitro.png "Filtro")
+![filtro](flitro.png "Filtro")
 
-#### Regulador de presión
+### Regulador de presión
 
 Mantiene la presión en su salida constante independientemente de las variaciones de presión que haya en la entrada. La presión de salida tiene que ser siempre inferior a la presión mínima del depósito.
 Como vemos en la imagen el aire pasa a través de un orificio y mediante una membrana vence la fuerza de un muelle, dependiendo de la presión la fuerza es mayor o menor mientras que la del muelle es constante. Esto provoca la mayor o menor apertura del orificio de paso, haciendo que la presión se mantenga constante aguas abajo.
 
-![Regulador de presión](cap2/regulador_presion.png "Regulador de presión")
+![Regulador de presión](regulador_presion.png "Regulador de presión")
 
-#### Lubricador
+### Lubricador
 
 Es el elemento que proporciona aceite para la lubricación de la instalación. Debido al efecto Venturi absorbe aceite de un depósito y lo pulveriza en el aire de trabajo. El aceite lo añadimos para reducir rozamientos en los elementos móviles de la instalación y proteger toda ella de la oxidación.
 En este punto tendremos una caudal de aire a presión en condiciones de abastecer nuestra instalación a presión constante.
 
-![lubricador](cap2/lubricador.png "Lubricador")
+![lubricador](lubricador.png "Lubricador")
 
 ## Manómetro
 
 Los manómetros son aparatos de control que sirven para medir la presión existente en un circuito en un momento dado.
 La presión P del circuito tiende a rectificar el muelle tubular (2), el cual mueve el sector (4) que hace girar el piñón (5) unido a la aguja indicadora (6). En la escala (7) puede leerse entonces la presión registrada. La caña (10) del aparato lleva un estrangulador (8) que amortigua el impacto de la presión sobre la aguja.
 
-![Manométro](cap2/manometro_descr.png "Manométro")
+![Manométro](manometro_descr.png "Manométro")
 
-![Manométro](cap2/manometro.jpg "Manométro")
+![Manométro](manometro.jpg "Manométro")
 
 ---
 
-[Ejercicios 2](ejercicios2.html)
+## [Ejercicios del capitulo 2](./ejercicios2.md)
 
-- [Capítulo 1](index.html)
-- [Capítulo 3](index3.html)
+---
+
+- [Inicio](../index.md)
+- [Capítulo 1](../capitulo1/index.md)
+- [Capítulo 2](#)
+- [Capítulo 3](../capitulo3/index.md)
+- [Capítulo 4](../capitulo4/index.md)
+- [Bibliografía](../bibliografia.md)

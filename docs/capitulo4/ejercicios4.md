@@ -11,3 +11,12 @@
 9. Controlar un cilindro de doble efecto, activado por una valvular accionada por botón con retorno por muelle, al ser accionado debe expulsar el vástago; contará con un final de carrera que al tocar el vástago hará que se retraiga y regrese a su posicón inicial.
 10. Control de un cilindro de simple efecto por medio de una válvula **OR**, por medio de dos válvulas manuales.
 11. Control de un cilindro de simple efecto por medio de una válvula **AND**, por medio de dos válvulas manuales.
+
+---
+
+- [Inicio](../index.md)
+- [Capítulo 1](../capitulo1/index.md)
+- [Capítulo 2](../capitulo2/index.md)
+- [Capítulo 3](../capitulo3/index.md)
+- [Capítulo 4](./index.md)
+- [Bibliografía](../bibliografia.md)

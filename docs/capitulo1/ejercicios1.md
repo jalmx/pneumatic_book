@@ -38,4 +38,11 @@
 19. Cuál es la ley de Boyle-Mariotte
 20. Cuál es la ley de Gay-Lussac
 
-[Bibliografía](bibliografia.html)
+---
+
+- [Inicio](../index.md)
+- [Capítulo 1](./index.md)
+- [Capítulo 2](../capitulo2/index.md)
+- [Capítulo 3](../capitulo3/index.md)
+- [Capítulo 4](../capitulo4/index.md)
+- [Bibliógrafía](../bibliografia.md)

@@ -1,33 +1,7 @@
-<!-- ---
-title: "Neumática e Hidráulica"
-author: "Alejandro Leyva"
-date: "26/08/2019"
-output: html_document
-bibliography: bibliografia.md
-references:
-- id: jalmx89
-  title: Neumática e Hidráulica
-  author:
-  - family: Fenner
-    given: Martin
-  container-title: Nature Materials
-  volume: 1
-  URL: 'https://www.alejandro-leyva.com/'
-  DOI: 10.1038/nmat3283
-  issue: 4
-  publisher: Xizuth
-  page: 1-n
-  type: book
-  issued:
-    year: 2019
-    month: 3 -->
-<!-- --- -->
 
-# Neumática e Hidráulica
+# Capítulo 1. Introduccion a Neumática e Hidráulica
 
-## Capítulo 1. Conceptos básicos
-
-### Neumática
+## Neumática
 
 > La palabra neumática se refiere al estudio del movimiento del aire.
 
@@ -41,17 +15,17 @@ La neumática precisa de una estación de generación y preparación del air
 
 Los sistemas neumáticos se complementan con los eléctricos y electrónicos lo que les permite obtener un alto grado de sofisticación y flexibilidad. Utilizan válvulas solenoide, señales de realimentación de interruptores magnéticos, sensores e interruptores eléctricos de final de carrera. El PLC (programmable logic controller) les permite programar la lógica de funcionamiento de un cilindro o de un conjunto de cilindros realizando una tarea específica.
 
-![fig 1](cap1/fig1.png)
+![fig 1](fig1.png)
 
 En determinadas aplicaciones, tales como en movimientos de aproximación rápido y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan la neumática y la hidráulica en un _circuito oleoneumático_, utilizando la parte neumática para el accionamiento y control y la parte hidráulica para el actuador.
 
-### Hidráulica
+## Hidráulica
 
 La hidráulica utiliza básicamente los fluidos hidráulicos como medios de presión para mover los pistones de los cilindros. En la figura 1.2 se representa el movimiento típico de un pistón dentro del cilindro gracias a la energía proporcionada por un sistema hidráulico formado por una bomba, un depósito y un conjunto de tuberías que llevan el fluido a presión hasta los puntos de utilización.
 
 Dentro de estos sistemas se encuentran los motores hidráulicos con velocidades que abarcan desde 0,5 rpm hasta 10.000 rpm y el par que proporcionan va desde 1 N/m (baja velocidad) hasta 20.000 N/m (alta velocidad).
 
-![fig 2](cap1/fig2.png 'pie de la foto')
+![fig 2](fig2.png 'pie de la foto')
 
 Los sistemas hidráulicos se aplican típicamente en dispositivos móviles tales como maquinaria de construcción, excavadoras, plataformas elevadoras, aparatos de elevación y transporte, maquinaria para agricultura y simuladores de vuelo.
 
@@ -73,7 +47,7 @@ En determinadas aplicaciones, tales como en movimientos de aproximación rápi
 - _Circuito oleoneumático_ – Accionamiento neumático – Actuador hidráulico.
 - _Circuito electrohidráulico_ – Accionamiento eléctrico – Actuador hidráulico.
 
-### Presión
+## Presión
 
 > La fuerza normal aplicada por unidad de área.
 
@@ -93,9 +67,9 @@ Visto la definición deducimos que para aumentar la fuerza que ejerce un fluido
 - Aumentar la presión del fluido.
 - Aumentar la superficie sobre la que actúa el fluido.
 
-#### Equivalencias
+### Equivalencias
 
-##### Fuerza
+#### Fuerza
 
 $$1\text{ }N = 1 \text{ }kgm/s^2$$
 
@@ -104,7 +78,7 @@ $$1\text{ }kgf = 1 \text{ }kp = 9.81N$$
 $kgf = \text{kilogramo-fuerza}$
 $kp = \text{kilopondio}$
 
-##### Presión
+#### Presión
 
 $$1 \text{ pascal (Pa)} = 1 \text{ Newton por metro cuadrado} (N/m^2)$$
 
@@ -125,7 +99,7 @@ $$\text{Presión atmosférica} = \text{presión barométrica}$$
 
 La presión atmosférica al nivel del mar es $101.325 kPa$, o $14.7 lb/in^2$. Debido a que la presión atmosférica participa en gran número de cálculos, con frecuencia se usa una unidad de pre­sión de 1 **_atmósfera_** (atm), definida como la presión media que la atmósfera ejerce al nivel del mar, es decir, $101.3 kPa$.
 
-###### **Equivalencias**
+##### **Equivalencias**
 
 $$1 atm = 14.7 psi =1,013 bar = 101.325kPa$$
 
@@ -135,15 +109,15 @@ $$ 1N/m^2 = 9.869 \times 10^{-6} atm = 10^{-5} bar$$
 
 Medida de presión por encima de la presión atmosférica.
 
-![presion manometrica](cap1/presion_mano.jpg)
+![presion manometrica](presion_mano.jpg)
 
-###### **Manométro**
+##### **Manométro**
 
 Es un instrumento de medición para la presión de fluidos contenidos en recipientes cerrados. Se distinguen dos tipos de manómetros, según se empleen para medir la presión de líquidos o de gases.
 
 En la siguiente figura tenemos un manométro convencional, graduado en bar y psi
 
-![manometro](cap1/manometro.jpeg 'manométro')
+![manometro](manometro.jpeg 'manométro')
 
 ##### Presión absoluta
 
@@ -151,7 +125,7 @@ Toma como base el 0 absoluto. Se utiliza para realizar cáculos teóricos.
 
 $$\text{Presión absoluta} = \text{presión manométrica} + \text{presión atmosférica}$$
 
-#### Ejemplos
+## Ejemplos de presion
 
 1. Un tubo contiene agua bajo una presión manométrica de 400 kPa. Si se cubre un orificio de 4 mm de diámetro en el tubo, con un trozo de cinta adhesiva, ¿Qué fuerza tendrá que ser capaz de resistir la cinta?
 
@@ -201,7 +175,7 @@ $$P = \frac{196.2N}{0.00502656m^2}=39,032.65Pa$$
 
 > Por lo tanto, nos da una presión manométrica de $39.032kPa$, sobre el gas.
 
-### Caudal
+## Caudal
 
 > Es la cantidad de fluido en peso o volumen, que atraviesa una superficie en la unidad de tiempo. En neumática se usa habitualmente el volumen por unidad de tiempo.
 
@@ -222,9 +196,9 @@ El caudal viene expresado en $m^3/h$ o $l/s$, dependiendo de la magnitud de la q
 
 Intrumento para medir _caudal_ es el _Caudalimetro_, el cual puede sensar agua, gas, o cualquier otro tipo de fluido.
 
-![caudalimetro](cap1/caudalimetro.jpeg 'Caudalimetro')
+![caudalimetro](caudalimetro.jpeg 'Caudalimetro')
 
-### Ley de continuidad
+## Ley de continuidad
 
 > En una instalación neumática el caudal es constante, por eso si reducimos la sección en un punto la velocidad tiene que aumentar en ese punto de forma que el caudal se conserve.
 
@@ -235,15 +209,15 @@ $$V_1 \times A_1 = V_2 \times A_2$$
 $V= \text{Rapidez del fluido}$
 $A= \text{Área transversal}$
 
-![continuidad](cap1/continuidad.png)
+![continuidad](continuidad.png)
 
-### Presión de un fluido
+## Presión de un fluido
 
 > La fuerza que ejerce un fluido sobre las paredes de un recipiente que lo contiene siempre actúa en forma perpendicular a esas paredes.
 
 > Los fluidos ejercen presión en todas las direcciones.
 
-![fig 3](cap1/fig3.png)
+![fig 3](fig3.png)
 
 ### Ley de Pascal
 
@@ -251,7 +225,7 @@ Cualquier líquido en un recipiente abierto, por ejemplo, está sujeto a la pr
 
 > Una presión externa aplicada a un fluido confinado se transmite uniformemente a través del volumen de un líquido.
 
-![pascal](cap1/pascal.png 'Ley de pascal')
+![pascal](pascal.png 'Ley de pascal')
 
 La figura 1-3 muestra la sección transversal de un recipiente de forma irregular, que tiene paredes rígidas El fluido confinado en el ejerce la misma presión en todas las direcciones, tal como lo indican las flechas. Si las paredes fueran flexibles, la sección asumiría forma circular. Es entonces la Ley de Pascal que hace que una manguera contra incendios asuma forma cilíndrica cuando es conectada al suministro. Es importante la diferencia entre cómo actúa la fuerza sobre un fluido y cómo lo hace sobre un sólido. Puesto que el sólido es un cuerpo rígido, puede soportar que se le aplique una fuerza sin que cambie apreciablemente su forma. Por otra parte, un líquido puede soportar una fuerza únicamente en una superficie o frontera cerrada.
 
@@ -271,7 +245,7 @@ $$l1 \times A1=l2 \times A2$$
 $A= \text{Área de la sección del recipiente}$
 $l = Altura$
 
-### Ley de Boyle-Mariotte
+## Ley de Boyle-Mariotte
 
 > Esta ley aplciada a gases perfectos dice que a tempratura constante, la presión absoluta es inversamente porpocional al volumen, O sea:
 
@@ -283,9 +257,9 @@ $$P_1V_1 = P_2V_2=P_3V_3 = cte \text{ m y T constantes}$$
 
 Siendo $P_1,P_2,P_3$ presiones absolutas y $V_1,V_2,V_3$ volúmnes a esas presiones.
 
-![fig 4](cap1/fig4.png)
+![fig 4](fig4.png)
 
-#### Ejemplo:
+### Ejemplos:
 
 1. El aire expuesto a la presión atmosferica es comprimido a la séptima para de su volumen. ¿Cuál es la presión si la temperatura se mantiene constante?
 
@@ -320,13 +294,13 @@ $$
 
 > Tenemos que el volumen final es de **$10cm^3$**
 
-![fig 1-5](cap1/ejerc2.png 'Ejercicio 2')
+![fig 1-5](ejerc2.png 'Ejercicio 2')
 
-### Ley de Charles-Gay Lussac
+## Ley de Charles-Gay Lussac
 
 La relación entre el volumen de un gas y su temperatura, al pasar de un estado a otro a presión constante.
 
-**Ley de Charles**
+### Ley de Charles
 
 > Mientras la masa y la presión de un gas se mantengan cons­ tantes, el volumen de dicho gas es directamente proporcional a su tempera­ tura absoluta.
 
@@ -341,7 +315,7 @@ $$
 - $m = masa$
 - $P= presión$
 
-**Ley de Gay-Lussac**
+### Ley de Gay-Lussac
 
 > Si el volumen de una muestra de gas permanece constan­te, la presión absoluta de dicho gas es directamente proporcional a su tempe­ ratura absoluta.
 
@@ -352,10 +326,40 @@ $$
 - $m = masa$
 - $V= volumen$
 
-- Índice:
-- [Ejercicios Cap 1](./ejercicios1.html)
+---
+
+## [Ejercicios del capitulo 1](./ejercicios1.md)
+
+---
+
+- [Inicio](../index.md)
 - [Capítulo 1](#)
-- [Capítulo 2](index2.html)
-- [Capítulo 3](index3.html)
-- [Capítulo 4](index4.html)
-- [Bibliógrafía](bibliografia.html)
+- [Capítulo 2](../capitulo2/index.md)
+- [Capítulo 3](../capitulo3/index.md)
+- [Capítulo 4](../capitulo4/index.md)
+- [Bibliógrafía](../bibliografia.md)
+
+<!-- ---
+title: "Neumática e Hidráulica"
+author: "Alejandro Leyva"
+date: "26/08/2019"
+output: html_document
+bibliography: bibliografia.md
+references:
+- id: jalmx89
+  title: Neumática e Hidráulica
+  author:
+  - family: Fenner
+    given: Martin
+  container-title: Nature Materials
+  volume: 1
+  URL: 'https://www.alejandro-leyva.com/'
+  DOI: 10.1038/nmat3283
+  issue: 4
+  publisher: Xizuth
+  page: 1-n
+  type: book
+  issued:
+    year: 2019
+    month: 3 -->
+<!-- --- -->

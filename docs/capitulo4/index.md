@@ -8,7 +8,7 @@ Para un funcionamiento óptimo, la presión de funcionamiento del sistema de con
 
 ## Estructura de una sistema neumático
 
-![estructura de un sistema neumático](cap4/estructura.png)
+![estructura de un sistema neumático](./estructura.png)
 
 ### Esquema de conexiones del sistema
 
@@ -21,22 +21,22 @@ Para un funcionamiento óptimo, la presión de funcionamiento del sistema de con
 
 **Esquema de conexiones**
 
-|Descripción|Nomenclatura|
-|-|-|
-|De arriba hacia abajo|
-|Elemento de trabajo|1A
-|Elemento de mando|1V2
-|Elemento de procesamiento|1V1
-|Elemento de entrada|1S1,1S2,1S3
-|Elemento de alimentación|0Z,0S
+| Descripción               | Nomenclatura |
+| ------------------------- | ------------ |
+| De arriba hacia abajo     |
+| Elemento de trabajo       | 1A           |
+| Elemento de mando         | 1V2          |
+| Elemento de procesamiento | 1V1          |
+| Elemento de entrada       | 1S1,1S2,1S3  |
+| Elemento de alimentación  | 0Z,0S        |
 
-![esquema de conexiones](cap4/esquema.png)
+![esquema de conexiones](./esquema.png)
 
 ## Nomenclatura
 
 En el siguiente documento se detalla las diferentes nomenclaturas para el nombramiento de los elementos en un circuito neumático.
 
-<embed src="cap4/identificaciones.pdf" width="80%" height="800px">
+<embed src="./identificaciones.pdf" width="100%" height="800px">
 
 ## Armando circuitos neumáticos
 
@@ -44,35 +44,42 @@ Armar los siguientes circuitos neumáticos para irse familiarizando con el softw
 
 ### Válvulas de control
 
-![esquema](cap4/esq_42.png)
+![esquema](./esq_42.png)
 
-![esquema](cap4/esq_47.png)
+![esquema](./esq_47.png)
 
-![esquema](cap4/esq_411.png)
+![esquema](./esq_411.png)
 
-![esquema](cap4/esq_413.png)
+![esquema](./esq_413.png)
 
-![esquema](cap4/esq_419.png)
+![esquema](./esq_419.png)
 
-![esquema](cap4/esq_423.png)
+![esquema](./esq_423.png)
 
-![esquema](cap4/esq_425.png)
+![esquema](./esq_425.png)
 
 ### Válvulas combinacionales
 
-![esquema](cap4/esq_53.png)
+![esquema](./esq_53.png)
 
-![esquema](cap4/esq_54.png)
+![esquema](./esq_54.png)
 
-![esquema](cap4/esq_56.png)
+![esquema](./esq_56.png)
 
-![esquema](cap4/esq_57.png)
+![esquema](./esq_57.png)
 
-![esquema](cap4/esq_510.png)
+![esquema](./esq_510.png)
 
-![esquema](cap4/esq_514.png)
+![esquema](./esq_514.png)
 
-[Capítulo 1](index.html)
-[Capítulo 2](index2.html)
-[Capítulo 3](index3.html)
-[Ejercicios de circuitos neumáticos](circuitos.html)
+---
+
+## [Ejercicios del capitulo 4](./ejercicios4.md)
+---
+
+- [Inicio](../index.md)
+- [Capítulo 1](../capitulo1/index.md)
+- [Capítulo 2](../capitulo2/index.md)
+- [Capítulo 3](../capitulo3/index.md)
+- [Capítulo 4](#)
+- [Bibliografía](../bibliografia.md)

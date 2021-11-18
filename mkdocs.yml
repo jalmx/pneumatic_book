@@ -1,0 +1,34 @@
+site_name: Neumatica e Hidraulica
+site_url: https://www.alejandro-leyva.com/pneumatic_book/
+nav:
+    - Inicio: index.md
+    - "Capitulo 1": 
+      - "Introduccion a Neumática e Hidráulica": capitulo1/index.md
+      - "Ejecicios capitulo 1": capitulo1/ejercicios1.md
+      - "Mini test 1": capitulo1/mini-test.md
+    - "Capitulo 2":
+      - "Neumática": capitulo2/index.md
+      - "Ejecicios capitulo 2": capitulo2/ejercicios2.md
+      - "Mini test 2": capitulo1/mini-test.md
+    - "Capitulo 3": capitulo3/index.md
+    - "Capitulo 4": 
+      - "Circuitos neumáticos": capitulo4/index.md
+      - "Ejecicios capitulo 4": capitulo4/ejercicios4.md
+      - "Mini test 4": capitulo1/mini-test.md
+
+theme:
+  name: material
+  palette:
+    primary: red
+  favicon: favicon.png
+  logo: favicon.svg
+  features:
+    - navigation.expand
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
