@@ -171,7 +171,7 @@ La presión P del circuito tiende a rectificar el muelle tubular (2), el cual m
 
 ---
 
-## [Ejercicios del capitulo 2](./ejercicios2.md)
+## [Ejercicios del Capítulo 2](./ejercicios2.md)
 
 ---
 

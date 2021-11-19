@@ -337,7 +337,7 @@ $$
 - [Capítulo 2](../capitulo2/index.md)
 - [Capítulo 3](../capitulo3/index.md)
 - [Capítulo 4](../capitulo4/index.md)
-- [Bibliógrafía](../bibliografia.md)
+- [Bibliografía](../bibliografia.md)
 
 <!-- ---
 title: "Neumática e Hidráulica"
