@@ -1,0 +1,4 @@
+[submodule "site"]
+	path = site
+	url = https://github.com/jalmx/pneumatic_book.git
+	branch = gh-pages
