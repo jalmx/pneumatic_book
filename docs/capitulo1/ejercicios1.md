@@ -2,7 +2,7 @@
 
 ## Presión
 
-1. Tenemos una tuberia de PVC en la cual está corriendo un fluido con presión manométria de 100kPa. Si dicha tuberia tiene una perforación rectangular de 1cm de alto y 2 cm de ancho, y queremos tapar dicha área. ¿Como mínimo cuanta presión debe ser capaz de resistir?
+1. Tenemos una tubería de PVC en la cual está corriendo un fluido con presión manométrica de 100kPa. Si dicha tubería tiene una perforación rectangular de 1cm de alto y 2 cm de ancho, y queremos tapar dicha área. ¿Cómo mínimo cuanta presión debe ser capaz de resistir?
 2. ¿Cuál será la fuerza teórica que desarrolla un cilindro de 50mm de diámetro a una presión de 6 bar?
 3. Un pistón de 12kg de aluminio descansa sobre una muestra de aire en un cilindro de 5cm de diámetro. ¿Cuál es la presión manométrica sobre el gas?
 4. Un cilindro metálico de 80 kg, 2m de longitud y un área de $25cm^2$ en cada base. Si una de sus bases está en contacto con el piso, ¿qué presión ejerce el cilindro sobre el suelo?
@@ -17,8 +17,8 @@
 
 ## Cuestionario
 
-1. Qué es neumática?
-2. Qué es hidráulica?
+1. ¿Qué es neumática?
+2. ¿Qué es hidráulica?
 3. Ejemplos de herramientas neumáticas
 4. Aplicaciones de la neumática
 5. Función de una válvula

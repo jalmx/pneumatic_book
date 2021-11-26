@@ -1,31 +1,43 @@
-# [Libro de Neumatica e Hidraulica](./index.md)
+# [Libro de Neumática e Hidráulica](./index.md)
 
 ---
 
-## [Capitulo 1. Introduccion a Neumática e Hidráulica](./capitulo1/index.md)
+## [Capítulo 1. Introducción a Neumática e Hidráulica](./capitulo1/index.md)
 
-### [Ejercicios del capitulo 1](./capitulo1/ejercicios1.md)
+### [Ejercicios del capítulo 1](./capitulo1/ejercicios1.md)
 
----
-
-## [Capitulo 2. Neumática](./capitulo2/index.md)
-
-### [Ejercicios del capitulo 2](./capitulo2/ejercicios2.md)
+### [Mini test capítulo 1](./capitulo1/mini-test.md)
 
 ---
 
-## [Capitulo 3. Elementos neumáticos](./capitulo3/index.md)
+## [Capítulo 2. Neumática](./capitulo2/index.md)
+
+### [Ejercicios del capítulo 2](./capitulo2/ejercicios2.md)
+
+### [Videos - Capítulo 2](./capitulo2/video.md)
+
+### [Mini test capítulo 2](./capitulo2/mini-test.md)
 
 ---
 
-## [Capitulo 4. Circuitos neumáticos y electroneumaticos](./capitulo4/index.md)
+## [Capítulo 3. Elementos neumáticos](./capitulo3/index.md)
 
-### [Ejercicios del capitulo 4](./capitulo4/ejercicios4.md)
-
----
-
-## [Bibliografia](./bibliografia.md)
+### [Videos - Capítulo 3](./capitulo3/video.md)
 
 ---
 
-## [Ejemplos de videos y mas](https://www.facebook.com/mecatronica85/)
+## [Capítulo 4. Circuitos neumáticos y electroneumáticos](./capitulo4/index.md)
+
+### [Ejercicios del capítulo 4](./capitulo4/ejercicios4.md)
+
+### [Videos - Capítulo 4](./capitulo4/video.md)
+
+### [Mini test capítulo 4](./capitulo4/mini-test.md)
+
+---
+
+## [Bibliografía](./bibliografia.md)
+
+---
+
+## [Ejemplos de videos y más en Facebook de Mecatrónica 85](https://www.facebook.com/mecatronica85/)

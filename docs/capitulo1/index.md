@@ -1,11 +1,11 @@
 
-# Capítulo 1. Introduccion a Neumática e Hidráulica
+# Capítulo 1. Introducción a Neumática e Hidráulica
 
 ## Neumática
 
 > La palabra neumática se refiere al estudio del movimiento del aire.
 
-Los sistemas de aire comprimido proporcionan un movimiento controlado con el empleo de cilindros y motores neumáticos y se aplican en herramientas, válvulas de control y posicionadotes, martillos neumáticos, pistolas para pintar, motores neumáticos, sistemas de empaquetado, elevadores, herramientas de impacto, prensas neumáticas, robots industriales, vibradores, frenos neumáticos, etc.
+Los sistemas de aire comprimido proporcionan un movimiento controlado con el empleo de cilindros y motores neumáticos y se aplican en herramientas, válvulas de control y posicionadores, martillos neumáticos, pistolas para pintar, motores neumáticos, sistemas de empaquetado, elevadores, herramientas de impacto, prensas neumáticas, robots industriales, vibradores, frenos neumáticos, etc.
 
 Las ventajas que presenta el uso de la neumática son el bajo coste de sus componentes, su facilidad de diseño e implementación y el bajo par o la fuerza escasa que puede desarrollar a las bajas presiones con que trabaja (típico 6 bar) lo que constituye un factor de seguridad. Otras características favorables son el riesgo nulo de explosión, su conversión fácil al movimiento giratorio así como al lineal, la posibilidad de transmitir energía a grandes distancias, una construcción y mantenimiento fáciles y la economía en las aplicaciones.
 
@@ -17,7 +17,7 @@ Los sistemas neumáticos se complementan con los eléctricos y electrónicos 
 
 ![fig 1](fig1.png)
 
-En determinadas aplicaciones, tales como en movimientos de aproximación rápido y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan la neumática y la hidráulica en un _circuito oleoneumático_, utilizando la parte neumática para el accionamiento y control y la parte hidráulica para el actuador.
+En determinadas aplicaciones, tales como en movimientos de aproximación rápida y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan la neumática y la hidráulica en un _circuito oleoneumático_, utilizando la parte neumática para el accionamiento y control y la parte hidráulica para el actuador.
 
 ## Hidráulica
 
@@ -33,15 +33,15 @@ Sus aplicaciones en dispositivos fijos abarcan la fabricación y montaje de ma�
 
 Tienen las siguientes **ventajas**:
 
-Gran potencia transmitida con pequeños componentes, posicionamiento preciso, arranque con cargas pesadas, movimientos lineales independientes de la carga ya que los líquidos son casi incompresibles y pueden emplearse válvulas de control, operación suave e inversa, buen control y regulación y disipación favorable de calor.
+Gran potencia transmitida con pequeños componentes, posicionamiento preciso, arranque con cargas pesadas, movimientos lineales independientes de la carga, ya que los líquidos son casi incompresibles y pueden emplearse válvulas de control, operación suave e inversa, buen control y regulación y disipación favorable de calor.
 
 Y entre sus **desventajas** figuran:
 
 Polución del ambiente con riesgo de incendio y accidentes en el caso de fuga de aceite, sensibilidad a la suciedad, peligro presente debido a las excesivas presiones, dependencia de la temperatura por cambios en la viscosidad.
 
-Análogamente a los sistemas neumáticos, los sistemas hidráulicos se complementan con los eléctricos y electrónicos mediante dispositivos tales como válvulas solenoide, señales de realimentación de interruptores magnéticos, sensores e interruptores eléctricos de final de carrera. Es fácil, en particular en sistemas complejos, acoplarles un PLC (programmable logic controller) que les permite programar la lógica de funcionamiento de varios cilindros.
+Análogamente, a los sistemas neumáticos, los sistemas hidráulicos se complementan con los eléctricos y electrónicos mediante dispositivos tales como válvulas solenoide, señales de realimentación de interruptores magnéticos, sensores e interruptores eléctricos de final de carrera. Es fácil, en particular en sistemas complejos, acoplarles un PLC (programmable logic controller) que les permite programar la lógica de funcionamiento de varios cilindros.
 
-En determinadas aplicaciones, tales como en movimientos de aproximación rápido y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan los sistemas neumático, hidráulico y eléctrico en la forma siguiente:
+En determinadas aplicaciones, tales como en movimientos de aproximación rápida y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan los sistemas neumático, hidráulico y eléctrico en la forma siguiente:
 
 - _Circuito electroneumático_ – Accionamiento eléctrico - Actuador neumático.
 - _Circuito oleoneumático_ – Accionamiento neumático – Actuador hidráulico.
@@ -84,14 +84,14 @@ $$1 \text{ pascal (Pa)} = 1 \text{ Newton por metro cuadrado} (N/m^2)$$
 
 $$1kPa = 1,000 N/m^2$$
 
-$$\color{red}{\text{revisar->>} 1bar = 1MPa=0,9869 atm=1,01972 kgf/cm^2} $$
+$$1bar = 1MPa=0,9869 atm=1,01972 kgf/cm^2$$
 
 #### Tipos de presión
 
 ##### Presión atmosférica
 
 - Peso de la atmósfera sobre la superficie de la tierra.
-- Se originia debido al peso del aire que actúa sobre todo cuerpo ubicado en la superficie terrestre.
+- Se origina debido al peso del aire que actúa sobre todo cuerpo ubicado en la superficie terrestre.
 - Se manifiesta con la misma intensidad en todas las direcciones.
 - El instrumento que mide la presión atmosférica se llama barómetro debido a lo cual se le denomina **_presión barométrica_**.
 
@@ -121,11 +121,11 @@ En la siguiente figura tenemos un manométro convencional, graduado en bar y psi
 
 ##### Presión absoluta
 
-Toma como base el 0 absoluto. Se utiliza para realizar cáculos teóricos.
+Toma como base el 0 absoluto. Se utiliza para realizar cálculos teóricos.
 
 $$\text{Presión absoluta} = \text{presión manométrica} + \text{presión atmosférica}$$
 
-## Ejemplos de presion
+## Ejemplos de presión
 
 1. Un tubo contiene agua bajo una presión manométrica de 400 kPa. Si se cubre un orificio de 4 mm de diámetro en el tubo, con un trozo de cinta adhesiva, ¿Qué fuerza tendrá que ser capaz de resistir la cinta?
 
@@ -134,7 +134,7 @@ $$\text{Presión absoluta} = \text{presión manométrica} + \text{presión atmos
 - $Presión=400kPa$
 - $Diametro=4mm \rightarrow radio = 2mm$
 
-Tenemos las medidas en milímetros, entonces debemos convertirlo a metros para poder obterner el área.
+Tenemos las medidas en milímetros, entonces debemos convertirlo a metros para poder obtener el área.
 
 $$
 1m * \frac{2mm}{1000mm} = 0.002m
@@ -155,17 +155,17 @@ $$F = P*A \rightarrow (400kPa)(0.0000125664m^2)=5.02656N$$
 **Datos:**
 
 - $Masa=20kg$
-- $Diametro=8cm \rightarrow radio = 4cm$
+- $Diámetro=8cm \rightarrow radio = 4cm$
 
 Para obtener la presión necesitamos el área en donde la fuerza está aplicada, por lo tanto, debemos calcularla, pero primero debemos hacer la conversión de centímetros a metros:
 
 $$1m *\frac{4cm}{100cm}=0.04m$$
 
-Una vez tenemos el diamtro en metros, sustituimos para obtener el área donde está aplicada la presión:
+Una vez tenemos el diámetro en metros, sustituimos para obtener el área donde está aplicada la presión:
 
 $$Área=\pi r^2 \rightarrow (\pi)(0.04m)^2= 0.00502656m^2$$
 
-Ahora necesitamos calcular la fuerza que genera el pistón que está en reposo; como sabemos que está en reposo, sabemos que le acelaración que se está aplicando es la gravedad; por ende,
+Ahora necesitamos calcular la fuerza que genera el pistón que está en reposo; como sabemos que está en reposo, sabemos que le aceleración que se está aplicando es la gravedad; por ende,
 
 $Fuerza = masa * aceleración \rightarrow (20kg)(9.81m/s^2)=196.2N$
 
@@ -194,7 +194,7 @@ Donde $v$ es la velocidad del fluido.
 
 El caudal viene expresado en $m^3/h$ o $l/s$, dependiendo de la magnitud de la que estemos hablando.
 
-Intrumento para medir _caudal_ es el _Caudalimetro_, el cual puede sensar agua, gas, o cualquier otro tipo de fluido.
+Instrumento para medir _caudal_ es el _Caudalímetro_, el cual puede censar agua, gas, o cualquier otro tipo de fluido.
 
 ![caudalimetro](caudalimetro.jpeg 'Caudalimetro')
 
@@ -328,7 +328,7 @@ $$
 
 ---
 
-## [Ejercicios del capitulo 1](./ejercicios1.md)
+## [Ejercicios del capítulo 1](./ejercicios1.md)
 
 ---
 

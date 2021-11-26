@@ -1,12 +1,12 @@
 # Capítulo 2. Neumática
 
-## Características del aire comprido
+## Características del aire comprimido
 
-El aire, como todos los gases, es comprimible y comprensible; es decir, es elastico. Dentro de un recipiente con capacidad de 1 litro, es posible introducir varios litros de aire gracias a que se puede comprimir y al liberarlo, vuelve a su volumen normal.
+El aire, como todos los gases, es comprimible y comprensible; es decir, es elástico. Dentro de un recipiente con capacidad de 1 litro, es posible introducir varios litros de aire gracias a que se puede comprimir y al liberarlo, vuelve a su volumen normal.
 
 Para comprimir el aire, se tiene que realizar un esfuerzo y será mayor cuanto mayor se quiera comprimir. Cuando el aire se libera a su estado normal, desarrolla una gran energía y es esta energía la que se utiliza para realizar los trabajos pesados.
 
-El aire, como se sabe, es un gas casi perfectamente cartacterizándose esencialmente por su **fluidez, compresibildiad y elasticidad**. La fluidez permite a sus partículas no ofrecer resistencia apenas al deslizamiento; la compresibilidad (Fig. 1.1) hace que una determinada cantidad de gas pueda reducir su volumen si éste se encuentra en un recinto hermeticamente cerrado; la elasticidad permite que al comprimirlo en ese mismo recinto, ejerza sobre sus paredes una determinada presión, normal a las superficies en contacto (Fig. 1.2).
+El aire, como se sabe, es un gas casi perfectamente caracterizándose esencialmente por su **fluidez, compresibilidad y elasticidad**. La fluidez permite a sus partículas no ofrecer resistencia apenas al deslizamiento; la compresibilidad (Fig. 1.1) hace que una determinada cantidad de gas pueda reducir su volumen si este se encuentra en un recinto herméticamente cerrado; la elasticidad permite que al comprimirlo en ese mismo recinto, ejerza sobre sus paredes una determinada presión, normal a las superficies en contacto (Fig. 1.2).
 
 !["propiedades del aire comprimido"](aire_compr.png "propiedades del aire comprimido")
 
@@ -16,11 +16,11 @@ $$1 atm = 14.7 psi =1,013 bar = 101.325kPa$$
 
 $$ 1N/m^2 = 9.869 \times 10^{-6} atm = 10^{-5} bar$$
 
-## Sistema de compresion de aire
+## Sistema de compresión de aire
 
 ### Compresor
 
-Los compresores son máquinas que se utilizan para comprimir el aire. El más elemental es el compresor alternativo, pero para aplicaciones industriales se cons_ truyen máquinas autónomas que utilizan un motor eléctrico y que se denominan electro compresores.
+Los compresores son máquinas que se utilizan para comprimir el aire. El más elemental es el compresor alternativo, pero para aplicaciones industriales se construyen máquinas autónomas que utilizan un motor eléctrico y que se denominan electrocompresores.
 
 > Es el elemento de la instalación encargado de comprimir el aire que capta de la atmósfera elevando su presión.
 
@@ -39,13 +39,11 @@ Dependiendo del tipo de compresor que utilicemos distinguimos varios tipos.
 
 #### Compresores Volumétricos
 
-Dentro de este grupo destacan los compresores de pistón, que son los más difundidos. Se construyen de baja, media y alta presión, aunque en este caso deben disponer de varias eta­ pas compresoras.
+Dentro de este grupo destacan los compresores de pistón, que son los más difundidos. Se construyen de baja, media y alta presión, aunque en este caso deben disponer de varias etapas compresoras.
 
 #### Compresor de pistón de una sola etapa
 
-La Figura 13.2 muestra un compresor de pistón clásico de
-una sola etapa. El aire aspirado por el pistón en su carrera des­ cendente penetra en la cámara de compresión a través de la
-válvula de admisión y después es inmediatamente comprimi­ do hasta la presión de trabajo, momento en el que se abre la válvula de escape. Durante el trabajo de compresión se gene­ ra calor -según previene la ley de Gay-Lussac- lo que obli­ga a una refrigeración del cilindro proporcional a la cantidad de calor producida. En los compresores pequeños bastan las aletas que lleva el cilindro por la parte exterior. En los mayo­ res se instala además un ventilador y en los de alta presión es necesaria la refrigeración por agua.
+La Figura 13.2 muestra un compresor de pistón clásico de una sola etapa. El aire aspirado por el pistón en su carrera des­cendente penetra en la cámara de compresión a través de la válvula de admisión y después es inmediatamente comprimido hasta la presión de trabajo, momento en el que se abre la válvula de escape. Durante el trabajo de compresión se genera calor -según previene la ley de Gay-Lussac- lo que obli­ga a una refrigeración del cilindro proporcional a la cantidad de calor producida. En los compresores pequeños bastan las aletas que lleva el cilindro por la parte exterior. En los mayo­res se instala además un ventilador y en los de alta presión es necesaria la refrigeración por agua.
 
 ![Compresor de pistón 1 etapa](compresor_1piston_1.png "Compresor de 1 pistón 1 etapa")
 
@@ -77,7 +75,7 @@ Es un depósito de reserva de aire comprimido cuya misión es mantener el cons
 Cumple varias funciones en una instalación de aire comprimido:
 
 - Amortiguar las pulsaciones del caudal de salida de los compresores alternativos.
-- Permitir que los motorores de arrastre de los compresores no tengan que trabajar de manera continua, sino intermitente.
+- Permitir que los motores de arrastre de los compresores no tengan que trabajar de manera continua, sino intermitente.
 - Hacer frente a las demandas punta de caudal sin que se provoquen caídas de presión en la red.
 
 ![Tanque Horizontal](tanque1.jpeg "Tanque horizontal")
@@ -87,7 +85,7 @@ Cumple varias funciones en una instalación de aire comprimido:
 ## Presostato (Switch de presión)
 
 Si has observado los compresores no están funcionando continuamente. Esto es debido a que es posible acumular la energía neumática. El depósito se va a llenar hasta que alcance una determinada presión máxima, en ese momento el motor que acciona el compresor para. A medida que vamos consumiendo aire vamos extrayéndolo del depósito, con lo cual va bajando su presión. Al llegar a una presión mínima el compresor vuelve a arrancar para recuperar la presión perdida.
-Vemos que el depósito varía entre un valor máximo y uno mínimo. El elemento que mide esas presiones y regula el funcionamiento del compresor es el presostato o manocontacto. **Básicamente es un interruptor regulado por presión**.
+Vemos que el depósito varía entre un valor máximo y uno mínimo. El elemento que mide esas presiones y regula el funcionamiento del compresor es el presostato. **Básicamente, es un interruptor regulado por presión**.
 
 ![Presostato](presostato1.jpeg "Presostato")
 
@@ -99,7 +97,7 @@ Vemos que el depósito varía entre un valor máximo y uno mínimo. El eleme
 
 Si por alguna razón el presostato que regula el funcionamiento del compresor fallase, pueden ocurrir dos cosas.
 Si falla el mecanismo que regula el arranque cuando baja la presión, el compresor no funcionaría, pero no pasaría nada más.
-Si falla el mecanismo de paro cuando alcanza la presión de trabajo, el compresor continuaría aumentando la presión en el interior del depósito y éste podría estallar al no aguantar a presión.
+Si falla el mecanismo de paro cuando alcanza la presión de trabajo, el compresor continuaría aumentando la presión en el interior del depósito y este podría estallar al no aguantar a presión.
 
 ![valvula de seguridad](valvula_seg1.jpeg "valvula de seguridad")
 
@@ -115,7 +113,7 @@ Debido a las presiones a las que es sometido el aire durante la compresión, pa
 
 ## Unidad de Mantenimiento
 
-Hasta ahora lo que hemos hecho ha sido comprimir el aire y almacenarlo para poder utilizarlo. El almacenamiento se realiza, como hemos visto, entre dos presiones determinadas. Estas variaciones perturbarían el funcionamiento de la instalación ya que funcionaría de manera distinta para cada presión. Es por ello que debemos realizar un acondicionamiento final que estabilice esa presión en un valor fijo. Este acondicionamiento es lo que hacemos en la unidad de mantenimiento.
+Hasta ahora lo que hemos hecho ha sido comprimir el aire y almacenarlo para poder utilizarlo. El almacenamiento se realiza, como hemos visto, entre dos presiones determinadas. Estas variaciones perturbarían el funcionamiento de la instalación, ya que funcionaría de manera distinta para cada presión. Es por ello que debemos realizar un acondicionamiento final que estabilice esa presión en un valor fijo. Este acondicionamiento es lo que hacemos en la unidad de mantenimiento.
 
 *Para la utilización del aire comprimido, se requiere de un proceso de purificación, regulación y engrase*, que se logra mediante una unidad de mantenimiento, que debe ir montada en la entrada general de los circuitos neumáticos. Esta unidad tiene los siguientes objetivos:
 
@@ -140,8 +138,7 @@ Así que la unidad de mantenimiento representa una combinación de los siguien
 ### Filtro
 
 Su misión es retener las impurezas que pudiera contener el aire procedente del depósito y que podrían deteriorar la instalación posterior.
-Está formado por un elemento filtrante, que puede
-ser de papel, una chapa metálica taladrada o una malla de alambre, encargado de retener las impurezas. Aquí quedan retenidas las partículas de tamaño mayor que las de la malla.
+Está formado por un elemento filtrante, que puede ser de papel, una chapa metálica taladrada o una malla de alambre, encargado de retener las impurezas. Aquí quedan retenidas las partículas de tamaño mayor que las de la malla.
 El recipiente del filtro tiene también un diseño especial para que el aire en su recorrido realice un movimiento helicoidal que favorece que por efecto de las fuerzas centrífugas las gotas de agua y las partículas más grandes salgan proyectadas contra las paredes del filtro y sean recogidas en la parte inferior del filtro. Esta parte inferior del filtro es desmontable y periódicamente es necesario limpiarla.
 
 ![filtro](flitro.png "Filtro")

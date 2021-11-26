@@ -1,12 +1,12 @@
 # Capítulo 4. Circuitos neumáticos
 
-Para efectuar el montahe de los sistemas control, debe disponerse de un puesto de trabajo fijo. La alimentación de aire comprimido puede estar a cargo de un compresor móvil con silenciados (máximo 800kPa = 8 bar).
+Para efectuar el montaje de los sistemas control, debe disponerse de un puesto de trabajo fijo. La alimentación de aire comprimido puede estar a cargo de un compresor móvil con silenciados (máximo 800kPa = 8 bar).
 
-**La presión de funcionamiento deberá ser, como máximo, de p = 600kPa = 6 bar**
+**La presión de funcionamiento deberá ser, como máximo, de $P = 600kPa = 6 bar$**
 
-Para un funcionamiento óptimo, la presión de funcionamiento del sistema de control deberá ser máximo p=500kPa = 5 bar con aire sin lubricar.
+Para un funcionamiento óptimo, la presión de funcionamiento del sistema de control deberá ser máximo $P=500kPa = 5$ bar con aire sin lubricar.
 
-## Estructura de una sistema neumático
+## Estructura de un sistema neumático
 
 ![estructura de un sistema neumático](./estructura.png)
 
@@ -40,7 +40,7 @@ En el siguiente documento se detalla las diferentes nomenclaturas para el nombra
 
 ## Armando circuitos neumáticos
 
-Armar los siguientes circuitos neumáticos para irse familiarizando con el software de simulación FluidSIM, conocer la hubicación de los elementos neumáticos y electricos. Configuración de válvulas y más elementos.
+Armar los siguientes circuitos neumáticos para irse familiarizando con el software de simulación FluidSIM, conocer la ubicación de los elementos neumáticos y eléctricos. Configuración de válvulas y más elementos.
 
 ### Válvulas de control
 
@@ -74,7 +74,8 @@ Armar los siguientes circuitos neumáticos para irse familiarizando con el softw
 
 ---
 
-## [Ejercicios del capitulo 4](./ejercicios4.md)
+## [Ejercicios del capítulo 4](./ejercicios4.md)
+
 ---
 
 - [Inicio](../index.md)
