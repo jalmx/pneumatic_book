@@ -19,6 +19,8 @@ nav:
       - "Ejercicios capítulo 4": capitulo4/ejercicios4.md
       - "Videos - Capítulo 4": capitulo4/video.md
       - "Mini test 4": capitulo4/mini-test.md
+    - "Capítulo 5":
+      - "Ejercicios FluidSim" : capitulo5/index.md
 
 theme:
   name: material
