@@ -8,10 +8,7 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 
 ![basico ](basico_1.png)
 
-<br>
-
 ![basico](basico_1.gif)
-
 
 ---
 
@@ -36,7 +33,7 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 **Solución:**
 
 <details>
-<img src="./circuito_1.png" alt="circuito">
+    <img src="./circuito_1.png" alt="circuito">
 </details>
 
 ---
@@ -52,6 +49,8 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 ### Estructura 
 
 #### Estructura de circuitos neumáticos
+
+<!-- TODO: Agregar la imagen -->
 
 #### Nomenclatura de circuitos neumáticos
 
@@ -76,7 +75,7 @@ Primero damos doble click sobre el rodillo o el cilindro
 
 ![paso 1](paso_1.png)
 
-Si damos doble click sobre el rodillo, nos saldra esta ventana donde colocamos la referencia que nos servirá para identificarlo. Por convención, se usa **A, B, C,...**
+Si damos doble click sobre el rodillo, nos saldrá esta ventana donde colocamos la referencia que nos servirá para identificarlo. Por convención, se usa **A, B, C,...**
 
 ![paso 2](paso_2.png)
 
@@ -131,9 +130,16 @@ Solución:
 <details markdown="1">
     <img src="./sec_1.png" alt="circuito">
     <img src="./sec_1.gif" alt="circuito">
-
-
 </details>
+
+### Circuito A+ B+ B- A- (Descapotable)
+
+Limites 95 y 5
+
+<details markdown="1">
+    <img src="./A+B+B-A-_descapotable.png" alt="circuito">
+</details>
+
 
 ---
 
@@ -230,8 +236,6 @@ Sistema de enclavamiento (interlock)
     <img src="enclavamiento_simple_efecto.gif" alt="circuito simple efecto">
     <br>
     <img src="enclavamiento_doble_efecto.gif" alt="circuito doble efecto">
-
-
 </details>
 
 ---
