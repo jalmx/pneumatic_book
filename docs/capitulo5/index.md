@@ -234,6 +234,26 @@ Sistema de enclavamiento (interlock)
 
 </details>
 
+### Sensores 
+
+#### Sensor inductivo (Reed)
+
+![simbolo](sensor_inductivo_reed.png)
+
+el sensor inductivo nos ayuda a conocer la posición del embolo, que esta dentro del cilindro. Este sensor seria lo equivalente a una `válvula de rodillo`.
+
+La salida de la señal del sensor nos ayuda a alimentar la bobina del relay y realizar las acciones necesarias que necesitemos.
+
+La forma de conexión es la siguiente:
+
+![](conexion_sensor.png)
+
+
+
+![sensor1](sensor_1.png)
+
+![sensor gif](sensor_1.gif)
+
 ---
 
 ### Aplicaciones

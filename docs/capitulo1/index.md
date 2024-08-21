@@ -86,9 +86,9 @@ $$1kPa = 1,000 N/m^2$$
 
 $$1bar = 1MPa=0,9869 atm=1,01972 kgf/cm^2$$
 
-#### Tipos de presión
+### Tipos de presión
 
-##### Presión atmosférica
+#### Presión atmosférica
 
 - Peso de la atmósfera sobre la superficie de la tierra.
 - Se origina debido al peso del aire que actúa sobre todo cuerpo ubicado en la superficie terrestre.
@@ -97,42 +97,42 @@ $$1bar = 1MPa=0,9869 atm=1,01972 kgf/cm^2$$
 
 $$\text{Presión atmosférica} = \text{presión barométrica}$$
 
-La presión atmosférica al nivel del mar es $101.325 kPa$, o $14.7 lb/in^2$. Debido a que la presión atmosférica participa en gran número de cálculos, con frecuencia se usa una unidad de pre­sión de 1 **_atmósfera_** (atm), definida como la presión media que la atmósfera ejerce al nivel del mar, es decir, $101.3 kPa$.
+La presión atmosférica al nivel del mar es $101.325 kPa$, o $14.7 lb/in^2$. Debido a que la presión atmosférica participa en gran número de cálculos, con frecuencia se usa una unidad de pre­sión de 1 **_atmósfera_** (atm), definida como la presión media que la atmósfera ejerce al nivel del mar, es decir, $101.3 kPa$.
 
-##### **Equivalencias**
+#### Equivalencias
 
 $$1 atm = 14.7 psi =1,013 bar = 101.325kPa$$
 
 $$ 1N/m^2 = 9.869 \times 10^{-6} atm = 10^{-5} bar$$
 
-##### Presión manométrica o Presión relativa
+#### Presión manométrica o Presión relativa
 
 Medida de presión por encima de la presión atmosférica.
 
 ![presion manometrica](presion_mano.jpg)
 
-##### **Manométro**
+##### Manómetro
 
 Es un instrumento de medición para la presión de fluidos contenidos en recipientes cerrados. Se distinguen dos tipos de manómetros, según se empleen para medir la presión de líquidos o de gases.
 
-En la siguiente figura tenemos un manométro convencional, graduado en bar y psi
+En la siguiente figura tenemos un manómetro convencional, graduado en **bar** y **PSI**
 
-![manometro](manometro.jpeg 'manométro')
+![manómetro](manometro.jpeg 'manómetro')
 
-##### Presión absoluta
+#### Presión absoluta
 
 Toma como base el 0 absoluto. Se utiliza para realizar cálculos teóricos.
 
 $$\text{Presión absoluta} = \text{presión manométrica} + \text{presión atmosférica}$$
 
-## Ejemplos de presión
+### Ejemplos de presión
 
 1. Un tubo contiene agua bajo una presión manométrica de 400 kPa. Si se cubre un orificio de 4 mm de diámetro en el tubo, con un trozo de cinta adhesiva, ¿Qué fuerza tendrá que ser capaz de resistir la cinta?
 
 **Datos:**
 
 - $Presión=400kPa$
-- $Diametro=4mm \rightarrow radio = 2mm$
+- $Diámetro=4mm \rightarrow radio = 2mm$
 
 Tenemos las medidas en milímetros, entonces debemos convertirlo a metros para poder obtener el área.
 
@@ -148,7 +148,7 @@ Despejando Fuerza en la fórmula de presión nos queda:
 
 $$F = P*A \rightarrow (400kPa)(0.0000125664m^2)=5.02656N$$
 
-> Nos da una fuerza resultande de $5.02656N$
+> ✅ Nos da una fuerza resultan de de $5.02656N$
 
 2. Un pistón de 20kg descansa sobre una muestra de gas en un cilindro de 8 cm de diámetro. ¿Cuál es la presión manométrica sobre el gas?
 
@@ -173,7 +173,13 @@ Una vez contando con ambas variables, vamos a sustituir en la fórmula de presi�
 
 $$P = \frac{196.2N}{0.00502656m^2}=39,032.65Pa$$
 
-> Por lo tanto, nos da una presión manométrica de $39.032kPa$, sobre el gas.
+Por lo tanto, nos da una presión de $39.032kPa$, sobre el gas.
+
+Ahora para obtener la presión manométrica debemos saber sumar 1 atmósfera, que es a $101.325kPa$
+
+$$Presión_{manométrica} = 101.325kPa + 39.032kPa = 140.357kPa$$
+
+> ✅ La presión manométrica es 140.357kPa
 
 ## Caudal
 
