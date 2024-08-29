@@ -41,3 +41,11 @@
 ---
 
 ## [Ejemplos de videos y más en Facebook de Mecatrónica 85](https://www.facebook.com/mecatronica85/)
+
+## Configuration
+
+``` bash
+pip install poetry
+
+poetry install --no-root    
+``` 

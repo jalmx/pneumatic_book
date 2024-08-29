@@ -43,7 +43,7 @@ Dentro de este grupo destacan los compresores de pistón, que son los más dif
 
 #### Compresor de pistón de una sola etapa
 
-La Figura 13.2 muestra un compresor de pistón clásico de una sola etapa. El aire aspirado por el pistón en su carrera des­cendente penetra en la cámara de compresión a través de la válvula de admisión y después es inmediatamente comprimido hasta la presión de trabajo, momento en el que se abre la válvula de escape. Durante el trabajo de compresión se genera calor -según previene la ley de Gay-Lussac- lo que obli­ga a una refrigeración del cilindro proporcional a la cantidad de calor producida. En los compresores pequeños bastan las aletas que lleva el cilindro por la parte exterior. En los mayo­res se instala además un ventilador y en los de alta presión es necesaria la refrigeración por agua.
+La Figura 13.2 muestra un compresor de pistón clásico de una sola etapa. El aire aspirado por el pistón en su carrera des­cendente penetra en la cámara de compresión a través de la válvula de admisión y después es inmediatamente comprimido hasta la presión de trabajo, momento en el que se abre la válvula de escape. Durante el trabajo de compresión se genera calor *según previene la ley de Gay-Lussac* lo que obli­ga a una refrigeración del cilindro proporcional a la cantidad de calor producida. En los compresores pequeños bastan las aletas que lleva el cilindro por la parte exterior. En los mayo­res se instala además un ventilador y en los de alta presión es necesaria la refrigeración por agua.
 
 ![Compresor de pistón 1 etapa](compresor_1piston_1.png "Compresor de 1 pistón 1 etapa")
 

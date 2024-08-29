@@ -51,7 +51,7 @@ En determinadas aplicaciones, tales como en movimientos de aproximación rápi
 
 > La fuerza normal aplicada por unidad de área.
 
-> La presión ejercida de un fluido sobre una superficie - y viserversa - el cociente entre la fuerza y la superficie que recibe su acción. Es decir,
+> La presión ejercida de un fluido sobre una superficie - y viceversa - el cociente entre la fuerza y la superficie que recibe su acción. Es decir,
 
 $$
 $$
@@ -84,7 +84,7 @@ $$1 \text{ pascal (Pa)} = 1 \text{ Newton por metro cuadrado} (N/m^2)$$
 
 $$1kPa = 1,000 N/m^2$$
 
-$$1bar = 1MPa=0,9869 atm=1,01972 kgf/cm^2$$
+$$1bar = 1MPa=0.9869 atm=1,01972 kgf/cm^2$$
 
 ### Tipos de presión
 
@@ -177,9 +177,11 @@ Por lo tanto, nos da una presión de $39.032kPa$, sobre el gas.
 
 Ahora para obtener la presión manométrica debemos saber sumar 1 atmósfera, que es a $101.325kPa$
 
+> La presión manométrica $P_{manométrica}$ es la presión absoluta $P_{absoluta}$ menos la presión atmosférica $P_{atm}$; por tanto, es la presión debida solo al peso del pistón
+
 $$Presión_{manométrica} = 101.325kPa + 39.032kPa = 140.357kPa$$
 
-> ✅ La presión manométrica es 140.357kPa
+> ✅ La presión manométrica es $140.357kPa$
 
 ## Caudal
 
@@ -227,7 +229,7 @@ $A= \text{Área transversal}$
 
 ### Ley de Pascal
 
-Cualquier líquido en un recipiente abierto, por ejemplo, está sujeto a la presión atmos­férica además de la presión debida a su propio peso. Puesto que el líquido es relativamente incompresible, la presión externa de la atmósfera se trasmite por igual a todo el volumen del líquido. Se conoce como **ley de Pascal**. En general, se enuncia como sigue:
+Cualquier líquido en un recipiente abierto, por ejemplo, está sujeto a la presión atmosférica además de la presión debida a su propio peso. Puesto que el líquido es relativamente incompresible, la presión externa de la atmósfera se trasmite por igual a todo el volumen del líquido. Se conoce como **ley de Pascal**. En general, se enuncia como sigue:
 
 > Una presión externa aplicada a un fluido confinado se transmite uniformemente a través del volumen de un líquido.
 
@@ -239,10 +241,11 @@ Este fenómeno nos permite amplificar/reducir fuerzas teniendo como contraprest
 
 Igualando las presiones tenemos
 
-$P_1 =F_1 /A_1$
-$P_2= F_2 / A_2$
+$P_1 =\frac{F_1}{A_1}$
 
-$$F_1 /A_1 = F_2 / A_2$$
+$P_2= \frac{F_2}{A_2}$
+
+$$\frac{F_1}{A_1} = \frac{F_2}{A_2}$$
 
 Como el volumen desplazado es el mismo $V_1 = V_2$, Luego:
 
@@ -253,21 +256,20 @@ $l = Altura$
 
 ## Ley de Boyle-Mariotte
 
-> Esta ley aplciada a gases perfectos dice que a tempratura constante, la presión absoluta es inversamente porpocional al volumen, O sea:
-
+> Esta ley aplicada a gases perfectos dice que a temperatura constante, la presión absoluta es inversamente proporcional al volumen, O sea:
 > Siempre que la masa y la temperatura de una mues­tra de gas se mantengan constantes, el volumen de dicho gas es inversamente proporcional a su presión absoluta.
 
 > La presión absoluta de un gas confinado en un recipiente varia en forma inversa a su volumen, cuando la temperatura permanece constante.
 
 $$P_1V_1 = P_2V_2=P_3V_3 = cte \text{ m y T constantes}$$
 
-Siendo $P_1,P_2,P_3$ presiones absolutas y $V_1,V_2,V_3$ volúmnes a esas presiones.
+Siendo $P_1,P_2,P_3$ presiones absolutas y $V_1,V_2,V_3$ volumen a esas presiones.
 
 ![fig 4](fig4.png)
 
 ### Ejemplos:
 
-1. El aire expuesto a la presión atmosferica es comprimido a la séptima para de su volumen. ¿Cuál es la presión si la temperatura se mantiene constante?
+1. El aire expuesto a la presión atmosférica es comprimido a la séptima parte de su volumen. ¿Cuál es la presión si la temperatura se mantiene constante?
 
 $P_1V_1 = P_2V_2$
 
@@ -279,10 +281,11 @@ Recordamos que se va a comprimir a la séptima parte, por lo tanto;
 
 $V_2 = 1/7$
 
-Para la presión 1, tnemos que es la presión atmosférica
+Para la presión 1, tenemos que es la presión atmosférica
 
-$P_1= 100kPa = 1 bar$
-$P_2= 1 *7 = 700kPa = 7\text{ bar absoluto}$
+$P_1= 101.325kPa = 1 atm$
+
+$$P_2= (101.325kPa)(\frac{1}{7}) = 709.275kPa$$
 
 1. Partiendo con $40 cm^3$ de gas confinado a una presión manométrica de $3 kg/cm^2$, fig. 1-5 A, ¿Cuál será el volumen final después de que el gas haya sido comprimido cuatro veces menor?
 
@@ -308,7 +311,7 @@ La relación entre el volumen de un gas y su temperatura, al pasar de un estado 
 
 ### Ley de Charles
 
-> Mientras la masa y la presión de un gas se mantengan cons­ tantes, el volumen de dicho gas es directamente proporcional a su tempera­ tura absoluta.
+> Mientras la masa y la presión de un gas se mantengan cons­tantes, el volumen de dicho gas es directamente proporcional a su tempera­ tura absoluta.
 
 > A presión constante, la razón entre el volumen y la temperatura absoluta de un gas se mantiene constante. O lo que es lo mismo, el volumen es directamente proporcional a la temperatura absoluta.
 
@@ -323,7 +326,7 @@ $$
 
 ### Ley de Gay-Lussac
 
-> Si el volumen de una muestra de gas permanece constan­te, la presión absoluta de dicho gas es directamente proporcional a su tempe­ ratura absoluta.
+> Si el volumen de una muestra de gas permanece constan­te, la presión absoluta de dicho gas es directamente proporcional a su tempe­ratura absoluta.
 
 $$
 \frac{P_1}{T1} = \frac{P_2}{T2} =\frac{P_3}{T3} = etc \text{ m y V constantes}

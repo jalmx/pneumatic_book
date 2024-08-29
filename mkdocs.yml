@@ -32,9 +32,13 @@ theme:
     repo: fontawesome/brands/github
   features:
     - navigation.expand
+    - navigation.footer
+    - content.code.copy
+    
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+
 
 extra_javascript:
   - javascripts/mathjax.js
