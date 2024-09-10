@@ -30,7 +30,8 @@ Se compone de un cilindro y su culata con las correspondientes válvulas, una d
 
 ### Tipos de compresores
 
-![Diagrama de compresores](compresores_diagrama.png "Diagrama de compresores")
+![Diagrama de compresores](compresores_diagrama.png#only-light "Diagrama de compresores")
+![Diagrama de compresores](compresores_diagrama_bk.png#only-dark "Diagrama de compresores")
 
 Dependiendo del tipo de compresor que utilicemos distinguimos varios tipos.
 
@@ -47,9 +48,14 @@ La Figura 13.2 muestra un compresor de pistón clásico de una sola etapa. El 
 
 ![Compresor de pistón 1 etapa](compresor_1piston_1.png "Compresor de 1 pistón 1 etapa")
 
-![Compresor de pistón 1 etapa](compresor_1piston_2.png "Compresor de 1 pistón 1 etapa")
+![Compresor de pistón 1 etapa](compresor_1piston_2.png#only-light "Compresor de 1 pistón 1 etapa")
+![Compresor de pistón 1 etapa](compresor_1piston_2_bk.png#only-dark "Compresor de 1 pistón 1 etapa")
 
 ![Compresor de pistón 1 etapa](compresor_1piston_3.jpg "Compresor de 1 pistón 1 etapa")
+
+#### Animación del compresor
+
+![compresor gif](compresor.gif)
 
 ### Compresor de pistón 2 etapas montaje en V
 
@@ -70,7 +76,7 @@ De este tipo son la mayoría de los extractores de aire que tienen las campanas
 
 ## El tanque o unidad de almacenamiento
 
-Es un depósito de reserva de aire comprimido cuya misión es mantener el consumo de la red y evitar pérdidas de carga bruscas en la misma, en caso de fallo o accidente. En este ele­mento se elimina parte del agua  -que se condensa en su parte inferior- por medio de un orificio de purga.
+Es un depósito de reserva de aire comprimido cuya misión es mantener el consumo de la red y evitar pérdidas de carga bruscas en la misma, en caso de fallo o accidente. En este elemento se elimina parte del agua  -que se condensa en su parte inferior- por medio de un orificio de purga.
 
 Cumple varias funciones en una instalación de aire comprimido:
 
@@ -107,9 +113,9 @@ Si falla el mecanismo de paro cuando alcanza la presión de trabajo, el compres
 
 ## Válvula de purga
 
-Debido a las presiones a las que es sometido el aire durante la compresión, parte del vapor de agua que contiene el aire puede licuar. Esta agua condensada se acumula en la parte inferior del depósito y periódicamente hay que purgarla para evitar que pase a la instalación.
+Debido a las presiones a las que es sometido el aire durante la compresión, parte del vapor de agua que contiene el aire puede licuar. Esta agua condensada se acumula en la parte inferior del depósito y periódicamente hay que purgar para evitar que pase a la instalación.
 
-![valvula de purga](valvula_purga1.jpeg "Valvula de purga")
+![valvula de purga](valvula_purga1.jpeg "Válvula de purga")
 
 ## Unidad de Mantenimiento
 

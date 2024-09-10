@@ -2,7 +2,7 @@ site_name: Neumática e Hidráulica
 site_url: https://www.alejandro-leyva.com/pneumatic_book/
 nav:
     - Inicio: index.md
-    - "Capítulo 1": 
+    - "Capítulo 1":
       - "Introducción a Neumática e Hidráulica": capitulo1/index.md
       - "Ejercicios capítulo 1": capitulo1/ejercicios1.md
       - "Mini test 1": capitulo1/mini-test.md
@@ -11,10 +11,10 @@ nav:
       - "Ejercicios capítulo 2": capitulo2/ejercicios2.md
       - "Videos - Capítulo 2": capitulo2/video.md
       - "Mini test 2": capitulo2/mini-test.md
-    - "Capítulo 3": 
+    - "Capítulo 3":
         - "Elementos neumáticos": capitulo3/index.md
         - "Videos - Capítulo 3": capitulo3/video.md
-    - "Capítulo 4": 
+    - "Capítulo 4":
       - "Circuitos neumáticos": capitulo4/index.md
       - "Ejercicios capítulo 4": capitulo4/ejercicios4.md
       - "Videos - Capítulo 4": capitulo4/video.md
@@ -25,7 +25,18 @@ nav:
 theme:
   name: material
   palette:
-    primary: red
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   favicon: favicon.png
   logo: favicon.svg
   icon:
@@ -34,7 +45,7 @@ theme:
     - navigation.expand
     - navigation.footer
     - content.code.copy
-    
+
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true

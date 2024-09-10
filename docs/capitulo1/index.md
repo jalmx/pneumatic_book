@@ -109,7 +109,8 @@ $$ 1N/m^2 = 9.869 \times 10^{-6} atm = 10^{-5} bar$$
 
 Medida de presión por encima de la presión atmosférica.
 
-![presion manometrica](presion_mano.jpg)
+![presion manometrica](presion_mano.jpg#only-light)
+![presion manometrica](presion_mano_bk.jpg#only-dar)
 
 ##### Manómetro
 
@@ -225,7 +226,8 @@ $A= \text{Área transversal}$
 
 > Los fluidos ejercen presión en todas las direcciones.
 
-![fig 3](fig3.png)
+![fig 3](fig3.png#only-light "presion")
+![fig 3](fig3_bk.png#only-dark "presion")
 
 ### Ley de Pascal
 
@@ -233,7 +235,8 @@ Cualquier líquido en un recipiente abierto, por ejemplo, está sujeto a la pr
 
 > Una presión externa aplicada a un fluido confinado se transmite uniformemente a través del volumen de un líquido.
 
-![pascal](pascal.png 'Ley de pascal')
+![pascal](pascal.png#only-light 'Ley de pascal')
+![pascal](pascal_bk.png#only-dark 'Ley de pascal')
 
 La figura 1-3 muestra la sección transversal de un recipiente de forma irregular, que tiene paredes rígidas El fluido confinado en el ejerce la misma presión en todas las direcciones, tal como lo indican las flechas. Si las paredes fueran flexibles, la sección asumiría forma circular. Es entonces la Ley de Pascal que hace que una manguera contra incendios asuma forma cilíndrica cuando es conectada al suministro. Es importante la diferencia entre cómo actúa la fuerza sobre un fluido y cómo lo hace sobre un sólido. Puesto que el sólido es un cuerpo rígido, puede soportar que se le aplique una fuerza sin que cambie apreciablemente su forma. Por otra parte, un líquido puede soportar una fuerza únicamente en una superficie o frontera cerrada.
 
@@ -265,7 +268,8 @@ $$P_1V_1 = P_2V_2=P_3V_3 = cte \text{ m y T constantes}$$
 
 Siendo $P_1,P_2,P_3$ presiones absolutas y $V_1,V_2,V_3$ volumen a esas presiones.
 
-![fig 4](fig4.png)
+![fig 4](fig4.png#only-light)
+![fig 4](fig4_bk.png#only-dark)
 
 ### Ejemplos:
 
@@ -303,7 +307,8 @@ $$
 
 > Tenemos que el volumen final es de **$10cm^3$**
 
-![fig 1-5](ejerc2.png 'Ejercicio 2')
+![fig 1-5](ejerc2.png#only-light 'Ejercicio 2')
+![fig 1-5](ejerc2_bk.png#only-dark 'Ejercicio 2')
 
 ## Ley de Charles-Gay Lussac
 
