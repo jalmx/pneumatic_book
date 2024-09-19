@@ -17,18 +17,17 @@ De acuerdo a esta teoría física, si dentro del sistema se presenta una difer
 
 **Capacidad de trabajo:**
 
-- **Carrera:** Desplazamiento que efectúa el émbolo en el interior del cilindro. De ella depende la **Longitud (L)** de desplazamiento del vástago.
-  - En los cilindros se obtiene el máximo esfuerzo cuando la presión se ejerce sobre la cara del émbolo opuesta al vástago, ya que su superficie es mayor. En este caso el émbolo y el vástago realizan una CARRERA DE AVANCE.
-  - Si la presión se ejerce sobre la cara del émbolo solidaria con el vástago, se origina una CARRERA DE RETROCESO.
-
+- **Carrera:** **Desplazamiento que efectúa el émbolo en el interior del cilindro**. De ella depende la **Longitud (L)** de desplazamiento del vástago.
+  - En los cilindros se obtiene el máximo esfuerzo cuando **la presión se ejerce sobre la cara del émbolo opuesta al vástago**, ya que su superficie es mayor. En este caso el émbolo y el vástago realizan una **CARRERA DE AVANCE**.
+  - **CARRERA DE RETROCESO**: **Si la presión se ejerce sobre la cara del émbolo solidaria con el vástago**.
 - **Diámetro (D):** Determina la superficie del émbolo. Dada una determinada presión del aire, cuanto mayor sea la
 superficie del émbolo, mayor será la fuerza que ejerce el vástago, ya que:
 
 ![cilindro parts](../capitulo2/cilindro_parts.jpg "Partes de un cilindro")
 
-### Cilindro de simple efecto
+### Cilindro de simple efecto con retorno de muelle
 
-**Estos cilindros tienen una sola conexión de aire.** No pueden realizar trabajos más que en un sentido. Entonces para que el vástago (o pistón) salga se aplica el aire y para que el vástago retorne se dispone de un muelle incorporado o de una fuerza externa.
+**Estos cilindros tienen una sola conexión de aire. No pueden realizar trabajos más que en un sentido. Entonces para que el vástago (o pistón) salga se aplica el aire y para que el vástago retorne se dispone de un muelle incorporado o de una fuerza externa.**
 El muelle incorporado se calcula de modo que haga regresar el émbolo a su posición inicial a una velocidad suficientemente grande.
 En los cilindros de simple efecto con muelle incorporado, su longitud limita la carrera (el desplazamiento efectivo del vástago). Por eso, estos cilindros no sobrepasan una carrera de unos 100mm.
 Se utilizan principalmente para sujetar, expulsar, apretar, levantar, alimentar, etc.
@@ -46,9 +45,9 @@ La figura 8.3 muestra el símbolo del cilindro de simple efecto. En la figura s
 
 ### Cilindro de doble efecto
 
-*Son los más empleados y el fluido actúa en ambas cámaras*
+#### Son los más empleados y el fluido actúa en ambas cámaras
 
-La fuerza ejercida por el fluido en cilindros de doble efecto, permite que el vástago pueda realizar un movimiento de traslación en los dos sentidos. Se dispone de una fuerza útil tanto en la ida como en el retorno. La figura 8.4 muestra un esquema interno del cilindro. Para que el vástago se desplace en ambas direcciones es necesario que una de las cámaras esté alimentada y la otra esté en estado de escape (para el aire) o tanque (para el aceite)
+**La fuerza ejercida por el fluido en cilindros de doble efecto, permite que el vástago pueda realizar un movimiento de traslación en los dos sentidos.** Se dispone de una fuerza útil tanto en la ida como en el retorno. La figura 8.4 muestra un esquema interno del cilindro. Para que el vástago se desplace en ambas direcciones es necesario que una de las cámaras esté alimentada y la otra esté en estado de escape (para el aire) o tanque (para el aceite)
 
 ![cilindro de doble efecto](../capitulo2/cilindro_doble_efecto.png "cilindro de doble efecto")
 
@@ -76,9 +75,7 @@ Para representarla se hace en la posición de reposo por medio de un rectángu
 
 ![Accionamiento de válvulas](../capitulo2/accionamiento_valvula.png "Accionamiento de válvulas")
 
-### Válvulas distribuidoras
-
-#### Conceptos de vías y posiciones
+### Conceptos de vías y posiciones
 
 Las válvulas de vías se designan en los catálogos de los fabricantes por el número de las vías controladas y de las posiciones de maniobra estable. Así, una válvula 3/2 vías quiere decir que posee tres vías y dos posiciones de maniobra. Hay que observar que la primera cifra es simplemente indicativa de número de vías, indicando la segunda el número de posiciones.
 
@@ -220,6 +217,6 @@ Las válvulas reguladoras de presión se encargan en un circuito de controlar la
 - [Inicio](../index.md)
 - [Capítulo 1](../capitulo1/index.md)
 - [Capítulo 2](../capitulo2/index.md)
-- [Capítulo 3](#)
+- [Capítulo 3](#capítulo-3-elementos-neumáticos)
 - [Capítulo 4](../capitulo4/index.md)
 - [Bibliografía](../bibliografia.md)
