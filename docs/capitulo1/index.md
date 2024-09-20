@@ -84,7 +84,7 @@ $$1 \text{ pascal (Pa)} = 1 \text{ Newton por metro cuadrado} (N/m^2)$$
 
 $$1kPa = 1,000 N/m^2$$
 
-$$1bar = 1MPa=0.9869 atm=1,01972 kgf/cm^2$$
+$$1bar = 100 kPa= 0.1MPa =0.9869 atm=1,01972 kgf/cm^2$$
 
 ### Tipos de presión
 
