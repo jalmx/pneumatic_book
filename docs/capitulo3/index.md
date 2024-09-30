@@ -126,8 +126,7 @@ Cuando se acciona el pulsador, el distribuidor pone en comu­nicación la entra
 
 ### Válvula 3/2
 
-Estas válvulas permiten la circulación de aceite en una dirección y, al mismo tiempo, cortan el paso en la otra direc­ción.
-
+Estas válvulas permiten la circulación del fluido en una dirección y, al mismo tiempo, cortan el paso en la otra direc­ción.
 **Se emplean para gobernar cilindros de simple efecto.**
 
 ![valvula 3/2](../capitulo2/v3_2.jpeg)
