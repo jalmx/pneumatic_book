@@ -7,9 +7,9 @@
 5. Cómo es la operación de una válvula check o antetirretorno
 6. Describa la estructura de un sistema neumático
 7. Explique cómo está operando el siguiente circuito detalladamente; es decir, qué está realizando cada elemento en cada momento
-![esquema](../capitulo4/img/esq_425.png)
+![esquema](../capitulo4/imgs/esq_425.png)
 1. Indicar el nombre completo de los siguientes símbolos
-![simbolos](simbolos.png)
+![simbolos](./imgs/simbolos.png)
 
 ---
 
