@@ -6,9 +6,9 @@ Construir el siguiente circuito neumático.
 
 Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/2 de accionamiento manual con retorno de muelle.
 
-![basico ](basico_1.png)
+![básico](basico_1.png)
 
-![basico](basico_1.gif)
+![básico](basico_1.gif)
 
 ---
 
@@ -16,17 +16,16 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 
 ![accionamientos](accionamientos.png)
 
-**Control indirecto**
+### Control indirecto
 
 ![control indirecto](control_indirecto.gif)
-
 
 !!! note
     El accionamiento correcto es el control indirecto, dado que es el más seguro para el usuario ante cualquier falla o contingencia.
 
 ---
 
-## Ejercicios 
+## Ejercicios
 
 **1. Control de un cilindro de simple efecto con retorno de muelle, gobernado por una válvula de presión con retorno de muelle; las válvulas de control restantes son a elección propia del ingeniero (*Es con control indirecto*).**
 
@@ -44,9 +43,9 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 <img src="./circuito_2.png" alt="circuito">
 </details>
 
-----
+---
 
-### Estructura 
+### Estructura
 
 #### Estructura de circuitos neumáticos
 
@@ -56,12 +55,11 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 
 ---
 
-**3. Reproducir el siguiente diagrama y describir su funcionamiento**
+##### 3. Reproducir el siguiente diagrama y describir su funcionamiento
 
 ![doble or](circuito_doble_or.gif)
 
 ---
-
 
 ## Accionamiento por rodillo
 
@@ -101,7 +99,7 @@ Aceptamos, y nos quedara la marca sobre el cilindro, dependiendo de donde lo hay
 
 <details>
     <img src="configuracion de rodillo con cilindro.gif" alt="circuito">
-    
+
 </details>
 
 ---
@@ -118,7 +116,7 @@ Solución:
     <img src="./ejercicio_1_2.png" alt="circuito">
     <br>
     <img src="./ejercicio_rodillo.gif" alt="circuito">
-    
+
 </details>
 
 ---
@@ -140,9 +138,7 @@ Limites 95 y 5
     <img src="./A+B+B-A-_descapotable.png" alt="circuito">
 </details>
 
-
 ---
-
 
 ## Control de salida del vástago
 
@@ -154,21 +150,19 @@ Limites 95 y 5
 
 ### Control de puerta de un autobús
 
-**El control de apertura y cierre de la puerta de un autobús es llevada a cabo por el chofer que acciona un botón para abrirla y otro botón para cerrarla. Pero para que este sistema funcione el autobus debe estar detenido, es decir, se debe estar presionando el freno (accionamiento por rodillo). Ademas, por fuera, debe existir un botón de enclavamiento (accionamiento por bloqueo con retorno de muelle), el cual debe abrir la puerta del autobus. 
-La entrada y salida del vástago es lenta, a un 50% en su cierre y a un 30% su apertura.** 
+**El control de apertura y cierre de la puerta de un autobús es llevada a cabo por el chofer que acciona un botón para abrirla y otro botón para cerrarla. Pero para que este sistema funcione el autobus debe estar detenido, es decir, se debe estar presionando el freno (accionamiento por rodillo). Ademas, por fuera, debe existir un botón de enclavamiento (accionamiento por bloqueo con retorno de muelle), el cual debe abrir la puerta del autobus.
+La entrada y salida del vástago es lenta, a un 50% en su cierre y a un 30% su apertura.**
 
 ### Elevador Simple
 
-Tenemos un elevador, el cual se controla por medio de dos pulsadores, con uno podemos subir la plataforma (PS), y con el otro podemos bajar la plataforma (PB). Realiza un circuito neumático para el control, estos pulsadores esta en la parte inferior donde el operador realiza el control. 
+Tenemos un elevador, el cual se controla por medio de dos pulsadores, con uno podemos subir la plataforma (PS), y con el otro podemos bajar la plataforma (PB). Realiza un circuito neumático para el control, estos pulsadores esta en la parte inferior donde el operador realiza el control.
 
 ![](eleveador_simple.png)
 
 <details markdown="1">
     <img src="elevador_diagama.png" alt="circuito">
 
-
 </details>
-
 
 ----
 
@@ -189,7 +183,6 @@ Ahora el elevador tiene doble control, es decir, cuenta con 4 botones para hacer
 </details>
 
 ---
-
 
 ### Martillo neumático
 
@@ -214,7 +207,6 @@ De protección, se debe colocar una válvula principal para detener el flujo de 
 
 **Realizar un circuito electroneumático, el cual al presionar un botón salga el vástago, se suelta el botón y el vástago se mantiene, con otro botón se regresa el vástago, se debe usar una válvula biestable con solenoide.**
 
-
 <details markdown="1">
     <img src="eletroneumatica_basico_2.gif" alt="circuito">
     <br>
@@ -238,7 +230,7 @@ Sistema de enclavamiento (interlock)
     <img src="enclavamiento_doble_efecto.gif" alt="circuito doble efecto">
 </details>
 
-### Sensores 
+### Sensores
 
 #### Sensor inductivo (Reed)
 
@@ -251,8 +243,6 @@ La salida de la señal del sensor nos ayuda a alimentar la bobina del relay y re
 La forma de conexión es la siguiente:
 
 ![](conexion_sensor.png)
-
-
 
 ![sensor1](sensor_1.png)
 
@@ -269,15 +259,13 @@ En un primer lugar, se colocan las placas de características en los rebajes que
 Un cilindro aplica presión sobre ellas, para que queden embutidas. La operación de prensado del cuerpo de la válvula se activa mediante un pulsador.
 Una vez sujeto el cuerpo de la válvula, se inicia la operación de prensado. Cuando el cilindro de prensado alcanza su posición delantera de final de carrera, ambos cilindros deben retroceder.**
 
-
 ![prensa](prensa_de_placas.png)
 
 ---
 
-###  Sistema transportador
+### Sistema transportador
 
 **Los paquetes que llegan por transportador son elevados por un cilindro neumático A (1.0) y desplazados a otro transportador, mediante un segundo cilindro B (2.0), el regreso del actuador A será en el momento que el actuador B desplace la caja, *el actuador B regresará a su posición de inicio cuando A alcance su posición de reposo***.
-
 
 ![](Sistema_transportador.png)
 
@@ -303,17 +291,15 @@ Una vez sujeto el cuerpo de la válvula, se inicia la operación de prensado. Cu
 
 **Diseñar el sistema de control electroneumático de una prensadora de latas, para esto deberá utilizar electroválvulas monoestables, la secuencia deberá ejecutarse de manera manual. Es decir, al presionar el pulsador que comience la secuencia, que realice todos los pasos y para volver a iniciar, se debe presionar de nuevo el botón**
 
-
 ![](Prensado_de_latas.png)
 
 ---
+
 ### Selector de cajas
 
-Observar la siguiente animación, la cual consiste en controlar 2 cilindros, los cuales están montados sobre una banda transportadora. 
+Observar la siguiente animación, la cual consiste en controlar 2 cilindros, los cuales están montados sobre una banda transportadora.
 El sistema debe detectar 3 tamaños de cajas, y con base a su altura se deben desplazar hacia otro sitio. Como se muestra en la animación.
-
 
 ![](ejemplo_neumatica_2.gif)
 
 ---
-

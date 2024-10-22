@@ -15,7 +15,7 @@ La neumática precisa de una estación de generación y preparación del air
 
 Los sistemas neumáticos se complementan con los eléctricos y electrónicos lo que les permite obtener un alto grado de sofisticación y flexibilidad. Utilizan válvulas solenoide, señales de realimentación de interruptores magnéticos, sensores e interruptores eléctricos de final de carrera. El PLC (programmable logic controller) les permite programar la lógica de funcionamiento de un cilindro o de un conjunto de cilindros realizando una tarea específica.
 
-![fig 1](fig1.png)
+![fig 1](imgs/fig1.png)
 
 En determinadas aplicaciones, tales como en movimientos de aproximación rápida y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan la neumática y la hidráulica en un _circuito oleoneumático_, utilizando la parte neumática para el accionamiento y control y la parte hidráulica para el actuador.
 
@@ -25,7 +25,7 @@ La hidráulica utiliza básicamente los fluidos hidráulicos como medios de p
 
 Dentro de estos sistemas se encuentran los motores hidráulicos con velocidades que abarcan desde 0,5 rpm hasta 10.000 rpm y el par que proporcionan va desde 1 N/m (baja velocidad) hasta 20.000 N/m (alta velocidad).
 
-![fig 2](fig2.png 'pie de la foto')
+![fig 2](imgs/fig2.png 'pie de la foto')
 
 Los sistemas hidráulicos se aplican típicamente en dispositivos móviles tales como maquinaria de construcción, excavadoras, plataformas elevadoras, aparatos de elevación y transporte, maquinaria para agricultura y simuladores de vuelo.
 
@@ -50,11 +50,9 @@ En determinadas aplicaciones, tales como en movimientos de aproximación rápi
 ## Presión
 
 > La fuerza normal aplicada por unidad de área.
-
 > La presión ejercida de un fluido sobre una superficie - y viceversa - el cociente entre la fuerza y la superficie que recibe su acción. Es decir,
 
-$$
-$$
+$$P = \frac{Fuerza}{Area}$$
 
 **En donde:**
 
@@ -78,7 +76,7 @@ $$1\text{ }kgf = 1 \text{ }kp = 9.81N$$
 $kgf = \text{kilogramo-fuerza}$
 $kp = \text{kilopondio}$
 
-#### Presión
+#### Conversiones de presión
 
 $$1 \text{ pascal (Pa)} = 1 \text{ Newton por metro cuadrado} (N/m^2)$$
 
@@ -97,7 +95,7 @@ $$1bar = 100 kPa= 0.1MPa =0.9869 atm=1,01972 kgf/cm^2$$
 
 $$\text{Presión atmosférica} = \text{presión barométrica}$$
 
-La presión atmosférica al nivel del mar es $101.325 kPa$, o $14.7 lb/in^2$. Debido a que la presión atmosférica participa en gran número de cálculos, con frecuencia se usa una unidad de pre­sión de 1 **_atmósfera_** (atm), definida como la presión media que la atmósfera ejerce al nivel del mar, es decir, $101.3 kPa$.
+La presión atmosférica al nivel del mar es $101.325 kPa$, o $14.7 lb/in^2$. Debido a que la presión atmosférica participa en gran número de cálculos, con frecuencia se usa una unidad de presión de 1 **_atmósfera_** (atm), definida como la presión media que la atmósfera ejerce al nivel del mar, es decir, $101.3 kPa$.
 
 #### Equivalencias
 
@@ -118,7 +116,7 @@ Es un instrumento de medición para la presión de fluidos contenidos en recipie
 
 En la siguiente figura tenemos un manómetro convencional, graduado en **bar** y **PSI**
 
-![manómetro](manometro.jpeg 'manómetro')
+![manómetro](imgs/manometro.jpeg 'manómetro')
 
 #### Presión absoluta
 
@@ -226,8 +224,8 @@ $A= \text{Área transversal}$
 
 > Los fluidos ejercen presión en todas las direcciones.
 
-![fig 3](fig3.png#only-light "presion")
-![fig 3](fig3_bk.png#only-dark "presion")
+![fig 3](imgs/fig3.png#only-light "presion")
+![fig 3](imgs/fig3_bk.png#only-dark "presion")
 
 ### Ley de Pascal
 
@@ -235,8 +233,8 @@ Cualquier líquido en un recipiente abierto, por ejemplo, está sujeto a la pr
 
 > Una presión externa aplicada a un fluido confinado se transmite uniformemente a través del volumen de un líquido.
 
-![pascal](pascal.png#only-light 'Ley de pascal')
-![pascal](pascal_bk.png#only-dark 'Ley de pascal')
+![pascal](imgs/pascal.png#only-light 'Ley de pascal')
+![pascal](imgs/pascal_bk.png#only-dark 'Ley de pascal')
 
 La figura 1-3 muestra la sección transversal de un recipiente de forma irregular, que tiene paredes rígidas El fluido confinado en el ejerce la misma presión en todas las direcciones, tal como lo indican las flechas. Si las paredes fueran flexibles, la sección asumiría forma circular. Es entonces la Ley de Pascal que hace que una manguera contra incendios asuma forma cilíndrica cuando es conectada al suministro. Es importante la diferencia entre cómo actúa la fuerza sobre un fluido y cómo lo hace sobre un sólido. Puesto que el sólido es un cuerpo rígido, puede soportar que se le aplique una fuerza sin que cambie apreciablemente su forma. Por otra parte, un líquido puede soportar una fuerza únicamente en una superficie o frontera cerrada.
 
@@ -261,17 +259,16 @@ $l = Altura$
 
 > Esta ley aplicada a gases perfectos dice que a temperatura constante, la presión absoluta es inversamente proporcional al volumen, O sea:
 > Siempre que la masa y la temperatura de una mues­tra de gas se mantengan constantes, el volumen de dicho gas es inversamente proporcional a su presión absoluta.
-
 > La presión absoluta de un gas confinado en un recipiente varia en forma inversa a su volumen, cuando la temperatura permanece constante.
 
 $$P_1V_1 = P_2V_2=P_3V_3 = cte \text{ m y T constantes}$$
 
 Siendo $P_1,P_2,P_3$ presiones absolutas y $V_1,V_2,V_3$ volumen a esas presiones.
 
-![fig 4](fig4.png#only-light)
-![fig 4](fig4_bk.png#only-dark)
+![fig 4](imgs/fig4.png#only-light)
+![fig 4](imgs/fig4_bk.png#only-dark)
 
-### Ejemplos:
+### Ejemplos
 
 1. El aire expuesto a la presión atmosférica es comprimido a la séptima parte de su volumen. ¿Cuál es la presión si la temperatura se mantiene constante?
 
@@ -307,8 +304,8 @@ $$
 
 > Tenemos que el volumen final es de **$10cm^3$**
 
-![fig 1-5](ejerc2.png#only-light 'Ejercicio 2')
-![fig 1-5](ejerc2_bk.png#only-dark 'Ejercicio 2')
+![fig 1-5](imgs/ejerc2.png#only-light 'Ejercicio 2')
+![fig 1-5](imgs/ejerc2_bk.png#only-dark 'Ejercicio 2')
 
 ## Ley de Charles-Gay Lussac
 
@@ -342,12 +339,12 @@ $$
 
 ---
 
-## [Ejercicios del capítulo 1](./ejercicios1.md)
+## [Ejercicios del capítulo 1](ejercicios1.md)
 
 ---
 
 - [Inicio](../index.md)
-- [Capítulo 1](#)
+- [Capítulo 1](#capítulo-1-introducción-a-neumática-e-hidráulica)
 - [Capítulo 2](../capitulo2/index.md)
 - [Capítulo 3](../capitulo3/index.md)
 - [Capítulo 4](../capitulo4/index.md)

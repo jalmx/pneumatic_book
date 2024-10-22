@@ -8,7 +8,7 @@ Para un funcionamiento óptimo, la presión de funcionamiento del sistema de con
 
 De acuerdo a esta teoría física, si dentro del sistema se presenta una diferencia de áreas y la fuerza es igual en cualquier punto, entonces se tendrá una diferencia de presiones. Este principio se aplica en un dispositivo hidráulico denominado cilindro.
 
-![Cilindro](../capitulo2/cilindro_descrp.png "Cilindro")
+![Cilindro](../capitulo2/imgs/cilindro_descrp.png "Cilindro")
 
 - Tubo de sección circular constante, cerrado por sus extremos
 - En su interior se desliza un émbolo solidario con un vástago
@@ -23,7 +23,7 @@ De acuerdo a esta teoría física, si dentro del sistema se presenta una difer
 - **Diámetro (D):** Determina la superficie del émbolo. Dada una determinada presión del aire, cuanto mayor sea la
 superficie del émbolo, mayor será la fuerza que ejerce el vástago, ya que:
 
-![cilindro parts](../capitulo2/cilindro_parts.jpg "Partes de un cilindro")
+![cilindro parts](../capitulo2/imgs/cilindro_parts.jpg "Partes de un cilindro")
 
 ### Cilindro de simple efecto con retorno de muelle
 
@@ -33,7 +33,7 @@ En los cilindros de simple efecto con muelle incorporado, su longitud limita la 
 Se utilizan principalmente para sujetar, expulsar, apretar, levantar, alimentar, etc.
 En la figura 8.1 se ilustra un esquema de la estructura interna, indicando las partes que lo componen. Como se observa en la figura, el fluido (aire o aceite) entra por la cámara izquierda y empuja al émbolo venciendo la resistencia del muelle haciendo que el vástago salga.
 
-![Cilindro de simple efecto](../capitulo2/cilindro_simple_efecto.png "Cilindro de simple efecto")
+![Cilindro de simple efecto](../capitulo2/imgs/cilindro_simple_efecto.png "Cilindro de simple efecto")
 
 La figura 8.3 muestra el símbolo del cilindro de simple efecto. En la figura se tiene:
 
@@ -41,7 +41,7 @@ La figura 8.3 muestra el símbolo del cilindro de simple efecto. En la figura s
 - (B) Cilindro de simple efecto con retorno por muelle
 - (C) Inyecta fluido en la cámara izquierda del cilindro; las flechas indican que por efecto del fluido se ejerce una fuerza sobre el émbolo empujando el sistema hacia la derecha.
 
-![Cilindros de simple efecto](../capitulo2/cilindros_simple_efecto.png "Cilindros de simple efecto")
+![Cilindros de simple efecto](../capitulo2/imgs/cilindros_simple_efecto.png "Cilindros de simple efecto")
 
 ### Cilindro de doble efecto
 
@@ -49,7 +49,7 @@ La figura 8.3 muestra el símbolo del cilindro de simple efecto. En la figura s
 
 **La fuerza ejercida por el fluido en cilindros de doble efecto, permite que el vástago pueda realizar un movimiento de traslación en los dos sentidos.** Se dispone de una fuerza útil tanto en la ida como en el retorno. La figura 8.4 muestra un esquema interno del cilindro. Para que el vástago se desplace en ambas direcciones es necesario que una de las cámaras esté alimentada y la otra esté en estado de escape (para el aire) o tanque (para el aceite)
 
-![cilindro de doble efecto](../capitulo2/cilindro_doble_efecto.png "cilindro de doble efecto")
+![cilindro de doble efecto](../capitulo2/imgs/cilindro_doble_efecto.png "cilindro de doble efecto")
 
 Los cilindros de doble efecto comparados con los de simple efecto presentan algunas ventajas:
 
@@ -69,11 +69,11 @@ No vías/no posiciones
 Así una válvula 3/2, será una distribuidora con 3 vías y 2 posiciones.
 Para representarla se hace en la posición de reposo por medio de un rectángulo dividido en tantos cuadrados como posiciones tenga la válvula, exteriormente se dibujan la vías en una de las posiciones y en cada cuadrado las conexiones entre vías.
 
-![valvula](../capitulo2/valvula_ejem.png "válvula")
+![valvula](../capitulo2/imgs/valvula_ejem.png "válvula")
 
 ### Accionamiento de las válvulas
 
-![Accionamiento de válvulas](../capitulo2/accionamiento_valvula.png "Accionamiento de válvulas")
+![Accionamiento de válvulas](../capitulo2/imgs/accionamiento_valvula.png "Accionamiento de válvulas")
 
 ### Conceptos de vías y posiciones
 
@@ -95,7 +95,7 @@ Según normas CETOP, es:
 3 y 5 = Escape de aire
 12 y 14 = Conexiones de mando
 
-![ejemplo de nomenclatura](../capitulo2/nomenclatura.png "Nomenclatura de válvulas")
+![ejemplo de nomenclatura](../capitulo2/imgs/nomenclatura.png "Nomenclatura de válvulas")
 
 En esta descripción se distingue:
 
@@ -114,7 +114,7 @@ Las posiciones pueden distinguirse por medio de letras minúsculas a, b, c... y
 
 Válvula de 3 posiciones: Posición intermedia = Posición de reposo (figura 8.7(H)).
 
-![valvulas general](../capitulo2/valvulas_g.png)
+![valvulas general](../capitulo2/imgs/valvulas_g.png)
 
 ### Válvula 2/2
 
@@ -122,40 +122,40 @@ Las válvulas 2/2 sirven para gobernar el paso del fluido. La denominación 2/
 La Figura 15.12, A) representa una de estas válvulas en reposo. En esta posición el paso de P hacia A está cerrado.
 Cuando se acciona el pulsador, el distribuidor pone en comu­nicación la entrada P con la utilización A (Figura 15.12, B); entonces se dice que la válvula está abierta.
 
-![valvula 2/2](../capitulo2/v2_2.png)
+![valvula 2/2](../capitulo2/imgs/v2_2.png)
 
 ### Válvula 3/2
 
 Estas válvulas permiten la circulación del fluido en una dirección y, al mismo tiempo, cortan el paso en la otra direc­ción.
 **Se emplean para gobernar cilindros de simple efecto.**
 
-![valvula 3/2](../capitulo2/v3_2.jpeg)
+![valvula 3/2](../capitulo2/imgs/v3_2.jpeg)
 
 ### Válvula 4/2
 
 La válvula 4/2 es de acciona­miento neumático. La alimentación principal se efectúa por (1), las vías de utilización son la (2) y la (4), el escape es (3) y las vías de pilotaje son la (12) y la (14). Cuando existe señal en (12) la corredera y el cursor se desplazan hacia la izquier­da con lo cual la vía (2) está en escape y la vía (4) alimenta­ da. Al invertir la señal de pilotaje [presión en (14)], la corre­dera se mueve hacia la derecha y comunica la vía (2) con la alimentación (1) y la vía (4) con el escape (3). Este tipo de válvula es apta para mandar un cilindro de doble efecto.
 
-![valvula 4/2](../capitulo2/v4_2_a.png)
+![valvula 4/2](../capitulo2/imgs/v4_2_a.png)
 
-![valvula 4/2](../capitulo2/v_4_2.png)
+![valvula 4/2](../capitulo2/imgs/v_4_2.png)
 
-![valvula 4/2](../capitulo2/v4_2.png)
+![valvula 4/2](../capitulo2/imgs/v4_2.png)
 
 ### Válvula 5/2
 
 La alimentación de presión (1) está conectada con la vía (4) y la (2 con la atmósfera, a través del escape (3), cuando se manda señal de pilotaje por (14). Cuando la corredera recibe el impulso opuesto por (12), se alimenta la vía (2) y se pone la (4) a escape (5).
 
-![válvula 5/2](../capitulo2/v5_2.png)
+![válvula 5/2](../capitulo2/imgs/v5_2.png)
 
-![válvula 5/2](../capitulo2/v5_2_a.jpeg)
+![válvula 5/2](../capitulo2/imgs/v5_2_a.jpeg)
 
-![válvula 5/2](../capitulo2/v5_2_b.jpeg)
+![válvula 5/2](../capitulo2/imgs/v5_2_b.jpeg)
 
 ### Válvula 4/3
 
 En la primera posición la alimentación de presión (1) está comunicada con la utilización (4) y la utilización (2) con esca­pe a la atmósfera a través de (3). En la posición opuesta (1) se comunica con (2) y (4) con (3). En la tercera posición que aquí aparece como posición central (1), (2), (4) y (3) están cerrados, provocando un bloqueo del aire comprimido en el interior del sistema o elemento colocado posteriormente; de ahí la denominación que tiene dicha válvula.
 
-![válvula 4/3](../capitulo2/v4_3.png)
+![válvula 4/3](../capitulo2/imgs/v4_3.png)
 
 ### Aplicación de las válvulas distribuidoras
 
@@ -175,41 +175,41 @@ Así, las aplicaciones más frecuentes de las válvulas son:
 Permite el paso del fluido en un sentido, impidiendo su circulación en el opuesto.
 Está constituida por un cierre presionado por un muelle. Solo cuando la presión del aire es capaz de generar una fuerza que venza la ejercida por el muelle el fluido puede pasar.
 
-![válvula check](../capitulo2/valvula_check.png)
+![válvula check](../capitulo2/imgs/valvula_check.png)
 
 ### Válvula reguladora de caudal bidireccional o válvula de estrangulamiento
 
 Mediante un estrechamiento en la red regulamos el caudal de fluido que pasa. Si el estrechamiento es regulable mediante un tornillo la regulación del caudal será variable.
 
-![válvula de estrangulamiento](../capitulo2/valvula_estrangulamiento.png)
+![válvula de estrangulamiento](../capitulo2/imgs/valvula_estrangulamiento.png)
 
 ### Válvula reguladora de caudal unidireccional o Válvula de estrangulamiento y antirretorno
 
 La válvula de estrangulamiento y antirretorno reduce el caudal de aire solamente en un sentido. La válvula de antirretorno cierra el paso del aire en un sentido y el aire solo puede pasar a través de la sección regulada. El aire puede pasar libremente en la dirección contraria a través de la válvula de antirretorno abierta. Estas válvulas son utilizadas para regular la velocidad de cilindros neumáticos.
 
-![válvula de estrangulamiento](../capitulo2/valvula_estrangulamiento_antiretorno.png)
+![válvula de estrangulamiento](../capitulo2/imgs/valvula_estrangulamiento_antiretorno.png)
 
 ### Válvula selectora o válvula “OR” o válvula O
 
 Tiene dos vías de entrada y una de salida.
 Tenemos presión de salida si tenemos presión en una de las entradas o en la otra
 
-![válvula OR](../capitulo2/valvula_or.png "válvula OR")
+![válvula OR](../capitulo2/imgs/valvula_or.png "válvula OR")
 
 ### Válvula simultaneidad o válvula “AND” o válvula Y
 
 Tiene dos vías de entrada y una de salida.
 Tenemos presión de salida si tenemos presión en una de las entradas y en la otra simultáneamente.
 
-![valvula AND](../capitulo2/valvula_and.jpg "Válvula AND")
+![valvula AND](../capitulo2/imgs/valvula_and.jpg "Válvula AND")
 
 ### Válvula reguladora de presión
 
 Las válvulas reguladoras de presión se encargan en un circuito de controlar la presión del fluido, desde un valor cero hasta el máximo que proporcione la red de distribución.
 
-![valvula reguladora de presión simbolo](../capitulo2/v_regu_simbolo.png)
+![valvula reguladora de presión símbolo](../capitulo2/imgs/v_regu_simbolo.png)
 
-![valvula reguladora](../capitulo2/valvula_reguladora.gif "válvula reguladora de presión")
+![valvula reguladora](../capitulo2/imgs/valvula_reguladora.png "válvula reguladora de presión")
 
 ---
 

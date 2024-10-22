@@ -8,29 +8,29 @@ Para un funcionamiento óptimo, la presión de funcionamiento del sistema de con
 
 ## Estructura de un sistema neumático
 
-![estructura de un sistema neumático](./estructura.png)
+![estructura de un sistema neumático](imgs/estructura.png)
 
 ### Esquema de conexiones del sistema
 
-**Código de señalización de los componentes**
+#### Código de señalización de los componentes
 
 - Número del equipo empezando con 1; sólo se utiliza cuando el circuito de mando completo consta de más de un equipo.
 - Número del circuito de mando comenzando con 1; todos los accesorios con 0.
 - Señalización de los componentes por medio de letras
 - Número de los componentes comenzando con 1
 
-**Esquema de conexiones**
+#### Esquema de conexiones
 
 | Descripción               | Nomenclatura |
 | ------------------------- | ------------ |
-| De arriba hacia abajo     |
+| De arriba hacia abajo     |              |
 | Elemento de trabajo       | 1A           |
 | Elemento de mando         | 1V2          |
 | Elemento de procesamiento | 1V1          |
 | Elemento de entrada       | 1S1,1S2,1S3  |
 | Elemento de alimentación  | 0Z,0S        |
 
-![esquema de conexiones](./esquema.png)
+![esquema de conexiones](imgs/esquema.png)
 
 ## Nomenclatura
 
@@ -44,33 +44,33 @@ Armar los siguientes circuitos neumáticos para irse familiarizando con el softw
 
 ### Válvulas de control
 
-![esquema](./esq_42.png)
+![esquema](imgs/esq_42.png)
 
-![esquema](./esq_47.png)
+![esquema](imgs/esq_47.png)
 
-![esquema](./esq_411.png)
+![esquema](imgs/esq_411.png)
 
-![esquema](./esq_413.png)
+![esquema](imgs/esq_413.png)
 
-![esquema](./esq_419.png)
+![esquema](imgs/esq_419.png)
 
-![esquema](./esq_423.png)
+![esquema](imgs/esq_423.png)
 
-![esquema](./esq_425.png)
+![esquema](imgs/esq_425.png)
 
 ### Válvulas combinacionales
 
-![esquema](./esq_53.png)
+![esquema](imgs/esq_53.png)
 
-![esquema](./esq_54.png)
+![esquema](imgs/esq_54.png)
 
-![esquema](./esq_56.png)
+![esquema](imgs/esq_56.png)
 
-![esquema](./esq_57.png)
+![esquema](imgs/esq_57.png)
 
-![esquema](./esq_510.png)
+![esquema](imgs/esq_510.png)
 
-![esquema](./esq_514.png)
+![esquema](imgs/esq_514.png)
 
 ---
 
@@ -82,5 +82,5 @@ Armar los siguientes circuitos neumáticos para irse familiarizando con el softw
 - [Capítulo 1](../capitulo1/index.md)
 - [Capítulo 2](../capitulo2/index.md)
 - [Capítulo 3](../capitulo3/index.md)
-- [Capítulo 4](#)
+- [Capítulo 4](#capítulo-4-circuitos-neumáticos)
 - [Bibliografía](../bibliografia.md)
