@@ -161,7 +161,7 @@ Como vemos en la imagen el aire pasa a través de un orificio y mediante una me
 Es el elemento que proporciona aceite para la lubricación de la instalación. Debido al efecto Venturi absorbe aceite de un depósito y lo pulveriza en el aire de trabajo. El aceite lo añadimos para reducir rozamientos en los elementos móviles de la instalación y proteger toda ella de la oxidación.
 En este punto tendremos una caudal de aire a presión en condiciones de abastecer nuestra instalación a presión constante.
 
-![lubricador](lubricador.png "Lubricador")
+![lubricador](imgs/lubricador.png "Lubricador")
 
 ## Manómetro
 

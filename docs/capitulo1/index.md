@@ -107,8 +107,8 @@ $$ 1N/m^2 = 9.869 \times 10^{-6} atm = 10^{-5} bar$$
 
 Medida de presión por encima de la presión atmosférica.
 
-![presion manometrica](presion_mano.jpg#only-light)
-![presion manometrica](presion_mano_bk.jpg#only-dar)
+![presion manometrica](imgs/presion_mano.jpg#only-light)
+![presion manometrica](imgs/presion_mano_bk.jpg#only-dar)
 
 ##### Manómetro
 
@@ -203,7 +203,7 @@ El caudal viene expresado en $m^3/h$ o $l/s$, dependiendo de la magnitud de la q
 
 Instrumento para medir _caudal_ es el _Caudalímetro_, el cual puede censar agua, gas, o cualquier otro tipo de fluido.
 
-![caudalimetro](caudalimetro.jpeg 'Caudalimetro')
+![caudalimetro](imgs/caudalimetro.jpeg 'Caudalimetro')
 
 ## Ley de continuidad
 
@@ -216,7 +216,7 @@ $$V_1 \times A_1 = V_2 \times A_2$$
 $V= \text{Rapidez del fluido}$
 $A= \text{Área transversal}$
 
-![continuidad](continuidad.png)
+![continuidad](imgs/continuidad.png)
 
 ## Presión de un fluido
 

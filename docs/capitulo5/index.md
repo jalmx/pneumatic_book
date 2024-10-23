@@ -12,13 +12,21 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 
 ---
 
-## Accionamiento directo vs indirecto
+## Tipos de accionamientos
 
 ![accionamientos](imgs/accionamientos.png)
 
-### Control indirecto
+### Accionamiento directo
 
-![control indirecto](video/control_indirecto.gif)
+![accionamiento directo](imgs/accionamiento_directo.png)
+
+![accionamiento directo](imgs/accionamiento_directo.png)
+
+### Accionamiento indirecto
+
+![accionamiento indirecto](imgs/accionamiento_indirecto.png)
+
+![accionamiento indirecto](video/accionamiento_indirecto.gif)
 
 !!! note
     El accionamiento correcto es el control indirecto, dado que es el más seguro para el usuario ante cualquier falla o contingencia.
@@ -27,35 +35,31 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 
 ## Ejercicios
 
-**1. Control de un cilindro de simple efecto con retorno de muelle, gobernado por una válvula de presión con retorno de muelle; las válvulas de control restantes son a elección propia del ingeniero (*Es con control indirecto*).**
+### Ejercicio 1
 
-**Solución:**
+Control de un cilindro de simple efecto con retorno de muelle, gobernado por una válvula de presión con retorno de muelle; las válvulas de control restantes son a elección propia del ingeniero (*Es con control indirecto*).
+
+Solución:
 
 <details>
     <img src="imgs/circuito_1.png" alt="circuito">
 </details>
 
----
+### Ejercicio 2
 
-**2. Control de un cilindro de simple efecto con retorno de muelle, gobernado por una válvula de presión biestable, las válvulas de control restantes son a elección propia del ingeniero.**
+Control de un cilindro de simple efecto con retorno de muelle, gobernado por una válvula de presión biestable, las válvulas de control restantes son a elección propia del ingeniero.
+
+Solución
 
 <details>
 <img src="imgs/circuito_2.png" alt="circuito">
 </details>
 
----
+### Nomenclatura de circuitos neumáticos
 
-### Estructura
+#### Ejercicio 3
 
-#### Estructura de circuitos neumáticos
-
-<!-- TODO: Agregar la imagen -->
-
-#### Nomenclatura de circuitos neumáticos
-
----
-
-##### 3. Reproducir el siguiente diagrama y describir su funcionamiento
+Reproducir el siguiente diagrama y describir su funcionamiento
 
 ![doble or](video/circuito_doble_or.gif)
 
@@ -63,9 +67,9 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 
 ## Accionamiento por rodillo
 
-Presentación y configuración del rodillo:
+Presentación y configuración por accionamiento de rodillo:
 
-![rodillo1](imgs/rodillo1.png)
+![rodillo1](imgs/accionando_rodillo.png)
 
 ### Configuración de la válvula por rodillo y cilindro
 
@@ -77,13 +81,11 @@ Si damos doble click sobre el rodillo, nos saldrá esta ventana donde colocamos 
 
 ![paso 2](imgs/paso_2.png)
 
-Damos Aceptar, y nos quedara la referencia del rodillo.
+Damos **Aceptar**, y nos quedara la referencia del rodillo.
 
 ![paso 3](imgs/paso_3.png)
 
 Ahora, si damos doble click sobre el cilindro, nos saldrá la siguiente ventana y  nos vamos a la pestaña "Etiquetas de accionamiento".
-
-![paso 2.9](imgs/paso_2_1.png)
 
 En esta sección debemos agregar la marca que se vinculara con el rodillo o sensor
 
@@ -97,14 +99,17 @@ Aceptamos, y nos quedara la marca sobre el cilindro, dependiendo de donde lo hay
 
 ![paso 6](imgs/paso_6.png)
 
-<details>
+![paso 7](imgs/paso_7.png)
+
+<!-- TODO: agregar la animacion completa de configuracion -->
+<!-- <details>
     <img src="video/configuracion de rodillo con cilindro.gif" alt="circuito">
 
-</details>
+</details> -->
 
 ---
 
-### Ejercicios
+#### Ejercicio 4
 
 **1. Se debe controlar un cilindro de doble efecto, por medio de un botón, *Y* al mismo tiempo debe estar presionado una válvula por rodillo. Para que regrese el vástago del cilindro debe ser presionado otro botón**
 
@@ -123,7 +128,7 @@ Solución:
 
 ### Circuito A+ B+ A- B-
 
-**2. Se debe accionar una válvula de manera manual para hacer salir el vástago del cilindro de doble efecto 1, cuando éste al 100% deber hacer salir el vástago del cilindro de doble efecto 2, cuando éste vástago este al 100% debe hacer regresar al vástago del cilindro de doble efecto 1 y el cilindro de doble efecto 2**
+Se debe accionar una válvula de manera manual para hacer salir el vástago del cilindro de doble efecto 1, cuando éste al 100% deber hacer salir el vástago del cilindro de doble efecto 2, cuando éste vástago este al 100% debe hacer regresar al vástago del cilindro de doble efecto 1 y el cilindro de doble efecto 2.
 
 <details markdown="1">
     <img src="imgs/sec_1.png" alt="circuito">
@@ -164,7 +169,7 @@ Tenemos un elevador, el cual se controla por medio de dos pulsadores, con uno po
 
 </details>
 
-----
+---
 
 ### Elevador (completo)
 
@@ -203,7 +208,7 @@ De protección, se debe colocar una válvula principal para detener el flujo de 
 
 ![electroneumtico basico](video/eletroneumatica_basico_1.gif)
 
-----
+---
 
 **Realizar un circuito electroneumático, el cual al presionar un botón salga el vástago, se suelta el botón y el vástago se mantiene, con otro botón se regresa el vástago, se debe usar una válvula biestable con solenoide.**
 
@@ -300,6 +305,6 @@ Una vez sujeto el cuerpo de la válvula, se inicia la operación de prensado. Cu
 Observar la siguiente animación, la cual consiste en controlar 2 cilindros, los cuales están montados sobre una banda transportadora.
 El sistema debe detectar 3 tamaños de cajas, y con base a su altura se deben desplazar hacia otro sitio. Como se muestra en la animación.
 
-![](imgs/ejemplo_neumatica_2.gif)
+![](video/ejemplo_neumatica_2.gif)
 
 ---
