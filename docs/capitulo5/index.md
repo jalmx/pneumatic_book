@@ -101,11 +101,9 @@ Aceptamos, y nos quedara la marca sobre el cilindro, dependiendo de donde lo hay
 
 ![paso 7](imgs/paso_7.png)
 
-<!-- TODO: agregar la animacion completa de configuracion -->
-<!-- <details>
-    <img src="video/configuracion de rodillo con cilindro.gif" alt="circuito">
-
-</details> -->
+<details>
+    <img src="video/accionando_rodillo.gif" alt="circuito">
+</details>
 
 ---
 
@@ -116,6 +114,8 @@ Aceptamos, y nos quedara la marca sobre el cilindro, dependiendo de donde lo hay
 Solución:
 
 <details>
+    <img src="imgs/accionamiento_rodillo.png" alt="circuito">
+    <br>
     <img src="imgs/ejercicio_1_1.png" alt="circuito">
     <br>
     <img src="imgs/ejercicio_1_2.png" alt="circuito">
@@ -131,8 +131,9 @@ Solución:
 Se debe accionar una válvula de manera manual para hacer salir el vástago del cilindro de doble efecto 1, cuando éste al 100% deber hacer salir el vástago del cilindro de doble efecto 2, cuando éste vástago este al 100% debe hacer regresar al vástago del cilindro de doble efecto 1 y el cilindro de doble efecto 2.
 
 <details markdown="1">
-    <img src="imgs/sec_1.png" alt="circuito">
-    <img src="video/sec_1.gif" alt="circuito">
+    <img src="imgs/a_mas_b_mas.png" alt="circuito">
+    <img src="imgs/a_mas_b_mas_2.png" alt="circuito">
+    <img src="video/a_mas_b_mas.gif" alt="circuito">
 </details>
 
 ### Circuito A+ B+ B- A- (Descapotable)
@@ -162,7 +163,7 @@ La entrada y salida del vástago es lenta, a un 50% en su cierre y a un 30% su a
 
 Tenemos un elevador, el cual se controla por medio de dos pulsadores, con uno podemos subir la plataforma (PS), y con el otro podemos bajar la plataforma (PB). Realiza un circuito neumático para el control, estos pulsadores esta en la parte inferior donde el operador realiza el control.
 
-![](imgs/eleveador_simple.png)
+![elevador](imgs/eleveador_simple.png)
 
 <details markdown="1">
     <img src="imgs/elevador_diagama.png" alt="circuito">
@@ -199,112 +200,3 @@ Ahora el elevador tiene doble control, es decir, cuenta con 4 botones para hacer
 De protección, se debe colocar una válvula principal para detener el flujo de aire del sistema.**
 
 ![papas a la francesa](video/ejemplo_neumatica_5.gif)
-
----
-
-## Electroneumática
-
-**Armar el siguiente circuito Electroneumático.**
-
-![electroneumtico basico](video/eletroneumatica_basico_1.gif)
-
----
-
-**Realizar un circuito electroneumático, el cual al presionar un botón salga el vástago, se suelta el botón y el vástago se mantiene, con otro botón se regresa el vástago, se debe usar una válvula biestable con solenoide.**
-
-<details markdown="1">
-    <img src="video/eletroneumatica_basico_2.gif" alt="circuito">
-    <br>
-</details>
-
----
-
-### Enclavamiento (Interlock)
-
-Sistema de enclavamiento (interlock)
-
-**Realizar el circuito de control eléctrico para cualquiera de estos dos circuitos. Al presionar un botón (S1) se debe salir el vástago, se suelta el botón (S1) y el vástago continua afuera, se presiona otro botón (S2) y el vástago regresa a su posición original.**
-
-![ejercicio enclavamiento](imgs/ejercicio_enclavamiento.png)
-
-<details markdown="1">
-    <img src="video/electro_enclavamiento.gif" alt="circuito">
-    <br>
-    <img src="video/enclavamiento_simple_efecto.gif" alt="circuito simple efecto">
-    <br>
-    <img src="video/enclavamiento_doble_efecto.gif" alt="circuito doble efecto">
-</details>
-
-### Sensores
-
-#### Sensor inductivo (Reed)
-
-![simbolo](imgs/sensor_inductivo_reed.png)
-
-el sensor inductivo nos ayuda a conocer la posición del embolo, que esta dentro del cilindro. Este sensor seria lo equivalente a una `válvula de rodillo`.
-
-La salida de la señal del sensor nos ayuda a alimentar la bobina del relay y realizar las acciones necesarias que necesitemos.
-
-La forma de conexión es la siguiente:
-
-![](imgs/conexion_sensor.png)
-
-![sensor1](imgs/sensor_1.png)
-
-![sensor gif](video/sensor_1.gif)
-
----
-
-### Aplicaciones
-
-### Prensa de placas
-
-**En una estación se colocan a presión placas de características sobre cuerpos de válvulas.
-En un primer lugar, se colocan las placas de características en los rebajes que poseen los cuerpos de las válvulas para tal fin.
-Un cilindro aplica presión sobre ellas, para que queden embutidas. La operación de prensado del cuerpo de la válvula se activa mediante un pulsador.
-Una vez sujeto el cuerpo de la válvula, se inicia la operación de prensado. Cuando el cilindro de prensado alcanza su posición delantera de final de carrera, ambos cilindros deben retroceder.**
-
-![prensa](imgs/prensa_de_placas.png)
-
----
-
-### Sistema transportador
-
-**Los paquetes que llegan por transportador son elevados por un cilindro neumático A (1.0) y desplazados a otro transportador, mediante un segundo cilindro B (2.0), el regreso del actuador A será en el momento que el actuador B desplace la caja, *el actuador B regresará a su posición de inicio cuando A alcance su posición de reposo***.
-
-![](imgs/Sistema_transportador.png)
-
----
-
-### Sistema de taladrado
-
-**Unas piezas cúbicas de acero son alimentadas desde un almacén de carga por gravedad a una máquina de mecanizado, fijadas, mecanizadas y expulsadas. Un cilindro de doble efecto dispuesto horizontalmente, con el aire de escape estrangulado (1.0) empuja las piezas fuera del almacén bajo el husillo de la taladradora y las mantiene sujetas contra un tope fijo. El husillo de taladrado (2.0) avanza empujado por un cilindro, haciendo descender la broca. Una vez se ha alcanzado la profundidad deseada, fijada por una válvula de accionamiento por rodillo, empieza la carrera de retroceso sin restricción. Al finalizar la carrera de retroceso, la pieza es expulsada por un cilindro de simple efecto (3.0). Después de un período t = 0,6 segundos, empieza la carrera de retroceso rápida. Cuando el cilindro expulsor haya alcanzado la posición final retraída se acciona una cuarta válvula de rodillo, cuya señal puede utilizarse para permitir el inicio de un nuevo ciclo.**
-
-![](imgs/Sistema_de_taladro.png)
-
----
-
-### Cargador para alimentación de ejes
-
-**En numerosas máquinas de montaje o mecanizado es necesario alimentar ejes, tubos y similares. Esta operación suele ser automática. En la gráfica se aprecia un cargador de barras apiladas del que salen las piezas una a una. El tamaño del cargador puede adaptarse a la longitud de las piezas. En la salida del cargador hay una palanca basculante (vibratoria) para evitar atascos (ocasionados por la fricción y el peso de las piezas). Este sistema podría ser utilizado, por ejemplo, para alimentar piezas a una máquina lijadora. En el dibujo "b" se muestra una alternativa frente al cargador de piezas apiladas con salida mediante palanca basculante. En este caso se trata de un cargador con salida mediante un segmento que recoge las piezas una a una.**
-
-![](imgs/Cargador_para_alimentación_de_ejes.png)
-
----
-
-### Prensa Latas
-
-**Diseñar el sistema de control electroneumático de una prensadora de latas, para esto deberá utilizar electroválvulas monoestables, la secuencia deberá ejecutarse de manera manual. Es decir, al presionar el pulsador que comience la secuencia, que realice todos los pasos y para volver a iniciar, se debe presionar de nuevo el botón**
-
-![](imgs/Prensado_de_latas.png)
-
----
-
-### Selector de cajas
-
-Observar la siguiente animación, la cual consiste en controlar 2 cilindros, los cuales están montados sobre una banda transportadora.
-El sistema debe detectar 3 tamaños de cajas, y con base a su altura se deben desplazar hacia otro sitio. Como se muestra en la animación.
-
-![](video/ejemplo_neumatica_2.gif)
-
----
