@@ -33,7 +33,7 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 
 ### Ejercicio 1
 
-Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada de forma manual (*pedal*), normalmete cerrada. Accionamiento directo.
+Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada de forma manual (*pedal*), normalmente cerrada. Accionamiento directo.
 
 ### Ejercicio 2
 
