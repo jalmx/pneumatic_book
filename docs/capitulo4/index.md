@@ -74,10 +74,6 @@ Armar los siguientes circuitos neumáticos para irse familiarizando con el softw
 
 ---
 
-## [Ejercicios del capítulo 4](./ejercicios4.md)
-
----
-
 - [Inicio](../index.md)
 - [Capítulo 1](../capitulo1/index.md)
 - [Capítulo 2](../capitulo2/index.md)

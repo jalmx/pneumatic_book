@@ -28,8 +28,6 @@
 
 ## [Capítulo 4. Circuitos neumáticos y electroneumáticos](./capitulo4/index.md)
 
-### [Ejercicios del capítulo 4](./capitulo4/ejercicios4.md)
-
 ### [Videos - Capítulo 4](./capitulo4/video.md)
 
 ### [Mini test capítulo 4](./capitulo4/mini-test.md)

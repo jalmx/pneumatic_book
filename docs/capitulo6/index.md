@@ -1,4 +1,4 @@
-# Electroneumática
+# Capítulo 6. Electroneumática
 
 **Armar el siguiente circuito Electroneumático.**
 
@@ -28,6 +28,14 @@ Sistema de enclavamiento (interlock)
     <br>
     <img src="video/enclavamiento_doble_efecto.gif" alt="circuito doble efecto">
 </details>
+
+## Ejercicios
+
+1. Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por ==solenoide== con retorno de muelle, el vástago debe salir de forma suave. Controlada por botón.
+2. Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por ==solenoide== con retorno de muelle, el vástago debe salir de forma suave. Controlada por interruptor.
+3. Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por ==solenoide== con retorno de muelle, el vástago debe salir de forma suave. Controlada por botón de enclavamiento con luces indicativas.
+4. Control de un cilindro de doble efecto por medio de una válvula 5/2 biestable accionada por ==solenoide==, con botoneras, cuando se active el botón 1 el cilindro expulsará el vástago, cuando sea presionado el botón 2 el vástago entrará. Cuando sea presionado cada botón se debe encender una luz indicativa.
+5. Control de un cilindro de doble efecto por medio de una válvula 5/2 monoestable accionada por ==solenoide== con retorno de muelle, cuando el botón (NA) de arranque se presione se activará la ==solenoide== y expulsará el vastago, el botón se debe enclavar; cuando sea presionado el segundo botón (NC), desenergizará la ==solenoide== y el vástago regresará. Debe contar con sus luces indicativas
 
 ### Sensores
 

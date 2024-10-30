@@ -1,4 +1,4 @@
-# Prácticas de clase - Circuitos Neumáticos
+# Capítulo 5. - Circuitos Neumáticos
 
 ## Ejercicios Construyendo circuitos básicos
 
@@ -9,8 +9,6 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 ![básico](imgs/basico_1.png)
 
 ![básico](video/basico_1.gif)
-
----
 
 ## Tipos de accionamientos
 
@@ -31,11 +29,13 @@ Accionar un cilindro de simple efecto con retorno de muelle, con una válvula 3/
 !!! note
     El accionamiento correcto es el control indirecto, dado que es el más seguro para el usuario ante cualquier falla o contingencia.
 
----
-
 ## Ejercicios
 
 ### Ejercicio 1
+
+Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada de forma manual (*pedal*), normalmete cerrada. Accionamiento directo.
+
+### Ejercicio 2
 
 Control de un cilindro de simple efecto con retorno de muelle, gobernado por una válvula de presión con retorno de muelle; las válvulas de control restantes son a elección propia del ingeniero (*Es con control indirecto*).
 
@@ -45,7 +45,7 @@ Solución:
     <img src="imgs/circuito_1.png" alt="circuito">
 </details>
 
-### Ejercicio 2
+### Ejercicio 3
 
 Control de un cilindro de simple efecto con retorno de muelle, gobernado por una válvula de presión biestable, las válvulas de control restantes son a elección propia del ingeniero.
 
@@ -57,15 +57,23 @@ Solución
 
 ### Nomenclatura de circuitos neumáticos
 
-#### Ejercicio 3
+#### Ejercicio 4
 
 Reproducir el siguiente diagrama y describir su funcionamiento
 
 ![doble or](video/circuito_doble_or.gif)
 
----
+#### Ejercicio 5
+
+Control de un cilindro de simple efecto por medio de una válvula **OR**, por medio de dos válvulas manuales.
+
+#### Ejercicio 6
+
+Control de un cilindro de simple efecto por medio de una válvula **AND**, por medio de dos válvulas manuales.
 
 ## Accionamiento por rodillo
+
+Controlar un cilindro de doble efecto, activado por una valvular accionada por botón con retorno por muelle, al ser accionado debe expulsar el vástago; contará con un final de carrera que al tocar el vástago hará que se retraiga y regrese a su posición inicial.
 
 Presentación y configuración por accionamiento de rodillo:
 
@@ -101,15 +109,11 @@ Aceptamos, y nos quedara la marca sobre el cilindro, dependiendo de donde lo hay
 
 ![paso 7](imgs/paso_7.png)
 
-<details>
-    <img src="video/accionando_rodillo.gif" alt="circuito">
-</details>
+<img src="video/accionando_rodillo.gif" alt="circuito">
 
----
+#### Ejercicio 7
 
-#### Ejercicio 4
-
-**1. Se debe controlar un cilindro de doble efecto, por medio de un botón, *Y* al mismo tiempo debe estar presionado una válvula por rodillo. Para que regrese el vástago del cilindro debe ser presionado otro botón**
+Se debe controlar un cilindro de doble efecto, por medio de un botón, *Y* al mismo tiempo debe estar presionado una válvula por rodillo. Para que regrese el vástago del cilindro debe ser presionado otro botón
 
 Solución:
 
@@ -124,8 +128,6 @@ Solución:
 
 </details>
 
----
-
 ### Circuito A+ B+ A- B-
 
 Se debe accionar una válvula de manera manual para hacer salir el vástago del cilindro de doble efecto 1, cuando éste al 100% deber hacer salir el vástago del cilindro de doble efecto 2, cuando éste vástago este al 100% debe hacer regresar al vástago del cilindro de doble efecto 1 y el cilindro de doble efecto 2.
@@ -136,7 +138,7 @@ Se debe accionar una válvula de manera manual para hacer salir el vástago del 
     <img src="video/a_mas_b_mas.gif" alt="circuito">
 </details>
 
-### Circuito A+ B+ B- A- (Descapotable)
+### Circuito A+ B+ B- A- (Escamoteable)
 
 Limites 95 y 5
 
@@ -144,20 +146,38 @@ Limites 95 y 5
     <img src="imgs/A+B+B-A-_descapotable.png" alt="circuito">
 </details>
 
----
-
 ## Control de salida del vástago
 
-![](video/estranguladora_check_1.gif)
+![estranguladora](video/estranguladora_check_1.gif)
 
----
+### Ejercicio 8
 
-## Aplicaciones
+Control de cilindro de simple efecto con válvula de 3/2 monoestable, accionada de forma manual (accionamiento indirecto), el vástago debe salir de forma suave.
+
+<details>
+    <img src="imgs/simple_efecto_salida_lento.png" alt="circuito">
+    <br>
+    <img src="video/simple_efecto_salida_lento.gif" alt="circuito">
+    <br>
+</details>
+
+### Ejercicio 9
+
+Control de un cilindro de doble efecto por medio de una válvula 5/2, el control es con una válvula con palanca de enclavamiento, con válvula de estrangulamiento con antirretorno para que salga (70%) y entre el vástago de forma suave (30%).
+
+<details>
+    <img src="imgs/doble_efecto_70_30.png" alt="circuito">
+    <br>
+    <img src="video/doble_efecto_palanca_70_30.gif" alt="circuito">
+    <br>
+</details>
+
+## Aplicaciones - Ejercicios
 
 ### Control de puerta de un autobús
 
-**El control de apertura y cierre de la puerta de un autobús es llevada a cabo por el chofer que acciona un botón para abrirla y otro botón para cerrarla. Pero para que este sistema funcione el autobus debe estar detenido, es decir, se debe estar presionando el freno (accionamiento por rodillo). Ademas, por fuera, debe existir un botón de enclavamiento (accionamiento por bloqueo con retorno de muelle), el cual debe abrir la puerta del autobus.
-La entrada y salida del vástago es lenta, a un 50% en su cierre y a un 30% su apertura.**
+El control de apertura y cierre de la puerta de un autobús es llevada a cabo por el chofer que acciona un botón para abrirla y otro botón para cerrarla. Pero para que este sistema funcione el autobus debe estar detenido, es decir, se debe estar presionando el freno (accionamiento por rodillo). Ademas, por fuera, debe existir un botón de enclavamiento (accionamiento por bloqueo con retorno de muelle), el cual debe abrir la puerta del autobus.
+La entrada y salida del vástago es lenta, a un 50% en su cierre y a un 30% su apertura.
 
 ### Elevador Simple
 
@@ -167,10 +187,7 @@ Tenemos un elevador, el cual se controla por medio de dos pulsadores, con uno po
 
 <details markdown="1">
     <img src="imgs/elevador_diagama.png" alt="circuito">
-
 </details>
-
----
 
 ### Elevador (completo)
 
@@ -188,15 +205,11 @@ Ahora el elevador tiene doble control, es decir, cuenta con 4 botones para hacer
 
 </details>
 
----
-
-### Martillo neumático
-
----
+<!-- ### Martillo neumático -->
 
 ### Papas a la francesa
 
-**Se debe realizar un circuito neumático para el control del cortador de papas. Para que este funcione se deben cumplir 2 condiciones, con el pie el usuario lo debe activar, en la parte superior debe haber otra aplacan, cuando ambos estén accionados, la maquina comienza a operar automáticamente, es decir, saliendo y entrando el vástago del cilindro. Cuando se desactive por medio de la aplacan o el pedal, se debe detener.
-De protección, se debe colocar una válvula principal para detener el flujo de aire del sistema.**
+Se debe realizar un circuito neumático para el control del cortador de papas. Para que este funcione se deben cumplir 2 condiciones, con el pie el usuario lo debe activar, en la parte superior debe haber otra aplacan, cuando ambos estén accionados, la maquina comienza a operar automáticamente, es decir, saliendo y entrando el vástago del cilindro. Cuando se desactive por medio de la aplacan o el pedal, se debe detener.
+De protección, se debe colocar una válvula principal para detener el flujo de aire del sistema.
 
 ![papas a la francesa](video/ejemplo_neumatica_5.gif)
