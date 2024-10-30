@@ -78,7 +78,7 @@ Unas piezas cúbicas de acero son alimentadas desde un almacén de carga por gra
 
 En numerosas máquinas de montaje o mecanizado es necesario alimentar ejes, tubos y similares. Esta operación suele ser automática. En la gráfica se aprecia un cargador de barras apiladas del que salen las piezas una a una. El tamaño del cargador puede adaptarse a la longitud de las piezas. En la salida del cargador hay una palanca basculante (vibratoria) para evitar atascos (ocasionados por la fricción y el peso de las piezas). Este sistema podría ser utilizado, por ejemplo, para alimentar piezas a una máquina lijadora. En el dibujo "b" se muestra una alternativa frente al cargador de piezas apiladas con salida mediante palanca basculante. En este caso se trata de un cargador con salida mediante un segmento que recoge las piezas una a una.
 
-![cargador para alimentar de ejes](imgs/Cargador_para_alimentación_de_ejes.png)
+![cargador para alimentar de ejes](imgs/Cargador_para_alimentacion_de_ejes.png)
 
 ### Prensa Latas
 
