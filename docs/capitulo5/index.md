@@ -209,7 +209,7 @@ Ahora el elevador tiene doble control, es decir, cuenta con 4 botones para hacer
 
 ### Papas a la francesa
 
-Se debe realizar un circuito neumático para el control del cortador de papas. Para que este funcione se deben cumplir 2 condiciones, con el pie el usuario lo debe activar, en la parte superior debe haber otra aplacan, cuando ambos estén accionados, la maquina comienza a operar automáticamente, es decir, saliendo y entrando el vástago del cilindro. Cuando se desactive por medio de la aplacan o el pedal, se debe detener.
+Se debe realizar un circuito neumático para el control del cortador de papas. Para que este funcione se deben cumplir 2 condiciones, con el pie el usuario lo debe activar y en la parte superior debe haber un botón, cuando ambos estén accionados, la maquina comienza a operar automáticamente, es decir, salga el vástago del cilindro. Cuando el vástago llegue al final de la carrera debe regresar en automático, sin importar que el operador continue presionando el botón o el pedal.
 De protección, se debe colocar una válvula principal para detener el flujo de aire del sistema.
 
 ![papas a la francesa](video/ejemplo_neumatica_5.gif)
