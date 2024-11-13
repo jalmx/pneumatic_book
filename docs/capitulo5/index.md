@@ -1,4 +1,4 @@
-# Capítulo 5. - Circuitos Neumáticos
+# Capítulo 5. Circuitos Neumáticos
 
 ## Ejercicios Construyendo circuitos básicos
 
@@ -113,7 +113,7 @@ Aceptamos, y nos quedara la marca sobre el cilindro, dependiendo de donde lo hay
 
 #### Ejercicio 7
 
-Se debe controlar un cilindro de doble efecto, por medio de un botón, *Y* al mismo tiempo debe estar presionado una válvula por rodillo. Para que regrese el vástago del cilindro debe ser presionado otro botón
+Se debe controlar un cilindro de doble efecto, por medio de un botón, *Y* al mismo tiempo debe estar presionado una válvula por rodillo. El vástago del cilindro regresa cuando se presiona otro botón.
 
 Solución:
 
@@ -138,7 +138,9 @@ Se debe accionar una válvula de manera manual para hacer salir el vástago del 
     <img src="video/a_mas_b_mas.gif" alt="circuito">
 </details>
 
-### Circuito A+ B+ B- A- (Escamoteable)
+### Circuitos en cascada
+
+#### Circuito A+ B+ B- A- (Escamoteable)
 
 Limites 95 y 5
 
@@ -209,7 +211,15 @@ Ahora el elevador tiene doble control, es decir, cuenta con 4 botones para hacer
 
 ### Papas a la francesa
 
-Se debe realizar un circuito neumático para el control del cortador de papas. Para que este funcione se deben cumplir 2 condiciones, con el pie el usuario lo debe activar y en la parte superior debe haber un botón, cuando ambos estén accionados, la maquina comienza a operar automáticamente, es decir, salga el vástago del cilindro. Cuando el vástago llegue al final de la carrera debe regresar en automático, sin importar que el operador continue presionando el botón o el pedal.
+Se debe realizar un circuito neumático para el control del cortador de papas. Para que este funcione se deben cumplir 2 condiciones, con el pie el usuario lo debe activar y en la parte superior debe haber un botón, cuando ambos estén accionados, también para que el cilindro salga debe estar en su posición inicial (cero) para que la maquina comienza a operar; es decir, saldrá el vástago del cilindro. Cuando el vástago llegue al final de la carrera debe regresar en automático.
 De protección, se debe colocar una válvula principal para detener el flujo de aire del sistema.
 
 ![papas a la francesa](video/ejemplo_neumatica_5.gif)
+
+<details markdown="1">
+    <img src="imgs/cortador_papa.png" alt="circuito">
+    <br>
+    <img src="imgs/cortador_papa_2.png" alt="circuito">
+    <br>
+    <img src="video/cortador_papa.gif" alt="circuito">`
+</details>

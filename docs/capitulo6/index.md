@@ -4,6 +4,8 @@
 
 ![electroneumtico basico](video/eletroneumatica_basico_1.gif)
 
+## Ejercicio 1
+
 Realizar un circuito electroneumático, el cual al presionar un botón salga el vástago, se suelta el botón; el vástago se mantiene fuera, con otro botón se regresa el vástago, se debe usar una válvula biestable con solenoide.
 
 <details markdown="1">
@@ -13,7 +15,7 @@ Realizar un circuito electroneumático, el cual al presionar un botón salga el 
 
 ## Sistema de enclavamiento (interlock)
 
-Realizar el circuito de control eléctrico para cualquiera de estos dos circuitos. Al presionar un botón (S1) se debe salir el vástago, se suelta el botón (S1) y el vástago continua afuera, se presiona otro botón (S2) y el vástago regresa a su posición original.
+Realizar el circuito de control eléctrico para cualquiera de estos dos circuitos. Al presionar un botón (S1) se debe salir el vástago, se suelta el botón (S1) y el vástago continua afuera, se presiona otro botón (S2) y el vástago regresa a su posición original. S1 es un botón normalmente abierto, S2 es un botón normalmente cerrado.
 
 ![ejercicio enclavamiento](imgs/ejercicio_enclavamiento.png)
 
@@ -25,21 +27,60 @@ Realizar el circuito de control eléctrico para cualquiera de estos dos circuito
     <img src="video/enclavamiento_doble_efecto.gif" alt="circuito doble efecto">
 </details>
 
-### Ejercicios
+### Ejercicio 2
 
-1. Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por ==solenoide== con retorno de muelle, el vástago debe salir de forma suave. Controlada por botón.
-2. Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por ==solenoide== con retorno de muelle, el vástago debe salir de forma suave. Controlada por interruptor.
-3. Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por ==solenoide== con retorno de muelle, el vástago debe salir de forma suave. Controlada por botón de enclavamiento con luces indicativas.
-4. Control de un cilindro de doble efecto por medio de una válvula 5/2 biestable accionada por ==solenoide==, con botoneras, cuando se active el botón 1 el cilindro expulsará el vástago, cuando sea presionado el botón 2 el vástago entrará. Cuando sea presionado cada botón se debe encender una luz indicativa.
-5. Control de un cilindro de doble efecto por medio de una válvula 5/2 monoestable accionada por ==solenoide== con retorno de muelle, cuando el botón (NA) de arranque se presione se activará la ==solenoide== y expulsará el vastago, el botón se debe enclavar; cuando sea presionado el segundo botón (NC), desenergizará la ==solenoide== y el vástago regresará. Debe contar con sus luces indicativas
+Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por solenoide con retorno de muelle, el vástago debe salir de forma suave. Controlada por botón.
+
+### Ejercicio 3
+
+Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por solenoide con retorno de muelle, el vástago debe salir de forma suave. Controlada por botón de enclavamiento con luces indicativas.
 
 ### Sensores
 
+#### Final de carrera (Limit switch)
+
+Este sensor seria lo equivalente a una `válvula accionada por rodillo`. Este tipo de sensor nos ayuda a saber la posición del algún elemento, como podría ser el vástago, o cualquier otro elemento mecánico que lo toque o lo presione.
+Nos puede ayudar a contar algún objeto, las veces que lo toca o empuja.
+
+<figure markdown="1">
+    <img src="imgs/limit_switch_simbolo.png" alt="limit switch símbolo">
+<figcaption>Limit Switch Símbolo NA (Normalmente abierto), NA (Normalmente cerrado)</figcaption>
+</figure>
+
+<figure markdown="1">
+    <img src="imgs/Limit-switches.png" alt="limit switch físico">
+<figcaption>Limit Switch Físico</figcaption>
+</figure>
+
+##### Circuito
+
+Se muestra como se utiliza en el siguiente circuitos electroneumático
+
+![limit switch](imgs/limit_switch_1.png)
+![limit switch](imgs/limit_switch_2.png)
+
+![limit animacion](video/limit_switch.gif)
+
+##### Ejercicio 4 (1A+ 2A+  1A-2A-)
+
+Realizar el circuito electroneumático para el diagrama de movimientos indicado con **electroválvulas monoestables** y cilindros de doble efecto. Pulsadores de un ciclo, paro y repetición de ciclos por impulso momentáneo.
+Al pulsar SB1 y estar los dos vástagos dentro, debe salir el vástago de 1A. El vástago de 1A acciona 1B2, que hace salir al vástago de 2A. El vástago de 2A acciona 2B2, que hacen entrar a ambos vástagos a la vez.
+
+![diagrama de mov 4](imgs/diagrama_movi_electro_exer_4.png)
+
+<details markdown="1">
+    <img src="imgs/exerc_4_solution.png" alt="circuito">
+    <br>
+</details>
+
 #### Sensor inductivo (Reed)
 
-![simbolo](imgs/sensor_inductivo_reed.png)
+![símbolo](imgs/sensor_inductivo_reed.png)
 
-el sensor inductivo nos ayuda a conocer la posición del embolo, que esta dentro del cilindro. Este sensor seria lo equivalente a una `válvula de rodillo`.
+El sensor inductivo nos ayuda a conocer la posición del embolo, que esta dentro del cilindro. Estos están colocados sobre el cuerpo del cilindro.
+![reed](imgs/reed.jpg)
+
+![cilindro reed](imgs/cilindro_reed.jpeg)
 
 La salida de la señal del sensor nos ayuda a alimentar la bobina del relay y realizar las acciones necesarias que necesitemos.
 
@@ -51,14 +92,18 @@ La forma de conexión es la siguiente:
 
 ![sensor gif](video/sensor_1.gif)
 
+## Compuertas lógicas con contactos
+
+![compuertas](imgs/puertas-logicas-contactos.png)
+
 ## Aplicaciones
 
 ## Prensa de placas
 
-**En una estación se colocan a presión placas de características sobre cuerpos de válvulas.
+En una estación se colocan a presión placas de características sobre cuerpos de válvulas.
 En un primer lugar, se colocan las placas de características en los rebajes que poseen los cuerpos de las válvulas para tal fin.
 Un cilindro aplica presión sobre ellas, para que queden embutidas. La operación de prensado del cuerpo de la válvula se activa mediante un pulsador.
-Una vez sujeto el cuerpo de la válvula, se inicia la operación de prensado. Cuando el cilindro de prensado alcanza su posición delantera de final de carrera, ambos cilindros deben retroceder.**
+Una vez sujeto el cuerpo de la válvula, se inicia la operación de prensado. Cuando el cilindro de prensado alcanza su posición delantera de final de carrera, ambos cilindros deben retroceder.
 
 ![prensa](imgs/prensa_de_placas.png)
 
