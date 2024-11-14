@@ -63,14 +63,20 @@ Se muestra como se utiliza en el siguiente circuitos electroneumático
 
 ##### Ejercicio 4 (1A+ 2A+  1A-2A-)
 
-Realizar el circuito electroneumático para el diagrama de movimientos indicado con **electroválvulas monoestables** y cilindros de doble efecto. Pulsadores de un ciclo, paro y repetición de ciclos por impulso momentáneo.
-Al pulsar SB1 y estar los dos vástagos dentro, debe salir el vástago de 1A. El vástago de 1A acciona 1B2, que hace salir al vástago de 2A. El vástago de 2A acciona 2B2, que hacen entrar a ambos vástagos a la vez.
+Realizar el circuito electroneumático para el diagrama de movimientos indicado con **electroválvulas biestables** por solenoide y cilindros de doble efecto. Pulsadores de un ciclo, paro y repetición de ciclos por impulso momentáneo.
+Al pulsar S1 y estar los dos vástagos dentro, debe salir el vástago de 1A. El vástago de 1A acciona 1B2, que hace salir al vástago de 2A. El vástago de 2A acciona 2B2, que hacen entrar a ambos vástagos a la vez.
 
 ![diagrama de mov 4](imgs/diagrama_movi_electro_exer_4.png)
 
 <details markdown="1">
     <img src="imgs/exerc_4_solution.png" alt="circuito">
     <br>
+    <img src="imgs/rodillo_a_masb_mas_exerc_4_solution.png" alt="circuito">
+    <br>
+    <img src="imgs/rodillo_a_masb_mas_exerc_4_solution_2.png" alt="circuito">
+    <br>
+    <img src="video/rodillo_a_masb_mas_exerc_4_solution.gif" alt="circuito">
+
 </details>
 
 #### Sensor inductivo (Reed)
