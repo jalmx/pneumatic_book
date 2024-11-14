@@ -29,11 +29,29 @@ Realizar el circuito de control eléctrico para cualquiera de estos dos circuito
 
 ### Ejercicio 2
 
-Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por solenoide con retorno de muelle, el vástago debe salir de forma suave. Controlada por botón.
+Control de cilindro de simple efecto con válvula monoestable accionada por solenoide con retorno de muelle, el vástago debe salir de forma suave. Controlada por botón.
+
+<details markdown="1">
+    <img src="imgs/ejercicio_2_electro_solution.png" alt="circuito">
+    <br>
+    <img src="imgs/ejercicio_2_electro_solution_2.png" alt="circuito">
+    <br>
+    <img src="video/ejercicio_2_electro_solution.gif" alt="circuito simple efecto">
+    <br>
+</details>
 
 ### Ejercicio 3
 
-Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por solenoide con retorno de muelle, el vástago debe salir de forma suave. Controlada por botón de enclavamiento con luces indicativas.
+Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por solenoide con retorno de muelle, el vástago debe salir de forma suave. **Controlada por botón de enclavamiento**, con luz indicativa que el vástago esta fuera (color rojo) y si esta dentro el vástago con luz verde.
+
+<details markdown="1">
+    <img src="imgs/ejercicio_3_electro.png" alt="circuito">
+    <br>
+    <img src="imgs/ejercicio_3_electro_2.png" alt="circuito">
+    <br>
+    <img src="video/ejercicio_3_electro.gif" alt="circuito simple efecto">
+    <br>
+</details>
 
 ### Sensores
 
