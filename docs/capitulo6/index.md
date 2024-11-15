@@ -75,6 +75,7 @@ Nos puede ayudar a contar algún objeto, las veces que lo toca o empuja.
 Se muestra como se utiliza en el siguiente circuitos electroneumático
 
 ![limit switch](imgs/limit_switch_1.png)
+
 ![limit switch](imgs/limit_switch_2.png)
 
 ![limit animacion](video/limit_switch.gif)
@@ -94,7 +95,6 @@ Al pulsar S1 y estar los dos vástagos dentro, debe salir el vástago de 1A. El 
     <img src="imgs/rodillo_a_masb_mas_exerc_4_solution_2.png" alt="circuito">
     <br>
     <img src="video/rodillo_a_masb_mas_exerc_4_solution.gif" alt="circuito">
-
 </details>
 
 #### Sensor inductivo (Reed)
@@ -120,9 +120,34 @@ La forma de conexión es la siguiente:
 
 ![compuertas](imgs/puertas-logicas-contactos.png)
 
+### Ejercicio
+
+Replicar las compuertas lógicas con botones, encendiendo una lampara.
+
+## Banda transportadora
+
+### Banda transportadora básica
+
+Vamos a realizar control de una banda transportadora y el expulsado de piezas hacia la banda.
+
+Cuando se presione el botón S1 debe arrancar la banda transportadora, en ese momento si el sensor óptico 1B1 detecta si hay alguna pieza enfrente, manda la señal para que el cilindro 1A, sacando su vástago expulsado la pieza del contenedor y mandándolo a la banda.
+Para que salga el vástago, primero se debió arrancar el sistema, de lo contrario aunque exista pieza y sea detectada, no deberá accionar el cilindro.
+Utilizar un switch reed 1B2 para detectar cuando el vástago llego al 100% mande la indicación a la solenoide y regrese el vástago.
+El control del sistema se utiliza el sistema de enclavamiento. Para que todo se detenga se presiona el botón de STOP.
+
+![banda transportadora](imgs/banda_1_pictorico.png)
+
+<details markdown="1">
+    <img src="imgs/banda_1.png" alt="banda transportadora">
+    <br>
+    <img src="imgs/banda_1_run.png" alt="banda transportadora">
+    <br>
+    <img src="video/banda_1.gif" alt="banda transportadora">
+</details>
+
 ## Aplicaciones
 
-## Prensa de placas
+### Prensa de placas
 
 En una estación se colocan a presión placas de características sobre cuerpos de válvulas.
 En un primer lugar, se colocan las placas de características en los rebajes que poseen los cuerpos de las válvulas para tal fin.
@@ -131,31 +156,31 @@ Una vez sujeto el cuerpo de la válvula, se inicia la operación de prensado. Cu
 
 ![prensa](imgs/prensa_de_placas.png)
 
-## Sistema transportador
+### Sistema transportador
 
 Los paquetes que llegan por transportador son elevados por un cilindro neumático A (1.0) y desplazados a otro transportador, mediante un segundo cilindro B (2.0), el regreso del actuador A será en el momento que el actuador B desplace la caja, *el actuador B regresará a su posición de inicio cuando A alcance su posición de reposo*.
 
 ![sistema transportador](imgs/Sistema_transportador.png)
 
-## Sistema de taladrado
+### Sistema de taladrado
 
 Unas piezas cúbicas de acero son alimentadas desde un almacén de carga por gravedad a una máquina de mecanizado, fijadas, mecanizadas y expulsadas. Un cilindro de doble efecto dispuesto horizontalmente, con el aire de escape estrangulado (1.0) empuja las piezas fuera del almacén bajo el husillo de la taladradora y las mantiene sujetas contra un tope fijo. El husillo de taladrado (2.0) avanza empujado por un cilindro, haciendo descender la broca. Una vez se ha alcanzado la profundidad deseada, fijada por una válvula de accionamiento por rodillo, empieza la carrera de retroceso sin restricción. Al finalizar la carrera de retroceso, la pieza es expulsada por un cilindro de simple efecto (3.0). Después de un período t = 0,6 segundos, empieza la carrera de retroceso rápida. Cuando el cilindro expulsor haya alcanzado la posición final retraída se acciona una cuarta válvula de rodillo, cuya señal puede utilizarse para permitir el inicio de un nuevo ciclo.
 
 ![sistema de taladro](imgs/Sistema_de_taladro.png)
 
-## Cargador para alimentación de ejes
+### Cargador para alimentación de ejes
 
 En numerosas máquinas de montaje o mecanizado es necesario alimentar ejes, tubos y similares. Esta operación suele ser automática. En la gráfica se aprecia un cargador de barras apiladas del que salen las piezas una a una. El tamaño del cargador puede adaptarse a la longitud de las piezas. En la salida del cargador hay una palanca basculante (vibratoria) para evitar atascos (ocasionados por la fricción y el peso de las piezas). Este sistema podría ser utilizado, por ejemplo, para alimentar piezas a una máquina lijadora. En el dibujo "b" se muestra una alternativa frente al cargador de piezas apiladas con salida mediante palanca basculante. En este caso se trata de un cargador con salida mediante un segmento que recoge las piezas una a una.
 
 ![cargador para alimentar de ejes](imgs/Cargador_para_alimentacion_de_ejes.png)
 
-## Prensa Latas
+### Prensa Latas
 
 Diseñar el sistema de control electroneumático de una prensadora de latas, para esto deberá utilizar electroválvulas monoestables, la secuencia deberá ejecutarse de manera manual. Es decir, al presionar el pulsador que comience la secuencia, que realice todos los pasos y para volver a iniciar, se debe presionar de nuevo el botón
 
 ![prensa de latas](imgs/Prensado_de_latas.png)
 
-## Selector de cajas
+### Selector de cajas
 
 Observar la siguiente animación, la cual consiste en controlar 2 cilindros, los cuales están montados sobre una banda transportadora.
 El sistema debe detectar 3 tamaños de cajas, y con base a su altura se deben desplazar hacia otro sitio. Como se muestra en la animación.
