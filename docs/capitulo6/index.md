@@ -185,4 +185,4 @@ Diseñar el sistema de control electroneumático de una prensadora de latas, par
 Observar la siguiente animación, la cual consiste en controlar 2 cilindros, los cuales están montados sobre una banda transportadora.
 El sistema debe detectar 3 tamaños de cajas, y con base a su altura se deben desplazar hacia otro sitio. Como se muestra en la animación.
 
-![ejemplo neumatica](video/ejemplo_neumatica_2.gif)
+![ejemplo neumática](video/ejemplo_neumatica_2.gif)
