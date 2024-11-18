@@ -186,3 +186,5 @@ Observar la siguiente animación, la cual consiste en controlar 2 cilindros, los
 El sistema debe detectar 3 tamaños de cajas, y con base a su altura se deben desplazar hacia otro sitio. Como se muestra en la animación.
 
 ![ejemplo neumática](video/ejemplo_neumatica_2.gif)
+
+<!-- TODO: agregar ejercicios con relay on y off delay -->
