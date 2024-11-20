@@ -130,9 +130,10 @@ Replicar las compuertas lógicas con botones, encendiendo una lampara.
 
 Vamos a realizar control de una banda transportadora y el expulsado de piezas hacia la banda.
 
-Cuando se presione el botón S1 debe arrancar la banda transportadora, en ese momento si el sensor óptico 1B1 detecta si hay alguna pieza enfrente, manda la señal para que el cilindro 1A, sacando su vástago expulsado la pieza del contenedor y mandándolo a la banda.
+Cuando se presione el botón S1 debe arrancar la banda transportadora, en ese momento si el sensor óptico 1S1 detecta si hay alguna pieza enfrente, manda la señal para que el cilindro 1A, sacando su vástago expulsado la pieza del contenedor y mandándolo a la banda.
 Para que salga el vástago, primero se debió arrancar el sistema, de lo contrario aunque exista pieza y sea detectada, no deberá accionar el cilindro.
 Utilizar un switch reed 1B2 para detectar cuando el vástago llego al 100% mande la indicación a la solenoide y regrese el vástago.
+Para que el vástago vuelva a salir, debe regresar a su posición inicial.
 El control del sistema se utiliza el sistema de enclavamiento. Para que todo se detenga se presiona el botón de STOP.
 
 ![banda transportadora](imgs/banda_1_pictorico.png)
@@ -163,6 +164,28 @@ Si el sistema no esta operando, aunque los sensores 1S1 y 2S1, no deben accionar
     <img src="imgs/banda_2_run.png" alt="banda transportadora">
     <br>
     <img src="video/banda_2.gif" alt="banda transportadora">
+</details>
+
+### Banda transportadora con paro automático
+
+Vamos a realizar control de una banda transportadora y el expulsado de piezas hacia la banda y desviarla a otra sección.
+
+Para que el sistema comience a operar, se debe presionar el botón **S1**, y para detener todo el proceso se presiona **S2** (STOP). Se aplica el sistema de enclavamiento (interlock).
+Cuando el sistema arranca, comienza a operar la banda transportadora.
+Cuando el **sensor óptico 1S1** detecta objeto enfrente, manda a accionar el **cilindro 1A**, sacando su vástago al 100% y a su ves saca la pieza hacia la banda transportadora. Para que vuelva a salir, el vástago debe estar en su posición inicial.
+Cuando el **sensor óptico 2S1** detecta objeto enfrente, manda a accionar el **cilindro 2A**, sacando su vástago al 100% y a su ves saca la pieza hacia la banda transportadora. Para que vuelva a salir, el vástago debe estar en su posición inicial.
+Si el sistema no esta operando, aunque los sensores 1S1 y 2S1, no deben accionar a los cilindros.
+**Todo el procesos se debe detener en automático cuando el cilindro 2A saque la ultima pieza.**
+**Para que comience a operar el sistema, primero debe existir una pieza enfrente del sensor.**
+
+![banda transportadora](imgs/banda_2_pictorico.png)
+
+<details markdown="1">
+    <img src="imgs/banda_3.png" alt="banda transportadora">
+    <br>
+    <img src="imgs/banda_3_run.png" alt="banda transportadora">
+    <br>
+    <img src="video/banda_3.gif" alt="banda transportadora">
 </details>
 
 ## Prensa de placas
