@@ -223,3 +223,6 @@ De protección, se debe colocar una válvula principal para detener el flujo de 
     <br>
     <img src="video/cortador_papa.gif" alt="circuito">`
 </details>
+
+<!-- TODO: agrear el contador neumatico-->
+<!-- TODO: agrear la ventosa-->

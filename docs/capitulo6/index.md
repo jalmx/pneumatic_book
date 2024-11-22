@@ -97,18 +97,19 @@ Al pulsar S1 y estar los dos vástagos dentro, debe salir el vástago de 1A. El 
     <img src="video/rodillo_a_masb_mas_exerc_4_solution.gif" alt="circuito">
 </details>
 
-#### Sensor magnético (Reed)
+#### Sensor magnético (Reed) y Switch Reed
 
-![símbolo](imgs/sensor_inductivo_reed.png)
+![símbolo](imgs/reed_sensor.png)
 
-El sensor magnético nos ayuda a conocer la posición del embolo, que esta dentro del cilindro. Estos están colocados sobre el cuerpo del cilindro.
+> El sensor magnético nos ayuda a **conocer la posición del émbolo**, que esta dentro del cilindro. Estos están colocados sobre el cuerpo del cilindro.
+
 ![reed](imgs/reed.jpg)
 
 ![cilindro reed](imgs/cilindro_reed.jpeg)
 
 La salida de la señal del sensor nos ayuda a alimentar la bobina del relay y realizar las acciones necesarias que necesitemos.
 
-La forma de conexión es la siguiente:
+La forma de conexión del **sensor reed** es la siguiente:
 
 ![sensor](imgs/conexion_sensor.png)
 
@@ -125,6 +126,12 @@ La forma de conexión es la siguiente:
 Replicar las compuertas lógicas con botones, encendiendo una lampara.
 
 ## Banda transportadora
+
+Vamos a realizar un para arranque de una banda transportadora con motor eléctrico.
+
+![banda](imgs/banda.png)
+
+![banda](video/banda_base.gif)
 
 ### Banda transportadora básica
 
@@ -152,7 +159,7 @@ Vamos a realizar control de una banda transportadora y el expulsado de piezas ha
 
 Para que el sistema comience a operar, se debe presionar el botón **S1**, y para detener todo el proceso se presiona **S2** (STOP). Se aplica el sistema de enclavamiento (interlock).
 Cuando el sistema arranca, comienza a operar la banda transportadora.
-Cuando el **sensor óptico 1S1** detecta objeto enfrente, manda a accionar el **cilindro 1A**, sacando su vástago al 100% y a su ves saca la pieza hacia la banda transportadora. Para que vuelva a salir, el vástago debe estar en su posición inicial.
+Cuando el **sensor óptico 1S1** detecta objeto enfrente, manda a accionar el **cilindro 1A**, sacando su vástago al 100% y a su ves saca la pieza hacia otra sección. Para que vuelva a salir, el vástago debe estar en su posición inicial.
 Cuando el **sensor óptico 2S1** detecta objeto enfrente, manda a accionar el **cilindro 2A**, sacando su vástago al 100% y a su ves saca la pieza hacia la banda transportadora. Para que vuelva a salir, el vástago debe estar en su posición inicial.
 Si el sistema no esta operando, aunque los sensores 1S1 y 2S1, no deben accionar a los cilindros.
 
@@ -173,7 +180,7 @@ Vamos a realizar control de una banda transportadora y el expulsado de piezas ha
 Para que el sistema comience a operar, se debe presionar el botón **S1**, y para detener todo el proceso se presiona **S2** (STOP). Se aplica el sistema de enclavamiento (interlock).
 Cuando el sistema arranca, comienza a operar la banda transportadora.
 Cuando el **sensor óptico 1S1** detecta objeto enfrente, manda a accionar el **cilindro 1A**, sacando su vástago al 100% y a su ves saca la pieza hacia la banda transportadora. Para que vuelva a salir, el vástago debe estar en su posición inicial.
-Cuando el **sensor óptico 2S1** detecta objeto enfrente, manda a accionar el **cilindro 2A**, sacando su vástago al 100% y a su ves saca la pieza hacia la banda transportadora. Para que vuelva a salir, el vástago debe estar en su posición inicial.
+Cuando el **sensor óptico 2S1** detecta objeto enfrente, manda a accionar el **cilindro 2A**, sacando su vástago al 100% y a su ves saca la pieza hacia otra sección. Para que vuelva a salir, el vástago debe estar en su posición inicial.
 Si el sistema no esta operando, aunque los sensores 1S1 y 2S1, no deben accionar a los cilindros.
 **Todo el procesos se debe detener en automático cuando el cilindro 2A saque la ultima pieza.**
 **Para que comience a operar el sistema, primero debe existir una pieza enfrente del sensor.**
