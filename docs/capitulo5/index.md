@@ -226,3 +226,4 @@ De protección, se debe colocar una válvula principal para detener el flujo de 
 
 <!-- TODO: agrear el contador neumatico-->
 <!-- TODO: agrear la ventosa-->
+<!-- TODO: agrear  motor neumatico-->
