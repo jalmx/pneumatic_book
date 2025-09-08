@@ -174,14 +174,6 @@ $$P = \frac{196.2N}{0.00502656m^2}=39,032.65Pa$$
 
 Por lo tanto, nos da una presión de $39.032kPa$, sobre el gas.
 
-Ahora para obtener la presión manométrica debemos saber sumar 1 atmósfera, que es a $101.325kPa$
-
-> La presión manométrica $P_{manométrica}$ es la presión absoluta $P_{absoluta}$ menos la presión atmosférica $P_{atm}$; por tanto, es la presión debida solo al peso del pistón
-
-$$Presión_{manométrica} = 101.325kPa + 39.032kPa = 140.357kPa$$
-
-> ✅ La presión manométrica es $140.357kPa$
-
 ## Caudal
 
 > Es la cantidad de fluido en peso o volumen, que atraviesa una superficie en la unidad de tiempo. En neumática se usa habitualmente el volumen por unidad de tiempo.
