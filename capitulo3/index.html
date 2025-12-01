@@ -1,0 +1,1945 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.alejandro-leyva.com/pneumatic_book/capitulo3/">
+      
+      
+        <link rel="prev" href="../capitulo2/video/">
+      
+      
+        <link rel="next" href="video/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Capítulo 3. Elementos neumáticos - Neumática e Hidráulica</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-3-elementos-neumaticos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Neumática e Hidráulica" class="md-header__button md-logo" aria-label="Neumática e Hidráulica" data-md-component="logo">
+      
+  <img src="../favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Neumática e Hidráulica
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capítulo 3. Elementos neumáticos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Neumática e Hidráulica" class="md-nav__button md-logo" aria-label="Neumática e Hidráulica" data-md-component="logo">
+      
+  <img src="../favicon.svg" alt="logo">
+
+    </a>
+    Neumática e Hidráulica
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libro de Neumática e Hidráulica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1. Introducción a Neumática e Hidráulica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo1/ejercicios1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo1/mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2. Neumática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/ejercicios2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios del capítulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3. Elementos neumáticos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3. Elementos neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cilindros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cilindros
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cilindros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cilindro-de-simple-efecto-con-retorno-de-muelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cilindro de simple efecto con retorno de muelle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cilindro-de-doble-efecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cilindro de doble efecto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cilindro de doble efecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#son-los-mas-empleados-y-el-fluido-actua-en-ambas-camaras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Son los más empleados y el fluido actúa en ambas cámaras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valvulas-distribuidoras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvulas distribuidoras
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Válvulas distribuidoras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accionamiento-de-las-valvulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accionamiento de las válvulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-de-vias-y-posiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos de vías y posiciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula 2/2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula 3/2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula 4/2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula 5/2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula 4/3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicacion-de-las-valvulas-distribuidoras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aplicación de las válvulas distribuidoras
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-antirretorno-o-valvula-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula antirretorno o válvula Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-reguladora-de-caudal-bidireccional-o-valvula-de-estrangulamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula reguladora de caudal bidireccional o válvula de estrangulamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-reguladora-de-caudal-unidireccional-o-valvula-de-estrangulamiento-y-antirretorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula reguladora de caudal unidireccional o Válvula de estrangulamiento y antirretorno
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-selectora-o-valvula-or-o-valvula-o" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula selectora o válvula “OR” o válvula O
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-simultaneidad-o-valvula-and-o-valvula-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula simultaneidad o válvula “AND” o válvula Y
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-reguladora-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula reguladora de presión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitulo 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4. Circuitos neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitlo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo5
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo5
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5. Circuitos Neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo6
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo6
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 6. Electroneumática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo6/cuestionario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cuestionario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo6/ejercicios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recursos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cilindros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cilindros
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cilindros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cilindro-de-simple-efecto-con-retorno-de-muelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cilindro de simple efecto con retorno de muelle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cilindro-de-doble-efecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cilindro de doble efecto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cilindro de doble efecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#son-los-mas-empleados-y-el-fluido-actua-en-ambas-camaras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Son los más empleados y el fluido actúa en ambas cámaras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valvulas-distribuidoras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvulas distribuidoras
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Válvulas distribuidoras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accionamiento-de-las-valvulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accionamiento de las válvulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-de-vias-y-posiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos de vías y posiciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula 2/2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula 3/2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula 4/2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula 5/2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula 4/3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicacion-de-las-valvulas-distribuidoras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aplicación de las válvulas distribuidoras
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-antirretorno-o-valvula-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula antirretorno o válvula Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-reguladora-de-caudal-bidireccional-o-valvula-de-estrangulamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula reguladora de caudal bidireccional o válvula de estrangulamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-reguladora-de-caudal-unidireccional-o-valvula-de-estrangulamiento-y-antirretorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula reguladora de caudal unidireccional o Válvula de estrangulamiento y antirretorno
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-selectora-o-valvula-or-o-valvula-o" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula selectora o válvula “OR” o válvula O
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-simultaneidad-o-valvula-and-o-valvula-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula simultaneidad o válvula “AND” o válvula Y
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvula-reguladora-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula reguladora de presión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="capitulo-3-elementos-neumaticos">Capítulo 3. Elementos neumáticos</h1>
+<p>Para un funcionamiento óptimo, la presión de funcionamiento del sistema de control deberá ser de máximo P=500kPa = 5 bar con aire sin lubricar.</p>
+<h2 id="cilindros">Cilindros</h2>
+<p><em>Los cilindros neumáticos son, por regla general, los elementos que realizan el trabajo. Su función es la de transformar la energía neumática en trabajo mecánico de movimiento rectilíneo, que consta de carrera de avance y carrera de retroceso.</em></p>
+<p>De acuerdo a esta teoría física, si dentro del sistema se presenta una diferencia de áreas y la fuerza es igual en cualquier punto, entonces se tendrá una diferencia de presiones. Este principio se aplica en un dispositivo hidráulico denominado cilindro.</p>
+<p><img alt="Cilindro" src="../capitulo2/imgs/cilindro_descrp.png" title="Cilindro" /></p>
+<ul>
+<li>Tubo de sección circular constante, cerrado por sus extremos</li>
+<li>En su interior se desliza un émbolo solidario con un vástago</li>
+<li>El émbolo divide al cilindro en dos volúmenes llamados cámaras</li>
+<li>Hay una abertura en cada cámara para que entre y salga el aire.</li>
+</ul>
+<p><strong>Capacidad de trabajo:</strong></p>
+<ul>
+<li><strong>Carrera:</strong> <strong>Desplazamiento que efectúa el émbolo en el interior del cilindro</strong>. De ella depende la <strong>Longitud (L)</strong> de desplazamiento del vástago.</li>
+<li>En los cilindros se obtiene el máximo esfuerzo cuando <strong>la presión se ejerce sobre la cara del émbolo opuesta al vástago</strong>, ya que su superficie es mayor. En este caso el émbolo y el vástago realizan una <strong>CARRERA DE AVANCE</strong>.</li>
+<li><strong>CARRERA DE RETROCESO</strong>: <strong>Si la presión se ejerce sobre la cara del émbolo solidaria con el vástago</strong>.</li>
+<li><strong>Diámetro (D):</strong> Determina la superficie del émbolo. Dada una determinada presión del aire, cuanto mayor sea la
+superficie del émbolo, mayor será la fuerza que ejerce el vástago, ya que:</li>
+</ul>
+<p><img alt="cilindro parts" src="../capitulo2/imgs/cilindro_parts.jpg" title="Partes de un cilindro" /></p>
+<h3 id="cilindro-de-simple-efecto-con-retorno-de-muelle">Cilindro de simple efecto con retorno de muelle</h3>
+<p><strong>Estos cilindros tienen una sola conexión de aire. No pueden realizar trabajos más que en un sentido. Entonces para que el vástago (o pistón) salga se aplica el aire y para que el vástago retorne se dispone de un muelle incorporado o de una fuerza externa.</strong>
+El muelle incorporado se calcula de modo que haga regresar el émbolo a su posición inicial a una velocidad suficientemente grande.
+En los cilindros de simple efecto con muelle incorporado, su longitud limita la carrera (el desplazamiento efectivo del vástago). Por eso, estos cilindros no sobrepasan una carrera de unos 100mm.
+Se utilizan principalmente para sujetar, expulsar, apretar, levantar, alimentar, etc.
+En la figura 8.1 se ilustra un esquema de la estructura interna, indicando las partes que lo componen. Como se observa en la figura, el fluido (aire o aceite) entra por la cámara izquierda y empuja al émbolo venciendo la resistencia del muelle haciendo que el vástago salga.</p>
+<p><img alt="Cilindro de simple efecto" src="../capitulo2/imgs/cilindro_simple_efecto.png" title="Cilindro de simple efecto" /></p>
+<p>La figura 8.3 muestra el símbolo del cilindro de simple efecto. En la figura se tiene:</p>
+<ul>
+<li>(A) Cilindro de simple efecto con retorno por acción de fuerza externa</li>
+<li>(B) Cilindro de simple efecto con retorno por muelle</li>
+<li>(C) Inyecta fluido en la cámara izquierda del cilindro; las flechas indican que por efecto del fluido se ejerce una fuerza sobre el émbolo empujando el sistema hacia la derecha.</li>
+</ul>
+<p><img alt="Cilindros de simple efecto" src="../capitulo2/imgs/cilindros_simple_efecto.png" title="Cilindros de simple efecto" /></p>
+<h3 id="cilindro-de-doble-efecto">Cilindro de doble efecto</h3>
+<h4 id="son-los-mas-empleados-y-el-fluido-actua-en-ambas-camaras">Son los más empleados y el fluido actúa en ambas cámaras</h4>
+<p><strong>La fuerza ejercida por el fluido en cilindros de doble efecto, permite que el vástago pueda realizar un movimiento de traslación en los dos sentidos.</strong> Se dispone de una fuerza útil tanto en la ida como en el retorno. La figura 8.4 muestra un esquema interno del cilindro. Para que el vástago se desplace en ambas direcciones es necesario que una de las cámaras esté alimentada y la otra esté en estado de escape (para el aire) o tanque (para el aceite)</p>
+<p><img alt="cilindro de doble efecto" src="../capitulo2/imgs/cilindro_doble_efecto.png" title="cilindro de doble efecto" /></p>
+<p>Los cilindros de doble efecto comparados con los de simple efecto presentan algunas ventajas:</p>
+<ol>
+<li>Pueden realizar esfuerzos en ambas cámaras.</li>
+<li>Las carreras son mayores, pues se aprovecha prácticamente toda la longitud del cuerpo del cilindro.</li>
+<li>No necesita de esfuerzo para comprimir un muelle por no tenerlo.</li>
+<li>El retroceso del vástago no depende de las cargas o elementos mecánicos.</li>
+<li>El funcionamiento y su posicionamiento se pueden ajustar con mayor precisión.</li>
+</ol>
+<h2 id="valvulas-distribuidoras">Válvulas distribuidoras</h2>
+<p>Son muy similares para los circuitos neumáticos e hidráulicos. Están compuestos por válvulas distribuidoras encargadas de enviar el aire a presión a un lugar u otro por los diferentes conductos, o impedir su paso.
+Todas las válvulas distribuidoras tienen un determinado número de conexiones que llamamos vías. A estas conexiones se conectan las tuberías de la red.
+Cada válvula distribuidora tiene varias posiciones de funcionamiento, en función de las vías que conecte internamente.
+Cada válvula viene caracterizada por esos dos números, y de esa forma la nombraremos:
+No vías/no posiciones
+Así una válvula 3/2, será una distribuidora con 3 vías y 2 posiciones.
+Para representarla se hace en la posición de reposo por medio de un rectángulo dividido en tantos cuadrados como posiciones tenga la válvula, exteriormente se dibujan la vías en una de las posiciones y en cada cuadrado las conexiones entre vías.</p>
+<p><img alt="valvula" src="../capitulo2/imgs/valvula_ejem.png" title="válvula" /></p>
+<h3 id="accionamiento-de-las-valvulas">Accionamiento de las válvulas</h3>
+<p><img alt="Accionamiento de válvulas" src="../capitulo2/imgs/accionamiento_valvula.png" title="Accionamiento de válvulas" /></p>
+<h3 id="conceptos-de-vias-y-posiciones">Conceptos de vías y posiciones</h3>
+<p>Las válvulas de vías se designan en los catálogos de los fabricantes por el número de las vías controladas y de las posiciones de maniobra estable. Así, una válvula 3/2 vías quiere decir que posee tres vías y dos posiciones de maniobra. Hay que observar que la primera cifra es simplemente indicativa de número de vías, indicando la segunda el número de posiciones.</p>
+<p>Para evitar errores durante el montaje y además para identificarlos, se indican con letras mayúsculas o números.</p>
+<p>Según DIN 24300, se indica así:</p>
+<p>P = Alimentación de aire comprimido.
+A,B,C = Salida de trabajo.
+R,S,T = Escape de aire.
+X,Y,Z = Conexiones de mando.</p>
+<p>Según normas CETOP, es:</p>
+<p>1 = Alimentación de aire comprimido
+2 y 4 = Salidas de trabajo
+3 y 5 = Escape de aire
+12 y 14 = Conexiones de mando</p>
+<p><img alt="ejemplo de nomenclatura" src="../capitulo2/imgs/nomenclatura.png" title="Nomenclatura de válvulas" /></p>
+<p>En esta descripción se distingue:</p>
+<ul>
+<li>Las vías: es el número de orificios exteriores y que son conexiones a los puntos de trabajo.</li>
+<li>Las posiciones: son las que puede adoptar el distribuidor para dirigir el fluido a las distintas vías.</li>
+</ul>
+<p>Las posiciones de las válvulas distribuidoras se representan por medio de cuadrados (figura 8.7(A)). La cantidad de cuadrados (figura 8.7(B) y (H)) indica la cantidad de posiciones de la válvula distribuidora. El funcionamiento se representa esquemáticamente en el interior de las casillas (figura 8.7 (C), (G), (I), (J)). Las líneas representan tuberías o conductos. Las flechas, el sentido de circulación del fluido (figura 8.7(C), (D), (F), (I), (J)).</p>
+<p>Las posiciones de cierre dentro de las casillas se representan mediante líneas transversales (figura 8.7(D), (F), (G), (I), (J)).</p>
+<p>La unión de conductos o tuberías se representa mediante un punto (Figura 8.7(D)).</p>
+<p>Las conexiones (entradas y salidas) se representan por medio de trazos unidos a la casilla que esquematiza la posición de reposo o inicial (figura 8.7(E), (I), (J)). La otra posición se obtiene desplazando lateralmente los cuadrados, hasta que las conexiones coincidan.</p>
+<p>Las posiciones pueden distinguirse por medio de letras minúsculas a, b, c... y 0 (figura 8.7(G), (H))</p>
+<p>Válvula de 3 posiciones: Posición intermedia = Posición de reposo (figura 8.7(H)).</p>
+<p><img alt="valvulas general" src="../capitulo2/imgs/valvulas_g.png" /></p>
+<h3 id="valvula-22">Válvula 2/2</h3>
+<p>Las válvulas 2/2 sirven para gobernar el paso del fluido. La denominación 2/2 significa que este elemento adopta dos posiciones -paso y cierre- y tiene dos vías, P y A.
+La Figura 15.12, A) representa una de estas válvulas en reposo. En esta posición el paso de P hacia A está cerrado.
+Cuando se acciona el pulsador, el distribuidor pone en comu­nicación la entrada P con la utilización A (Figura 15.12, B); entonces se dice que la válvula está abierta.</p>
+<p><img alt="valvula 2/2" src="../capitulo2/imgs/v2_2.png" /></p>
+<h3 id="valvula-32">Válvula 3/2</h3>
+<p>Estas válvulas permiten la circulación del fluido en una dirección y, al mismo tiempo, cortan el paso en la otra direc­ción.
+<strong>Se emplean para gobernar cilindros de simple efecto.</strong></p>
+<p><img alt="valvula 3/2" src="../capitulo2/imgs/v3_2.jpeg" /></p>
+<h3 id="valvula-42">Válvula 4/2</h3>
+<p>La válvula 4/2 es de acciona­miento neumático. La alimentación principal se efectúa por (1), las vías de utilización son la (2) y la (4), el escape es (3) y las vías de pilotaje son la (12) y la (14). Cuando existe señal en (12) la corredera y el cursor se desplazan hacia la izquier­da con lo cual la vía (2) está en escape y la vía (4) alimenta­ da. Al invertir la señal de pilotaje [presión en (14)], la corre­dera se mueve hacia la derecha y comunica la vía (2) con la alimentación (1) y la vía (4) con el escape (3). Este tipo de válvula es apta para mandar un cilindro de doble efecto.</p>
+<p><img alt="valvula 4/2" src="../capitulo2/imgs/v4_2_a.png" /></p>
+<p><img alt="valvula 4/2" src="../capitulo2/imgs/v_4_2.png" /></p>
+<p><img alt="valvula 4/2" src="../capitulo2/imgs/v4_2.png" /></p>
+<h3 id="valvula-52">Válvula 5/2</h3>
+<p>La alimentación de presión (1) está conectada con la vía (4) y la (2 con la atmósfera, a través del escape (3), cuando se manda señal de pilotaje por (14). Cuando la corredera recibe el impulso opuesto por (12), se alimenta la vía (2) y se pone la (4) a escape (5).</p>
+<p><img alt="válvula 5/2" src="../capitulo2/imgs/v5_2.png" /></p>
+<p><img alt="válvula 5/2" src="../capitulo2/imgs/v5_2_a.jpeg" /></p>
+<p><img alt="válvula 5/2" src="../capitulo2/imgs/v5_2_b.jpeg" /></p>
+<h3 id="valvula-43">Válvula 4/3</h3>
+<p>En la primera posición la alimentación de presión (1) está comunicada con la utilización (4) y la utilización (2) con esca­pe a la atmósfera a través de (3). En la posición opuesta (1) se comunica con (2) y (4) con (3). En la tercera posición que aquí aparece como posición central (1), (2), (4) y (3) están cerrados, provocando un bloqueo del aire comprimido en el interior del sistema o elemento colocado posteriormente; de ahí la denominación que tiene dicha válvula.</p>
+<p><img alt="válvula 4/3" src="../capitulo2/imgs/v4_3.png" /></p>
+<h3 id="aplicacion-de-las-valvulas-distribuidoras">Aplicación de las válvulas distribuidoras</h3>
+<p>El número de posiciones y de vías condi­ciona las posibilidades de empleo de cada tipo de válvula.
+Así, las aplicaciones más frecuentes de las válvulas son:</p>
+<ul>
+<li>Válvula 2/2, normalmente cerrada. Sirve como válvula de paso y para el mando negativo ya citado.</li>
+<li>Válvula 3/2, normalmente cerrada. Se emplea para emi­tir señales de pilotaje sobre otras válvulas y para man­dar cilindros de simple efecto.</li>
+<li>Válvula 3/2, normalmente abierta. Se puede aplicar en el gobierno de cilindros de simple efecto de largo tiem­po de acción.</li>
+<li>Válvula 4/2. Se utiliza para gobernar cilindros de doble efecto.</li>
+<li>Válvula 5/2. Tiene el mismo empleo que la anterior.</li>
+<li>Válvula 4/3, posición central de bloqueo. Se emplea cuando un cilindro de doble efecto debe quedar blo­queado en un punto intermedio de su recorrido.</li>
+<li>Válvula 4/3, posición central de desbloqueo. Se emplea cuando un cilindro de doble efecto debe quedar desblo­queado en un momento de su actuación.</li>
+</ul>
+<h3 id="valvula-antirretorno-o-valvula-check">Válvula antirretorno o válvula <em>Check</em></h3>
+<p>Permite el paso del fluido en un sentido, impidiendo su circulación en el opuesto.
+Está constituida por un cierre presionado por un muelle. Solo cuando la presión del aire es capaz de generar una fuerza que venza la ejercida por el muelle el fluido puede pasar.</p>
+<p><img alt="válvula check" src="../capitulo2/imgs/valvula_check.png" /></p>
+<h3 id="valvula-reguladora-de-caudal-bidireccional-o-valvula-de-estrangulamiento">Válvula reguladora de caudal bidireccional o válvula de estrangulamiento</h3>
+<p>Mediante un estrechamiento en la red regulamos el caudal de fluido que pasa. Si el estrechamiento es regulable mediante un tornillo la regulación del caudal será variable.</p>
+<p><img alt="válvula de estrangulamiento" src="../capitulo2/imgs/valvula_estrangulamiento.png" /></p>
+<h3 id="valvula-reguladora-de-caudal-unidireccional-o-valvula-de-estrangulamiento-y-antirretorno">Válvula reguladora de caudal unidireccional o Válvula de estrangulamiento y antirretorno</h3>
+<p>La válvula de estrangulamiento y antirretorno reduce el caudal de aire solamente en un sentido. La válvula de antirretorno cierra el paso del aire en un sentido y el aire solo puede pasar a través de la sección regulada. El aire puede pasar libremente en la dirección contraria a través de la válvula de antirretorno abierta. Estas válvulas son utilizadas para regular la velocidad de cilindros neumáticos.</p>
+<p><img alt="válvula de estrangulamiento" src="../capitulo2/imgs/valvula_estrangulamiento_antiretorno.png" /></p>
+<h3 id="valvula-selectora-o-valvula-or-o-valvula-o">Válvula selectora o válvula “OR” o válvula O</h3>
+<p>Tiene dos vías de entrada y una de salida.
+Tenemos presión de salida si tenemos presión en una de las entradas o en la otra</p>
+<p><img alt="válvula OR" src="../capitulo2/imgs/valvula_or.png" title="válvula OR" /></p>
+<h3 id="valvula-simultaneidad-o-valvula-and-o-valvula-y">Válvula simultaneidad o válvula “AND” o válvula Y</h3>
+<p>Tiene dos vías de entrada y una de salida.
+Tenemos presión de salida si tenemos presión en una de las entradas y en la otra simultáneamente.</p>
+<p><img alt="valvula AND" src="../capitulo2/imgs/valvula_and.jpg" title="Válvula AND" /></p>
+<h3 id="valvula-reguladora-de-presion">Válvula reguladora de presión</h3>
+<p>Las válvulas reguladoras de presión se encargan en un circuito de controlar la presión del fluido, desde un valor cero hasta el máximo que proporcione la red de distribución.</p>
+<p><img alt="valvula reguladora de presión símbolo" src="../capitulo2/imgs/v_regu_simbolo.png" /></p>
+<p><img alt="valvula reguladora" src="../capitulo2/imgs/valvula_reguladora.png" title="válvula reguladora de presión" /></p>
+<hr />
+<ul>
+<li><a href="../">Inicio</a></li>
+<li><a href="../capitulo1/">Capítulo 1</a></li>
+<li><a href="../capitulo2/">Capítulo 2</a></li>
+<li><a href="#capítulo-3-elementos-neumáticos">Capítulo 3</a></li>
+<li><a href="../capitulo4/">Capítulo 4</a></li>
+<li><a href="../bibliografia/">Bibliografía</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../capitulo2/video/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Video clases del capitulo 2">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Video clases del capitulo 2
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="video/" class="md-footer__link md-footer__link--next" aria-label="Next: Video clases del capitulo 3">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Video clases del capitulo 3
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

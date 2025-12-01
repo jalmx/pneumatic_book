@@ -1,0 +1,2061 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.alejandro-leyva.com/pneumatic_book/capitulo6/">
+      
+      
+        <link rel="prev" href="../capitulo5/">
+      
+      
+        <link rel="next" href="cuestionario/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Capítulo 6. Electroneumática - Neumática e Hidráulica</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-6-electroneumatica" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Neumática e Hidráulica" class="md-header__button md-logo" aria-label="Neumática e Hidráulica" data-md-component="logo">
+      
+  <img src="../favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Neumática e Hidráulica
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capítulo 6. Electroneumática
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Neumática e Hidráulica" class="md-nav__button md-logo" aria-label="Neumática e Hidráulica" data-md-component="logo">
+      
+  <img src="../favicon.svg" alt="logo">
+
+    </a>
+    Neumática e Hidráulica
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libro de Neumática e Hidráulica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1. Introducción a Neumática e Hidráulica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo1/ejercicios1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo1/mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2. Neumática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/ejercicios2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios del capítulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3. Elementos neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo3/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitulo 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4. Circuitos neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitlo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo5
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo5
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5. Circuitos Neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo6
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo6
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 6. Electroneumática
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 6. Electroneumática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-de-enclavamiento-interlock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de enclavamiento (interlock)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sistema de enclavamiento (interlock)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sensores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#final-de-carrera-limit-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final de carrera (Limit switch)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Final de carrera (Limit switch)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circuito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Circuito
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-4-1a-2a-1a-2a-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 4 (1A+ 2A+ 1A-2A-)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensor-magnetico-reed-y-switch-reed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensor magnético (Reed) y Switch Reed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compuertas-logicas-con-contactos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compuertas lógicas con contactos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Compuertas lógicas con contactos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#banda-transportadora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Banda transportadora
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Banda transportadora">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inversion-de-giro-de-motor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inversion de giro de motor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banda-transportadora-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Banda transportadora básica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banda-transportadora-con-2-cilindros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Banda transportadora con 2 cilindros
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banda-transportadora-con-paro-automatico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Banda transportadora con paro automático
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prensa-de-placas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prensa de placas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-transportador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema transportador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-de-taladrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de taladrado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cargador-para-alimentacion-de-ejes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cargador para alimentación de ejes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prensa-latas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prensa Latas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selector-de-cajas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selector de cajas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cuestionario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cuestionario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ejercicios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recursos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-de-enclavamiento-interlock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de enclavamiento (interlock)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sistema de enclavamiento (interlock)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sensores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#final-de-carrera-limit-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final de carrera (Limit switch)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Final de carrera (Limit switch)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circuito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Circuito
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-4-1a-2a-1a-2a-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 4 (1A+ 2A+ 1A-2A-)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensor-magnetico-reed-y-switch-reed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensor magnético (Reed) y Switch Reed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compuertas-logicas-con-contactos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compuertas lógicas con contactos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Compuertas lógicas con contactos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#banda-transportadora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Banda transportadora
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Banda transportadora">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inversion-de-giro-de-motor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inversion de giro de motor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banda-transportadora-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Banda transportadora básica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banda-transportadora-con-2-cilindros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Banda transportadora con 2 cilindros
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banda-transportadora-con-paro-automatico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Banda transportadora con paro automático
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prensa-de-placas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prensa de placas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-transportador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema transportador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-de-taladrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de taladrado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cargador-para-alimentacion-de-ejes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cargador para alimentación de ejes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prensa-latas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prensa Latas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selector-de-cajas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selector de cajas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="capitulo-6-electroneumatica">Capítulo 6. Electroneumática</h1>
+<p><strong>Armar el siguiente circuito Electroneumático.</strong></p>
+<p><img alt="electroneumtico basico" src="video/eletroneumatica_basico_1.gif" /></p>
+<h2 id="ejercicio-1">Ejercicio 1</h2>
+<p>Realizar un circuito electroneumático, el cual al presionar un botón salga el vástago, se suelta el botón; el vástago se mantiene fuera, con otro botón se regresa el vástago, se debe usar una válvula biestable con solenoide.</p>
+<details markdown="1">
+    <img src="video/eletroneumatica_basico_2.gif" alt="circuito">
+    <br>
+</details>
+
+<h2 id="sistema-de-enclavamiento-interlock">Sistema de enclavamiento (interlock)</h2>
+<p>Realizar el circuito de control eléctrico para cualquiera de estos dos circuitos. Al presionar un botón (S1) se debe salir el vástago, se suelta el botón (S1) y el vástago continua afuera, se presiona otro botón (S2) y el vástago regresa a su posición original. S1 es un botón normalmente abierto, S2 es un botón normalmente cerrado.</p>
+<p><img alt="ejercicio enclavamiento" src="imgs/ejercicio_enclavamiento.png" /></p>
+<details markdown="1">
+    <img src="imgs/electro_enclavamiento.png" alt="circuito">
+    <br>
+    <img src="video/enclavamiento_simple_efecto.gif" alt="circuito simple efecto">
+    <br>
+    <img src="video/enclavamiento_doble_efecto.gif" alt="circuito doble efecto">
+</details>
+
+<h3 id="ejercicio-2">Ejercicio 2</h3>
+<p>Control de cilindro de simple efecto con válvula monoestable accionada por solenoide con retorno de muelle, el vástago debe salir de forma suave. Controlada por botón.</p>
+<details markdown="1">
+    <img src="imgs/ejercicio_2_electro_solution.png" alt="circuito">
+    <br>
+    <img src="imgs/ejercicio_2_electro_solution_2.png" alt="circuito">
+    <br>
+    <img src="video/ejercicio_2_electro_solution.gif" alt="circuito simple efecto">
+    <br>
+</details>
+
+<h3 id="ejercicio-3">Ejercicio 3</h3>
+<p>Control de cilindro de simple efecto con válvula de 3/2 monoestable accionada por solenoide con retorno de muelle, el vástago debe salir de forma suave. <strong>Controlada por botón de enclavamiento</strong>, con luz indicativa que el vástago esta fuera (color rojo) y si esta dentro el vástago con luz verde.</p>
+<details markdown="1">
+    <img src="imgs/ejercicio_3_electro.png" alt="circuito">
+    <br>
+    <img src="imgs/ejercicio_3_electro_2.png" alt="circuito">
+    <br>
+    <img src="video/ejercicio_3_electro.gif" alt="circuito simple efecto">
+    <br>
+</details>
+
+<h3 id="sensores">Sensores</h3>
+<h4 id="final-de-carrera-limit-switch">Final de carrera (Limit switch)</h4>
+<p>Este sensor seria lo equivalente a una <code>válvula accionada por rodillo</code>. Este tipo de sensor nos ayuda a saber la posición del algún elemento, como podría ser el vástago, o cualquier otro elemento mecánico que lo toque o lo presione.
+Nos puede ayudar a contar algún objeto, las veces que lo toca o empuja.</p>
+<figure markdown="1">
+    <img src="imgs/limit_switch_simbolo.png" alt="limit switch símbolo">
+<figcaption>Limit Switch Símbolo NA (Normalmente abierto), NA (Normalmente cerrado)</figcaption>
+</figure>
+
+<figure markdown="1">
+    <img src="imgs/Limit-switches.png" alt="limit switch físico">
+<figcaption>Limit Switch Físico</figcaption>
+</figure>
+
+<h5 id="circuito">Circuito</h5>
+<p>Se muestra como se utiliza en el siguiente circuitos electroneumático</p>
+<p><img alt="limit switch" src="imgs/limit_switch_1.png" /></p>
+<p><img alt="limit switch" src="imgs/limit_switch_2.png" /></p>
+<p><img alt="limit animacion" src="video/limit_switch.gif" /></p>
+<h5 id="ejercicio-4-1a-2a-1a-2a-">Ejercicio 4 (1A+ 2A+  1A-2A-)</h5>
+<p>Realizar el circuito electroneumático para el diagrama de movimientos indicado con <strong>electroválvulas biestables</strong> por solenoide y cilindros de doble efecto. Pulsadores de un ciclo, paro y repetición de ciclos por impulso momentáneo.
+Al pulsar S1 y estar los dos vástagos dentro, debe salir el vástago de 1A. El vástago de 1A acciona 1B2, que hace salir al vástago de 2A. El vástago de 2A acciona 2B2, que hacen entrar a ambos vástagos a la vez.</p>
+<p><img alt="diagrama de mov 4" src="imgs/diagrama_movi_electro_exer_4.png" /></p>
+<details markdown="1">
+    <img src="imgs/exerc_4_solution.png" alt="circuito">
+    <br>
+    <img src="imgs/rodillo_a_masb_mas_exerc_4_solution.png" alt="circuito">
+    <br>
+    <img src="imgs/rodillo_a_masb_mas_exerc_4_solution_2.png" alt="circuito">
+    <br>
+    <img src="video/rodillo_a_masb_mas_exerc_4_solution.gif" alt="circuito">
+</details>
+
+<h4 id="sensor-magnetico-reed-y-switch-reed">Sensor magnético (Reed) y Switch Reed</h4>
+<p><img alt="símbolo" src="imgs/reed_sensor.png" /></p>
+<blockquote>
+<p>El sensor magnético nos ayuda a <strong>conocer la posición del émbolo</strong>, que esta dentro del cilindro. Estos están colocados sobre el cuerpo del cilindro.</p>
+</blockquote>
+<p><img alt="reed" src="imgs/reed.jpg" /></p>
+<p><img alt="cilindro reed" src="imgs/cilindro_reed.jpeg" /></p>
+<p>La salida de la señal del sensor nos ayuda a alimentar la bobina del relay y realizar las acciones necesarias que necesitemos.</p>
+<p>La forma de conexión del <strong>sensor reed</strong> es la siguiente:</p>
+<p><img alt="sensor" src="imgs/conexion_sensor.png" /></p>
+<p><img alt="sensor1" src="imgs/sensor_1.png" /></p>
+<p><img alt="sensor gif" src="video/sensor_1.gif" /></p>
+<h2 id="compuertas-logicas-con-contactos">Compuertas lógicas con contactos</h2>
+<p><img alt="compuertas" src="imgs/puertas-logicas-contactos.png" /></p>
+<h3 id="ejercicio">Ejercicio</h3>
+<p>Replicar las compuertas lógicas con botones, encendiendo una lampara.</p>
+<h2 id="banda-transportadora">Banda transportadora</h2>
+<p>Vamos a realizar un para arranque de una banda transportadora con motor eléctrico.</p>
+<p><img alt="banda" src="imgs/banda.png" /></p>
+<p><img alt="banda" src="video/banda_base.gif" /></p>
+<h3 id="inversion-de-giro-de-motor">Inversion de giro de motor</h3>
+<p>Realizar un circuito para inversion de giro de motor, con un boton se activa giro a la derecha y con otro boton gira a la izquierda, una mas para que detenerlo. Puede ser con boton o sistema de enclavamiento. Si esta girando para un lado, no se debe poder activar la inversion de giro, primero se debe detener para que elija el sentido.</p>
+<details markdown="1">
+    <img src="imgs/inversion_giro_1.png" alt="banda transportadora giro">
+</details>
+
+<h3 id="banda-transportadora-basica">Banda transportadora básica</h3>
+<p>Vamos a realizar control de una banda transportadora y el expulsado de piezas hacia la banda.</p>
+<p>Cuando se presione el botón S1 debe arrancar la banda transportadora, en ese momento si el sensor óptico 1S1 detecta si hay alguna pieza enfrente, manda la señal para que el cilindro 1A, sacando su vástago expulsado la pieza del contenedor y mandándolo a la banda.
+Para que salga el vástago, primero se debió arrancar el sistema, de lo contrario aunque exista pieza y sea detectada, no deberá accionar el cilindro.
+Utilizar un switch reed 1B2 para detectar cuando el vástago llego al 100% mande la indicación a la solenoide y regrese el vástago.
+Para que el vástago vuelva a salir, debe regresar a su posición inicial.
+El control del sistema se utiliza el sistema de enclavamiento. Para que todo se detenga se presiona el botón de STOP.</p>
+<p><img alt="banda transportadora" src="imgs/banda_1_pictorico.png" /></p>
+<details markdown="1">
+    <img src="imgs/banda_1.png" alt="banda transportadora">
+    <br>
+    <img src="imgs/banda_1_run.png" alt="banda transportadora">
+    <br>
+    <img src="video/banda_1.gif" alt="banda transportadora">
+</details>
+
+<h3 id="banda-transportadora-con-2-cilindros">Banda transportadora con 2 cilindros</h3>
+<p>Vamos a realizar control de una banda transportadora y el expulsado de piezas hacia la banda y desviarla a otra sección.</p>
+<p>Para que el sistema comience a operar, se debe presionar el botón <strong>S1</strong>, y para detener todo el proceso se presiona <strong>S2</strong> (STOP). Se aplica el sistema de enclavamiento (interlock).
+Cuando el sistema arranca, comienza a operar la banda transportadora.
+Cuando el <strong>sensor óptico 1S1</strong> detecta objeto enfrente, manda a accionar el <strong>cilindro 1A</strong>, sacando su vástago al 100% y a su ves saca la pieza hacia otra sección. Para que vuelva a salir, el vástago debe estar en su posición inicial.
+Cuando el <strong>sensor óptico 2S1</strong> detecta objeto enfrente, manda a accionar el <strong>cilindro 2A</strong>, sacando su vástago al 100% y a su ves saca la pieza hacia la banda transportadora. Para que vuelva a salir, el vástago debe estar en su posición inicial.
+Si el sistema no esta operando, aunque los sensores 1S1 y 2S1, no deben accionar a los cilindros.</p>
+<p><img alt="banda transportadora" src="imgs/banda_2_pictorico.png" /></p>
+<details markdown="1">
+    <img src="imgs/banda_2.png" alt="banda transportadora">
+    <br>
+    <img src="imgs/banda_2_run.png" alt="banda transportadora">
+    <br>
+    <img src="video/banda_2.gif" alt="banda transportadora">
+</details>
+
+<h3 id="banda-transportadora-con-paro-automatico">Banda transportadora con paro automático</h3>
+<p>Vamos a realizar control de una banda transportadora y el expulsado de piezas hacia la banda y desviarla a otra sección.</p>
+<p>Para que el sistema comience a operar, se debe presionar el botón <strong>S1</strong>, y para detener todo el proceso se presiona <strong>S2</strong> (STOP). Se aplica el sistema de enclavamiento (interlock).
+Cuando el sistema arranca, comienza a operar la banda transportadora.
+Cuando el <strong>sensor óptico 1S1</strong> detecta objeto enfrente, manda a accionar el <strong>cilindro 1A</strong>, sacando su vástago al 100% y a su ves saca la pieza hacia la banda transportadora. Para que vuelva a salir, el vástago debe estar en su posición inicial.
+Cuando el <strong>sensor óptico 2S1</strong> detecta objeto enfrente, manda a accionar el <strong>cilindro 2A</strong>, sacando su vástago al 100% y a su ves saca la pieza hacia otra sección. Para que vuelva a salir, el vástago debe estar en su posición inicial.
+Si el sistema no esta operando, aunque los sensores 1S1 y 2S1, no deben accionar a los cilindros.
+<strong>Todo el procesos se debe detener en automático cuando el cilindro 2A saque la ultima pieza.</strong>
+<strong>Para que comience a operar el sistema, primero debe existir una pieza enfrente del sensor.</strong></p>
+<p><img alt="banda transportadora" src="imgs/banda_2_pictorico.png" /></p>
+<details markdown="1">
+    <img src="imgs/banda_3.png" alt="banda transportadora">
+    <br>
+    <img src="imgs/banda_3_run.png" alt="banda transportadora">
+    <br>
+    <img src="video/banda_3.gif" alt="banda transportadora">
+</details>
+
+<h2 id="prensa-de-placas">Prensa de placas</h2>
+<p>En una estación se colocan a presión placas de características sobre cuerpos de válvulas.
+En un primer lugar, se colocan las placas de características en los rebajes que poseen los cuerpos de las válvulas para tal fin.
+Un cilindro aplica presión sobre ellas, para que queden embutidas. La operación de prensado del cuerpo de la válvula se activa mediante un pulsador.
+Una vez sujeto el cuerpo de la válvula, se inicia la operación de prensado. Cuando el cilindro de prensado alcanza su posición delantera de final de carrera, ambos cilindros deben retroceder.</p>
+<p><img alt="prensa" src="imgs/prensa_de_placas.png" /></p>
+<h2 id="sistema-transportador">Sistema transportador</h2>
+<p>Los paquetes que llegan por transportador son elevados por un cilindro neumático A (1.0) y desplazados a otro transportador, mediante un segundo cilindro B (2.0), el regreso del actuador A será en el momento que el actuador B desplace la caja, <em>el actuador B regresará a su posición de inicio cuando A alcance su posición de reposo</em>.</p>
+<p><img alt="sistema transportador" src="imgs/Sistema_transportador.png" /></p>
+<h2 id="sistema-de-taladrado">Sistema de taladrado</h2>
+<p>Unas piezas cúbicas de acero son alimentadas desde un almacén de carga por gravedad a una máquina de mecanizado, fijadas, mecanizadas y expulsadas. Un cilindro de doble efecto dispuesto horizontalmente, con el aire de escape estrangulado (1.0) empuja las piezas fuera del almacén bajo el husillo de la taladradora y las mantiene sujetas contra un tope fijo. El husillo de taladrado (2.0) avanza empujado por un cilindro, haciendo descender la broca. Una vez se ha alcanzado la profundidad deseada, fijada por una válvula de accionamiento por rodillo, empieza la carrera de retroceso sin restricción. Al finalizar la carrera de retroceso, la pieza es expulsada por un cilindro de simple efecto (3.0). Después de un período t = 0,6 segundos, empieza la carrera de retroceso rápida. Cuando el cilindro expulsor haya alcanzado la posición final retraída se acciona una cuarta válvula de rodillo, cuya señal puede utilizarse para permitir el inicio de un nuevo ciclo.</p>
+<p><img alt="sistema de taladro" src="imgs/Sistema_de_taladro.png" /></p>
+<h2 id="cargador-para-alimentacion-de-ejes">Cargador para alimentación de ejes</h2>
+<p>En numerosas máquinas de montaje o mecanizado es necesario alimentar ejes, tubos y similares. Esta operación suele ser automática. En la gráfica se aprecia un cargador de barras apiladas del que salen las piezas una a una. El tamaño del cargador puede adaptarse a la longitud de las piezas. En la salida del cargador hay una palanca basculante (vibratoria) para evitar atascos (ocasionados por la fricción y el peso de las piezas). Este sistema podría ser utilizado, por ejemplo, para alimentar piezas a una máquina lijadora. En el dibujo "b" se muestra una alternativa frente al cargador de piezas apiladas con salida mediante palanca basculante. En este caso se trata de un cargador con salida mediante un segmento que recoge las piezas una a una.</p>
+<p><img alt="cargador para alimentar de ejes" src="imgs/Cargador_para_alimentacion_de_ejes.png" /></p>
+<h2 id="prensa-latas">Prensa Latas</h2>
+<p>Diseñar el sistema de control electroneumático de una prensadora de latas, para esto deberá utilizar electroválvulas monoestables, la secuencia deberá ejecutarse de manera manual. Es decir, al presionar el pulsador que comience la secuencia, que realice todos los pasos y para volver a iniciar, se debe presionar de nuevo el botón</p>
+<p><img alt="prensa de latas" src="imgs/Prensado_de_latas.png" /></p>
+<h2 id="selector-de-cajas">Selector de cajas</h2>
+<p>Observar la siguiente animación, la cual consiste en controlar 2 cilindros, los cuales están montados sobre una banda transportadora.
+El sistema debe detectar 3 tamaños de cajas, y con base a su altura se deben desplazar hacia otro sitio. Como se muestra en la animación.</p>
+<p><img alt="ejemplo neumática" src="video/ejemplo_neumatica_2.gif" /></p>
+<!-- TODO: agregar ejercicios con relay on y off delay -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../capitulo5/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Capítulo 5. Circuitos Neumáticos">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Capítulo 5. Circuitos Neumáticos
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="cuestionario/" class="md-footer__link md-footer__link--next" aria-label="Next: Cuestionario">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Cuestionario
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

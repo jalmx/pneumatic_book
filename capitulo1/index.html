@@ -1,0 +1,2196 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.alejandro-leyva.com/pneumatic_book/capitulo1/">
+      
+      
+        <link rel="prev" href="../bibliografia/">
+      
+      
+        <link rel="next" href="ejercicios1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Capítulo 1. Introducción a Neumática e Hidráulica - Neumática e Hidráulica</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-1-introduccion-a-neumatica-e-hidraulica" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Neumática e Hidráulica" class="md-header__button md-logo" aria-label="Neumática e Hidráulica" data-md-component="logo">
+      
+  <img src="../favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Neumática e Hidráulica
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capítulo 1. Introducción a Neumática e Hidráulica
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Neumática e Hidráulica" class="md-nav__button md-logo" aria-label="Neumática e Hidráulica" data-md-component="logo">
+      
+  <img src="../favicon.svg" alt="logo">
+
+    </a>
+    Neumática e Hidráulica
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libro de Neumática e Hidráulica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1. Introducción a Neumática e Hidráulica
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1. Introducción a Neumática e Hidráulica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#neumatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neumática
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hidraulica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hidráulica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presión
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equivalencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equivalencias
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Equivalencias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fuerza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuerza
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversiones-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conversiones de presión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de presión
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de presión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presion-atmosferica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presión atmosférica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equivalencias_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equivalencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presion-manometrica-o-presion-relativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presión manométrica o Presión relativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presión manométrica o Presión relativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manometro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manómetro
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presion-absoluta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presión absoluta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplos de presión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caudal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caudal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ley-de-continuidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de continuidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presion-de-un-fluido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presión de un fluido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presión de un fluido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ley-de-pascal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de Pascal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ley-de-boyle-mariotte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de Boyle-Mariotte
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ley de Boyle-Mariotte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ley-de-charles-gay-lussac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de Charles-Gay Lussac
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ley de Charles-Gay Lussac">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ley-de-charles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de Charles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ley-de-gay-lussac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de Gay-Lussac
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-del-capitulo-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicios del capítulo 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ejercicios1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2. Neumática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/ejercicios2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios del capítulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo2/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3. Elementos neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo3/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitulo 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4. Circuitos neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitlo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo5
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo5
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5. Circuitos Neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo6
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo6
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 6. Electroneumática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo6/cuestionario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cuestionario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo6/ejercicios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recursos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#neumatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neumática
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hidraulica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hidráulica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presión
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equivalencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equivalencias
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Equivalencias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fuerza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuerza
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversiones-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conversiones de presión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de presión
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de presión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presion-atmosferica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presión atmosférica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equivalencias_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equivalencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presion-manometrica-o-presion-relativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presión manométrica o Presión relativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presión manométrica o Presión relativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manometro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manómetro
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presion-absoluta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presión absoluta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplos de presión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caudal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caudal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ley-de-continuidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de continuidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presion-de-un-fluido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presión de un fluido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presión de un fluido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ley-de-pascal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de Pascal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ley-de-boyle-mariotte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de Boyle-Mariotte
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ley de Boyle-Mariotte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ley-de-charles-gay-lussac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de Charles-Gay Lussac
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ley de Charles-Gay Lussac">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ley-de-charles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de Charles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ley-de-gay-lussac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ley de Gay-Lussac
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-del-capitulo-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicios del capítulo 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="capitulo-1-introduccion-a-neumatica-e-hidraulica">Capítulo 1. Introducción a Neumática e Hidráulica</h1>
+<h2 id="neumatica">Neumática</h2>
+<blockquote>
+<p>La palabra neumática se refiere al estudio del movimiento del aire.</p>
+</blockquote>
+<p>Los sistemas de aire comprimido proporcionan un movimiento controlado con el empleo de cilindros y motores neumáticos y se aplican en herramientas, válvulas de control y posicionadores, martillos neumáticos, pistolas para pintar, motores neumáticos, sistemas de empaquetado, elevadores, herramientas de impacto, prensas neumáticas, robots industriales, vibradores, frenos neumáticos, etc.</p>
+<p>Las ventajas que presenta el uso de la neumática son el bajo coste de sus componentes, su facilidad de diseño e implementación y el bajo par o la fuerza escasa que puede desarrollar a las bajas presiones con que trabaja (típico 6 bar) lo que constituye un factor de seguridad. Otras características favorables son el riesgo nulo de explosión, su conversión fácil al movimiento giratorio así como al lineal, la posibilidad de transmitir energía a grandes distancias, una construcción y mantenimiento fáciles y la economía en las aplicaciones.</p>
+<p>Entre las desventajas figura la imposibilidad de obtener velocidades estables debido a la compresibilidad del aire, los altos costes de la energía neumática y las posibles fugas que reducen el rendimiento.</p>
+<p>La neumática precisa de una estación de generación y preparación del aire comprimido formada por un compresor de aire, un depósito, un sistema de preparación del aire (filtro, lubricador y regulador de presión), una red de tuberías para llegar al utilizador y un conjunto de preparación del aire para cada dispositivo neumático individual (figura 1.1).</p>
+<p>Los sistemas neumáticos se complementan con los eléctricos y electrónicos lo que les permite obtener un alto grado de sofisticación y flexibilidad. Utilizan válvulas solenoide, señales de realimentación de interruptores magnéticos, sensores e interruptores eléctricos de final de carrera. El PLC (programmable logic controller) les permite programar la lógica de funcionamiento de un cilindro o de un conjunto de cilindros realizando una tarea específica.</p>
+<p><img alt="fig 1" src="imgs/fig1.png" /></p>
+<p>En determinadas aplicaciones, tales como en movimientos de aproximación rápida y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan la neumática y la hidráulica en un <em>circuito oleoneumático</em>, utilizando la parte neumática para el accionamiento y control y la parte hidráulica para el actuador.</p>
+<h2 id="hidraulica">Hidráulica</h2>
+<p>La hidráulica utiliza básicamente los fluidos hidráulicos como medios de presión para mover los pistones de los cilindros. En la figura 1.2 se representa el movimiento típico de un pistón dentro del cilindro gracias a la energía proporcionada por un sistema hidráulico formado por una bomba, un depósito y un conjunto de tuberías que llevan el fluido a presión hasta los puntos de utilización.</p>
+<p>Dentro de estos sistemas se encuentran los motores hidráulicos con velocidades que abarcan desde 0,5 rpm hasta 10.000 rpm y el par que proporcionan va desde 1 N/m (baja velocidad) hasta 20.000 N/m (alta velocidad).</p>
+<p><img alt="fig 2" src="imgs/fig2.png" title="pie de la foto" /></p>
+<p>Los sistemas hidráulicos se aplican típicamente en dispositivos móviles tales como maquinaria de construcción, excavadoras, plataformas elevadoras, aparatos de elevación y transporte, maquinaria para agricultura y simuladores de vuelo.</p>
+<p>Sus aplicaciones en dispositivos fijos abarcan la fabricación y montaje de máquinas de todo tipo, líneas transfer, aparatos de elevación y transporte, prensas, máquinas de inyección y moldeo, máquinas de laminación, ascensores y montacargas.</p>
+<p>Tienen las siguientes <strong>ventajas</strong>:</p>
+<p>Gran potencia transmitida con pequeños componentes, posicionamiento preciso, arranque con cargas pesadas, movimientos lineales independientes de la carga, ya que los líquidos son casi incompresibles y pueden emplearse válvulas de control, operación suave e inversa, buen control y regulación y disipación favorable de calor.</p>
+<p>Y entre sus <strong>desventajas</strong> figuran:</p>
+<p>Polución del ambiente con riesgo de incendio y accidentes en el caso de fuga de aceite, sensibilidad a la suciedad, peligro presente debido a las excesivas presiones, dependencia de la temperatura por cambios en la viscosidad.</p>
+<p>Análogamente, a los sistemas neumáticos, los sistemas hidráulicos se complementan con los eléctricos y electrónicos mediante dispositivos tales como válvulas solenoide, señales de realimentación de interruptores magnéticos, sensores e interruptores eléctricos de final de carrera. Es fácil, en particular en sistemas complejos, acoplarles un PLC (programmable logic controller) que les permite programar la lógica de funcionamiento de varios cilindros.</p>
+<p>En determinadas aplicaciones, tales como en movimientos de aproximación rápida y avance lento, típicos de las fresadoras y rectificadoras, en la sujeción de piezas utilizada en los cortes a alta velocidad sobre materiales duros y en la automatización de procesos de producción, se combinan los sistemas neumático, hidráulico y eléctrico en la forma siguiente:</p>
+<ul>
+<li><em>Circuito electroneumático</em> – Accionamiento eléctrico - Actuador neumático.</li>
+<li><em>Circuito oleoneumático</em> – Accionamiento neumático – Actuador hidráulico.</li>
+<li><em>Circuito electrohidráulico</em> – Accionamiento eléctrico – Actuador hidráulico.</li>
+</ul>
+<h2 id="presion">Presión</h2>
+<blockquote>
+<p>La fuerza normal aplicada por unidad de área.
+La presión ejercida de un fluido sobre una superficie - y viceversa - el cociente entre la fuerza y la superficie que recibe su acción. Es decir,</p>
+</blockquote>
+<div class="arithmatex">\[P = \frac{Fuerza}{Area}\]</div>
+<p><strong>En donde:</strong></p>
+<ul>
+<li><span class="arithmatex">\(P = Presión \text{ } (N/m^2)\)</span></li>
+<li><span class="arithmatex">\(F = Fuerza \text{ } (N)\)</span></li>
+<li><span class="arithmatex">\(A = Área \text{ } (m^2)\)</span></li>
+</ul>
+<p>Visto la definición deducimos que para aumentar la fuerza que ejerce un fluido tenemos dos opciones.</p>
+<ul>
+<li>Aumentar la presión del fluido.</li>
+<li>Aumentar la superficie sobre la que actúa el fluido.</li>
+</ul>
+<h3 id="equivalencias">Equivalencias</h3>
+<h4 id="fuerza">Fuerza</h4>
+<div class="arithmatex">\[1\text{ }N = 1 \text{ }kgm/s^2\]</div>
+<div class="arithmatex">\[1\text{ }kgf = 1 \text{ }kp = 9.81N\]</div>
+<p><span class="arithmatex">\(kgf = \text{kilogramo-fuerza}\)</span>
+<span class="arithmatex">\(kp = \text{kilopondio}\)</span></p>
+<h4 id="conversiones-de-presion">Conversiones de presión</h4>
+<div class="arithmatex">\[1 \text{ pascal (Pa)} = 1 \text{ Newton por metro cuadrado} (N/m^2)\]</div>
+<div class="arithmatex">\[1kPa = 1,000 N/m^2\]</div>
+<div class="arithmatex">\[1bar = 100 kPa= 0.1MPa =0.9869 atm=1,01972 kgf/cm^2\]</div>
+<h3 id="tipos-de-presion">Tipos de presión</h3>
+<h4 id="presion-atmosferica">Presión atmosférica</h4>
+<ul>
+<li>Peso de la atmósfera sobre la superficie de la tierra.</li>
+<li>Se origina debido al peso del aire que actúa sobre todo cuerpo ubicado en la superficie terrestre.</li>
+<li>Se manifiesta con la misma intensidad en todas las direcciones.</li>
+<li>El instrumento que mide la presión atmosférica se llama barómetro debido a lo cual se le denomina <strong><em>presión barométrica</em></strong>.</li>
+</ul>
+<div class="arithmatex">\[\text{Presión atmosférica} = \text{presión barométrica}\]</div>
+<p>La presión atmosférica al nivel del mar es <span class="arithmatex">\(101.325 kPa\)</span>, o <span class="arithmatex">\(14.7 lb/in^2\)</span>. Debido a que la presión atmosférica participa en gran número de cálculos, con frecuencia se usa una unidad de presión de 1 <strong><em>atmósfera</em></strong> (atm), definida como la presión media que la atmósfera ejerce al nivel del mar, es decir, <span class="arithmatex">\(101.3 kPa\)</span>.</p>
+<h4 id="equivalencias_1">Equivalencias</h4>
+<div class="arithmatex">\[1 atm = 14.7 psi =1,013 bar = 101.325kPa\]</div>
+<div class="arithmatex">\[ 1N/m^2 = 9.869 \times 10^{-6} atm = 10^{-5} bar\]</div>
+<h4 id="presion-manometrica-o-presion-relativa">Presión manométrica o Presión relativa</h4>
+<p>Medida de presión por encima de la presión atmosférica.</p>
+<p><img alt="presion manometrica" src="imgs/presion_mano.jpg#only-light" />
+<img alt="presion manometrica" src="imgs/presion_mano_bk.jpg#only-dar" /></p>
+<h5 id="manometro">Manómetro</h5>
+<p>Es un instrumento de medición para la presión de fluidos contenidos en recipientes cerrados. Se distinguen dos tipos de manómetros, según se empleen para medir la presión de líquidos o de gases.</p>
+<p>En la siguiente figura tenemos un manómetro convencional, graduado en <strong>bar</strong> y <strong>PSI</strong></p>
+<p><img alt="manómetro" src="imgs/manometro.jpeg" title="manómetro" /></p>
+<h4 id="presion-absoluta">Presión absoluta</h4>
+<p>Toma como base el 0 absoluto. Se utiliza para realizar cálculos teóricos.</p>
+<div class="arithmatex">\[\text{Presión absoluta} = \text{presión manométrica} + \text{presión atmosférica}\]</div>
+<h3 id="ejemplos-de-presion">Ejemplos de presión</h3>
+<ol>
+<li>Un tubo contiene agua bajo una presión manométrica de 400 kPa. Si se cubre un orificio de 4 mm de diámetro en el tubo, con un trozo de cinta adhesiva, ¿Qué fuerza tendrá que ser capaz de resistir la cinta?</li>
+</ol>
+<p><strong>Datos:</strong></p>
+<ul>
+<li><span class="arithmatex">\(Presión=400kPa\)</span></li>
+<li><span class="arithmatex">\(Diámetro=4mm \rightarrow radio = 2mm\)</span></li>
+</ul>
+<p>Tenemos las medidas en milímetros, entonces debemos convertirlo a metros para poder obtener el área.</p>
+<div class="arithmatex">\[
+1m * \frac{2mm}{1000mm} = 0.002m
+\]</div>
+<p>Primero debemos obtener el área para poder calcular la fuerza que debe soportar la cinta. Por lo tanto,</p>
+<p><span class="arithmatex">\(Área = \pi r^2 \rightarrow (0.002m)^2(\pi)= 0.0000125664m^2\)</span></p>
+<p>Despejando Fuerza en la fórmula de presión nos queda:</p>
+<div class="arithmatex">\[F = P*A \rightarrow (400kPa)(0.0000125664m^2)=5.02656N\]</div>
+<blockquote>
+<p>✅ Nos da una fuerza resultan de de <span class="arithmatex">\(5.02656N\)</span></p>
+</blockquote>
+<ol>
+<li>Un pistón de 20kg descansa sobre una muestra de gas en un cilindro de 8 cm de diámetro. ¿Cuál es la presión manométrica sobre el gas?</li>
+</ol>
+<p><strong>Datos:</strong></p>
+<ul>
+<li><span class="arithmatex">\(Masa=20kg\)</span></li>
+<li><span class="arithmatex">\(Diámetro=8cm \rightarrow radio = 4cm\)</span></li>
+</ul>
+<p>Para obtener la presión necesitamos el área en donde la fuerza está aplicada, por lo tanto, debemos calcularla, pero primero debemos hacer la conversión de centímetros a metros:</p>
+<div class="arithmatex">\[1m *\frac{4cm}{100cm}=0.04m\]</div>
+<p>Una vez tenemos el diámetro en metros, sustituimos para obtener el área donde está aplicada la presión:</p>
+<div class="arithmatex">\[Área=\pi r^2 \rightarrow (\pi)(0.04m)^2= 0.00502656m^2\]</div>
+<p>Ahora necesitamos calcular la fuerza que genera el pistón que está en reposo; como sabemos que está en reposo, sabemos que le aceleración que se está aplicando es la gravedad; por ende,</p>
+<p><span class="arithmatex">\(Fuerza = masa * aceleración \rightarrow (20kg)(9.81m/s^2)=196.2N\)</span></p>
+<p>Una vez contando con ambas variables, vamos a sustituir en la fórmula de presión:</p>
+<div class="arithmatex">\[P = \frac{196.2N}{0.00502656m^2}=39,032.65Pa\]</div>
+<p>Por lo tanto, nos da una presión de <span class="arithmatex">\(39.032kPa\)</span>, sobre el gas.</p>
+<h2 id="caudal">Caudal</h2>
+<blockquote>
+<p>Es la cantidad de fluido en peso o volumen, que atraviesa una superficie en la unidad de tiempo. En neumática se usa habitualmente el volumen por unidad de tiempo.</p>
+<p>Representa el volumen de un fluido <strong><em>V</em></strong> que pasa por una sección <strong><em>A</em></strong>, transversal a la corriente, en una unidad de tiempo <strong><em>t</em></strong>.</p>
+</blockquote>
+<div class="arithmatex">\[Q = \frac{V}{t}(m^3/s)\]</div>
+<p>Como <span class="arithmatex">\(V=A*l\)</span>, siendo:</p>
+<ul>
+<li><span class="arithmatex">\(A= \text{Sección transversal}\)</span></li>
+<li><span class="arithmatex">\(l= \text{Espacio recorrido por el fluido}\)</span></li>
+</ul>
+<div class="arithmatex">\[Q= \frac{A \times l}{t} \rightarrow Q=v \times A\]</div>
+<p>Donde <span class="arithmatex">\(v\)</span> es la velocidad del fluido.</p>
+<p>El caudal viene expresado en <span class="arithmatex">\(m^3/h\)</span> o <span class="arithmatex">\(l/s\)</span>, dependiendo de la magnitud de la que estemos hablando.</p>
+<p>Instrumento para medir <em>caudal</em> es el <em>Caudalímetro</em>, el cual puede censar agua, gas, o cualquier otro tipo de fluido.</p>
+<p><img alt="caudalimetro" src="imgs/caudalimetro.jpeg" title="Caudalimetro" /></p>
+<h2 id="ley-de-continuidad">Ley de continuidad</h2>
+<blockquote>
+<p>En una instalación neumática el caudal es constante, por eso si reducimos la sección en un punto la velocidad tiene que aumentar en ese punto de forma que el caudal se conserve.</p>
+<p>La masa de un fluido en movimiento no cambia al fluir. Esto conduce a una relación cuantitativa importante llamada ecuación de continuidad.</p>
+</blockquote>
+<div class="arithmatex">\[V_1 \times A_1 = V_2 \times A_2\]</div>
+<p><span class="arithmatex">\(V= \text{Rapidez del fluido}\)</span>
+<span class="arithmatex">\(A= \text{Área transversal}\)</span></p>
+<p><img alt="continuidad" src="imgs/continuidad.png" /></p>
+<h2 id="presion-de-un-fluido">Presión de un fluido</h2>
+<blockquote>
+<p>La fuerza que ejerce un fluido sobre las paredes de un recipiente que lo contiene siempre actúa en forma perpendicular a esas paredes.</p>
+<p>Los fluidos ejercen presión en todas las direcciones.</p>
+</blockquote>
+<p><img alt="fig 3" src="imgs/fig3.png#only-light" title="presion" />
+<img alt="fig 3" src="imgs/fig3_bk.png#only-dark" title="presion" /></p>
+<h3 id="ley-de-pascal">Ley de Pascal</h3>
+<p>Cualquier líquido en un recipiente abierto, por ejemplo, está sujeto a la presión atmosférica además de la presión debida a su propio peso. Puesto que el líquido es relativamente incompresible, la presión externa de la atmósfera se trasmite por igual a todo el volumen del líquido. Se conoce como <strong>ley de Pascal</strong>. En general, se enuncia como sigue:</p>
+<blockquote>
+<p>Una presión externa aplicada a un fluido confinado se transmite uniformemente a través del volumen de un líquido.</p>
+</blockquote>
+<p><img alt="pascal" src="imgs/pascal.png#only-light" title="Ley de pascal" />
+<img alt="pascal" src="imgs/pascal_bk.png#only-dark" title="Ley de pascal" /></p>
+<p>La figura 1-3 muestra la sección transversal de un recipiente de forma irregular, que tiene paredes rígidas El fluido confinado en el ejerce la misma presión en todas las direcciones, tal como lo indican las flechas. Si las paredes fueran flexibles, la sección asumiría forma circular. Es entonces la Ley de Pascal que hace que una manguera contra incendios asuma forma cilíndrica cuando es conectada al suministro. Es importante la diferencia entre cómo actúa la fuerza sobre un fluido y cómo lo hace sobre un sólido. Puesto que el sólido es un cuerpo rígido, puede soportar que se le aplique una fuerza sin que cambie apreciablemente su forma. Por otra parte, un líquido puede soportar una fuerza únicamente en una superficie o frontera cerrada.</p>
+<p>Este fenómeno nos permite amplificar/reducir fuerzas teniendo como contraprestación una reducción/amplificación de los desplazamientos.</p>
+<p>Igualando las presiones tenemos</p>
+<p><span class="arithmatex">\(P_1 =\frac{F_1}{A_1}\)</span></p>
+<p><span class="arithmatex">\(P_2= \frac{F_2}{A_2}\)</span></p>
+<div class="arithmatex">\[\frac{F_1}{A_1} = \frac{F_2}{A_2}\]</div>
+<p>Como el volumen desplazado es el mismo <span class="arithmatex">\(V_1 = V_2\)</span>, Luego:</p>
+<div class="arithmatex">\[l1 \times A1=l2 \times A2\]</div>
+<p><span class="arithmatex">\(A= \text{Área de la sección del recipiente}\)</span>
+<span class="arithmatex">\(l = Altura\)</span></p>
+<h2 id="ley-de-boyle-mariotte">Ley de Boyle-Mariotte</h2>
+<blockquote>
+<p>Esta ley aplicada a gases perfectos dice que a temperatura constante, la presión absoluta es inversamente proporcional al volumen, O sea:
+Siempre que la masa y la temperatura de una mues­tra de gas se mantengan constantes, el volumen de dicho gas es inversamente proporcional a su presión absoluta.
+La presión absoluta de un gas confinado en un recipiente varia en forma inversa a su volumen, cuando la temperatura permanece constante.</p>
+</blockquote>
+<div class="arithmatex">\[P_1V_1 = P_2V_2=P_3V_3 = cte \text{ m y T constantes}\]</div>
+<p>Siendo <span class="arithmatex">\(P_1,P_2,P_3\)</span> presiones absolutas y <span class="arithmatex">\(V_1,V_2,V_3\)</span> volumen a esas presiones.</p>
+<p><img alt="fig 4" src="imgs/fig4.png#only-light" />
+<img alt="fig 4" src="imgs/fig4_bk.png#only-dark" /></p>
+<h3 id="ejemplos">Ejemplos</h3>
+<ol>
+<li>El aire expuesto a la presión atmosférica es comprimido a la séptima parte de su volumen. ¿Cuál es la presión si la temperatura se mantiene constante?</li>
+</ol>
+<p><span class="arithmatex">\(P_1V_1 = P_2V_2\)</span></p>
+<p>Despejando <span class="arithmatex">\(P_2\)</span></p>
+<div class="arithmatex">\[P_2= P_1 \frac{V_1}{V_2}\]</div>
+<p>Recordamos que se va a comprimir a la séptima parte, por lo tanto;</p>
+<p><span class="arithmatex">\(V_2 = 1/7\)</span></p>
+<p>Para la presión 1, tenemos que es la presión atmosférica</p>
+<p><span class="arithmatex">\(P_1= 101.325kPa = 1 atm\)</span></p>
+<div class="arithmatex">\[P_2= (101.325kPa)(\frac{1}{7}) = 709.275kPa\]</div>
+<ol>
+<li>Partiendo con <span class="arithmatex">\(40 cm^3\)</span> de gas confinado a una presión manométrica de <span class="arithmatex">\(3 kg/cm^2\)</span>, fig. 1-5 A, ¿Cuál será el volumen final después de que el gas haya sido comprimido cuatro veces menor?</li>
+</ol>
+<p><span class="arithmatex">\(P_1V_1 = P_2V_2\)</span></p>
+<p>Sabemos que la presión inicial es de <span class="arithmatex">\(3kg/cm^2\)</span> y ésta incrementa 4 veces; por ende, nos queda:</p>
+<p><span class="arithmatex">\(P_2= (3kg/cm^2)(4)= 12kg/cm^2\)</span></p>
+<p>Despejando <span class="arithmatex">\(V_2\)</span> de la ecuación inicial:</p>
+<div class="arithmatex">\[
+V_2 = \frac{P_1V_1}{P_2} = \frac{(3kg/cm^2)(40cm^3)}{12kg/cm^2} = 10cm^3
+\]</div>
+<blockquote>
+<p>Tenemos que el volumen final es de <strong><span class="arithmatex">\(10cm^3\)</span></strong></p>
+</blockquote>
+<p><img alt="fig 1-5" src="imgs/ejerc2.png#only-light" title="Ejercicio 2" />
+<img alt="fig 1-5" src="imgs/ejerc2_bk.png#only-dark" title="Ejercicio 2" /></p>
+<h2 id="ley-de-charles-gay-lussac">Ley de Charles-Gay Lussac</h2>
+<p>La relación entre el volumen de un gas y su temperatura, al pasar de un estado a otro a presión constante.</p>
+<h3 id="ley-de-charles">Ley de Charles</h3>
+<blockquote>
+<p>Mientras la masa y la presión de un gas se mantengan cons­tantes, el volumen de dicho gas es directamente proporcional a su tempera­ tura absoluta.</p>
+<p>A presión constante, la razón entre el volumen y la temperatura absoluta de un gas se mantiene constante. O lo que es lo mismo, el volumen es directamente proporcional a la temperatura absoluta.</p>
+<p>Si la temperatura de un gas se incrementa su volumen se incrementa en la misma proporción, permaneciendo su presión constante, o si la temperatura del gas se incrementa, se incrementa también su presión en la misma proporción, cuando permanece el volumen constante.</p>
+</blockquote>
+<div class="arithmatex">\[
+\frac{V_1}{T_1} = \frac{V_2}{T_2} =\frac{V_3}{T_3} = etc \text{ m y P constantes}
+\]</div>
+<ul>
+<li><span class="arithmatex">\(m = masa\)</span></li>
+<li><span class="arithmatex">\(P= presión\)</span></li>
+</ul>
+<h3 id="ley-de-gay-lussac">Ley de Gay-Lussac</h3>
+<blockquote>
+<p>Si el volumen de una muestra de gas permanece constan­te, la presión absoluta de dicho gas es directamente proporcional a su tempe­ratura absoluta.</p>
+</blockquote>
+<div class="arithmatex">\[
+\frac{P_1}{T1} = \frac{P_2}{T2} =\frac{P_3}{T3} = etc \text{ m y V constantes}
+\]</div>
+<ul>
+<li><span class="arithmatex">\(m = masa\)</span></li>
+<li><span class="arithmatex">\(V= volumen\)</span></li>
+</ul>
+<hr />
+<h2 id="ejercicios-del-capitulo-1"><a href="ejercicios1/">Ejercicios del capítulo 1</a></h2>
+<hr />
+<ul>
+<li><a href="../">Inicio</a></li>
+<li><a href="#capítulo-1-introducción-a-neumática-e-hidráulica">Capítulo 1</a></li>
+<li><a href="../capitulo2/">Capítulo 2</a></li>
+<li><a href="../capitulo3/">Capítulo 3</a></li>
+<li><a href="../capitulo4/">Capítulo 4</a></li>
+<li><a href="../bibliografia/">Bibliografía</a></li>
+</ul>
+<!-- ---
+title: "Neumática e Hidráulica"
+author: "Alejandro Leyva"
+date: "26/08/2019"
+output: html_document
+bibliography: bibliografia.md
+references:
+- id: jalmx89
+  title: Neumática e Hidráulica
+  author:
+  - family: Fenner
+    given: Martin
+  container-title: Nature Materials
+  volume: 1
+  URL: 'https://www.alejandro-leyva.com/'
+  DOI: 10.1038/nmat3283
+  issue: 4
+  publisher: Xizuth
+  page: 1-n
+  type: book
+  issued:
+    year: 2019
+    month: 3 -->
+<!-- --- -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../bibliografia/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bibliografía">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Bibliografía
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="ejercicios1/" class="md-footer__link md-footer__link--next" aria-label="Next: Ejercicios">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Ejercicios
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1947 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.alejandro-leyva.com/pneumatic_book/capitulo2/">
+      
+      
+        <link rel="prev" href="../capitulo1/mini-test/">
+      
+      
+        <link rel="next" href="ejercicios2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Capítulo 2. Neumática - Neumática e Hidráulica</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-2-neumatica" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Neumática e Hidráulica" class="md-header__button md-logo" aria-label="Neumática e Hidráulica" data-md-component="logo">
+      
+  <img src="../favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Neumática e Hidráulica
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capítulo 2. Neumática
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Neumática e Hidráulica" class="md-nav__button md-logo" aria-label="Neumática e Hidráulica" data-md-component="logo">
+      
+  <img src="../favicon.svg" alt="logo">
+
+    </a>
+    Neumática e Hidráulica
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libro de Neumática e Hidráulica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1. Introducción a Neumática e Hidráulica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo1/ejercicios1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo1/mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2. Neumática
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2. Neumática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-del-aire-comprimido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Características del aire comprimido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Características del aire comprimido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unidades-empleadas-y-equivalencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidades empleadas y equivalencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-de-compresion-de-aire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de compresión de aire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sistema de compresión de aire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compresor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compresor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-compresores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de compresores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de compresores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compresores-volumetricos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compresores Volumétricos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compresor-de-piston-de-una-sola-etapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compresor de pistón de una sola etapa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animacion-del-compresor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animación del compresor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compresor-de-piston-2-etapas-montaje-en-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compresor de pistón 2 etapas montaje en V
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compresores-centrifugos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compresores Centrífugos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-tanque-o-unidad-de-almacenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El tanque o unidad de almacenamiento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presostato-switch-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presostato (Switch de presión)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valvula-de-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula de Seguridad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valvula-de-purga" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula de purga
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidad-de-mantenimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidad de Mantenimiento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidad de Mantenimiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regulador-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regulador de presión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lubricador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lubricador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manometro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manómetro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-del-capitulo-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicios del Capítulo 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ejercicios2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios del capítulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3. Elementos neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo3/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitulo 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4. Circuitos neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/mini-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mini test del capítulo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo4/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video clases del capitlo 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo5
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo5
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5. Circuitos Neumáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capitulo6
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capitulo6
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 6. Electroneumática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo6/cuestionario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cuestionario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo6/ejercicios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recursos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-del-aire-comprimido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Características del aire comprimido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Características del aire comprimido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unidades-empleadas-y-equivalencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidades empleadas y equivalencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-de-compresion-de-aire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de compresión de aire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sistema de compresión de aire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compresor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compresor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-compresores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de compresores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de compresores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compresores-volumetricos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compresores Volumétricos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compresor-de-piston-de-una-sola-etapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compresor de pistón de una sola etapa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animacion-del-compresor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animación del compresor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compresor-de-piston-2-etapas-montaje-en-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compresor de pistón 2 etapas montaje en V
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compresores-centrifugos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compresores Centrífugos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-tanque-o-unidad-de-almacenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El tanque o unidad de almacenamiento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presostato-switch-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presostato (Switch de presión)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valvula-de-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula de Seguridad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valvula-de-purga" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Válvula de purga
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidad-de-mantenimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidad de Mantenimiento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidad de Mantenimiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regulador-de-presion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regulador de presión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lubricador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lubricador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manometro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manómetro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-del-capitulo-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicios del Capítulo 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="capitulo-2-neumatica">Capítulo 2. Neumática</h1>
+<h2 id="caracteristicas-del-aire-comprimido">Características del aire comprimido</h2>
+<p>El aire, como todos los gases, es comprimible y comprensible; es decir, es elástico. Dentro de un recipiente con capacidad de 1 litro, es posible introducir varios litros de aire gracias a que se puede comprimir y al liberarlo, vuelve a su volumen normal.</p>
+<p>Para comprimir el aire, se tiene que realizar un esfuerzo y será mayor cuanto mayor se quiera comprimir. Cuando el aire se libera a su estado normal, desarrolla una gran energía y es esta energía la que se utiliza para realizar los trabajos pesados.</p>
+<p>El aire, como se sabe, es un gas casi perfectamente caracterizándose esencialmente por su <strong>fluidez, compresibilidad y elasticidad</strong>. La fluidez permite a sus partículas no ofrecer resistencia apenas al deslizamiento; la compresibilidad (Fig. 1.1) hace que una determinada cantidad de gas pueda reducir su volumen si este se encuentra en un recinto herméticamente cerrado; la elasticidad permite que al comprimirlo en ese mismo recinto, ejerza sobre sus paredes una determinada presión, normal a las superficies en contacto (Fig. 1.2).</p>
+<p><img alt="&quot;propiedades del aire comprimido&quot;" src="imgs/aire_compr.png" title="propiedades del aire comprimido" /></p>
+<h3 id="unidades-empleadas-y-equivalencias">Unidades empleadas y equivalencias</h3>
+<div class="arithmatex">\[1 atm = 14.7 psi =1,013 bar = 101.325kPa\]</div>
+<div class="arithmatex">\[ 1N/m^2 = 9.869 \times 10^{-6} atm = 10^{-5} bar\]</div>
+<h2 id="sistema-de-compresion-de-aire">Sistema de compresión de aire</h2>
+<h3 id="compresor">Compresor</h3>
+<p>Los compresores son máquinas que se utilizan para comprimir el aire. El más elemental es el compresor alternativo, pero para aplicaciones industriales se construyen máquinas autónomas que utilizan un motor eléctrico y que se denominan electrocompresores.</p>
+<blockquote>
+<p>Es el elemento de la instalación encargado de comprimir el aire que capta de la atmósfera elevando su presión.</p>
+</blockquote>
+<p>Se compone de un cilindro y su culata con las correspondientes válvulas, una de admisión y otra de expulsión; un pistón provisto de segmentos para asegurar la compresión; una biela manivela (<em>conversión de un movimiento circular en rectilíneo alternativo</em>) y un cigüeñal. Todo montado en un cárter que, a su vez, hace de depósito para el aceite lubricante.</p>
+<p><img alt="&quot;compresor&quot;" src="imgs/compresores.png" title="Compresor" /></p>
+<h3 id="tipos-de-compresores">Tipos de compresores</h3>
+<p><img alt="Diagrama de compresores" src="imgs/compresores_diagrama.png#only-light" title="Diagrama de compresores" />
+<img alt="Diagrama de compresores" src="imgs/compresores_diagrama_bk.png#only-dark" title="Diagrama de compresores" /></p>
+<p>Dependiendo del tipo de compresor que utilicemos distinguimos varios tipos.</p>
+<ul>
+<li>Compresores Volumétricos.</li>
+<li>Compresores Centrífugos.</li>
+</ul>
+<h4 id="compresores-volumetricos">Compresores Volumétricos</h4>
+<p>Dentro de este grupo destacan los compresores de pistón, que son los más difundidos. Se construyen de baja, media y alta presión, aunque en este caso deben disponer de varias etapas compresoras.</p>
+<h4 id="compresor-de-piston-de-una-sola-etapa">Compresor de pistón de una sola etapa</h4>
+<p>La Figura 13.2 muestra un compresor de pistón clásico de una sola etapa. El aire aspirado por el pistón en su carrera des­cendente penetra en la cámara de compresión a través de la válvula de admisión y después es inmediatamente comprimido hasta la presión de trabajo, momento en el que se abre la válvula de escape. Durante el trabajo de compresión se genera calor <em>según previene la ley de Gay-Lussac</em> lo que obli­ga a una refrigeración del cilindro proporcional a la cantidad de calor producida. En los compresores pequeños bastan las aletas que lleva el cilindro por la parte exterior. En los mayo­res se instala además un ventilador y en los de alta presión es necesaria la refrigeración por agua.</p>
+<p><img alt="Compresor de pistón 1 etapa" src="imgs/compresor_1piston_1.png" title="Compresor de 1 pistón 1 etapa" /></p>
+<p><img alt="Compresor de pistón 1 etapa" src="imgs/compresor_1piston_2.png#only-light" title="Compresor de 1 pistón 1 etapa" />
+<img alt="Compresor de pistón 1 etapa" src="imgs/compresor_1piston_2_bk.png#only-dark" title="Compresor de 1 pistón 1 etapa" /></p>
+<p><img alt="Compresor de pistón 1 etapa" src="imgs/compresor_1piston_3.jpg" title="Compresor de 1 pistón 1 etapa" /></p>
+<h4 id="animacion-del-compresor">Animación del compresor</h4>
+<p><img alt="compresor gif" src="video/compresor.gif" /></p>
+<h3 id="compresor-de-piston-2-etapas-montaje-en-v">Compresor de pistón 2 etapas montaje en V</h3>
+<p>En la Figura 13.3 aparece un compresor de pistón de dos etapas y montaje en V. El aire comprimido en el primer pistón, después de refrigerado, se introduce en un segundo cilindro de volumen inferior que lo vuelve a comprimir. Así se obtienen presiones de 1 a 20 bar y con tres etapas se puede llegar hasta 220 bar.</p>
+<p><img alt="Compresor de pistón de 2 etapas" src="imgs/compresor_2etapas_2.png" title="Compresor de pistón de 2 etapas" /></p>
+<p><img alt="Compresor de pistón de 2 etapas" src="imgs/compresor_2etapas_1.png" title="Compresor de pistón de 2 etapas" /></p>
+<p><img alt="Compresor de pistón de 2 etapas" src="imgs/compresor_2etapas_3.jpg" title="Compresor de pistón de 2 etapas" /></p>
+<h3 id="compresores-centrifugos">Compresores Centrífugos</h3>
+<p>Se basan en aumentar la presión aprovechando la fuerza centrífuga. Para ello, lanzan el aire captado por el centro de una turbina hacia el exterior, donde lo recogen.
+De este tipo son la mayoría de los extractores de aire que tienen las campanas extractoras de las cocinas.</p>
+<p><img alt="Compresor centrífugo" src="imgs/compresor_centrifugo.png" title="Compresor centrífugo" /></p>
+<h2 id="el-tanque-o-unidad-de-almacenamiento">El tanque o unidad de almacenamiento</h2>
+<p>Es un depósito de reserva de aire comprimido cuya misión es mantener el consumo de la red y evitar pérdidas de carga bruscas en la misma, en caso de fallo o accidente. En este elemento se elimina parte del agua  -que se condensa en su parte inferior- por medio de un orificio de purga.</p>
+<p>Cumple varias funciones en una instalación de aire comprimido:</p>
+<ul>
+<li>Amortiguar las pulsaciones del caudal de salida de los compresores alternativos.</li>
+<li>Permitir que los motores de arrastre de los compresores no tengan que trabajar de manera continua, sino intermitente.</li>
+<li>Hacer frente a las demandas punta de caudal sin que se provoquen caídas de presión en la red.</li>
+</ul>
+<p><img alt="Tanque Horizontal" src="imgs/tanque1.jpeg" title="Tanque horizontal" /></p>
+<p><img alt="Tanque Vertical" src="imgs/tanque2.jpeg" title="Tanque vertical" /></p>
+<h2 id="presostato-switch-de-presion">Presostato (Switch de presión)</h2>
+<p>Si has observado los compresores no están funcionando continuamente. Esto es debido a que es posible acumular la energía neumática. El depósito se va a llenar hasta que alcance una determinada presión máxima, en ese momento el motor que acciona el compresor para. A medida que vamos consumiendo aire vamos extrayéndolo del depósito, con lo cual va bajando su presión. Al llegar a una presión mínima el compresor vuelve a arrancar para recuperar la presión perdida.
+Vemos que el depósito varía entre un valor máximo y uno mínimo. El elemento que mide esas presiones y regula el funcionamiento del compresor es el presostato. <strong>Básicamente, es un interruptor regulado por presión</strong>.</p>
+<p><img alt="Presostato" src="imgs/presostato1.jpeg" title="Presostato" /></p>
+<p><img alt="Presostato" src="imgs/presostato2.jpeg" title="Presostato" /></p>
+<p><img alt="Presostato" src="imgs/presostato3.jpeg" title="Presostato" /></p>
+<h2 id="valvula-de-seguridad">Válvula de Seguridad</h2>
+<p>Si por alguna razón el presostato que regula el funcionamiento del compresor fallase, pueden ocurrir dos cosas.
+Si falla el mecanismo que regula el arranque cuando baja la presión, el compresor no funcionaría, pero no pasaría nada más.
+Si falla el mecanismo de paro cuando alcanza la presión de trabajo, el compresor continuaría aumentando la presión en el interior del depósito y este podría estallar al no aguantar a presión.</p>
+<p><img alt="valvula de seguridad" src="imgs/valvula_seg1.jpeg" title="valvula de seguridad" /></p>
+<p><img alt="valvula de seguridad" src="imgs/valvula_seg2.jpeg" title="valvula de seguridad" /></p>
+<p><img alt="valvula de seguridad" src="imgs/valvula_seg3.jpeg" title="valvula de seguridad" /></p>
+<h2 id="valvula-de-purga">Válvula de purga</h2>
+<p>Debido a las presiones a las que es sometido el aire durante la compresión, parte del vapor de agua que contiene el aire puede licuar. Esta agua condensada se acumula en la parte inferior del depósito y periódicamente hay que purgar para evitar que pase a la instalación.</p>
+<p><img alt="valvula de purga" src="imgs/valvula_purga1.jpeg" title="Válvula de purga" /></p>
+<h2 id="unidad-de-mantenimiento">Unidad de Mantenimiento</h2>
+<p>Hasta ahora lo que hemos hecho ha sido comprimir el aire y almacenarlo para poder utilizarlo. El almacenamiento se realiza, como hemos visto, entre dos presiones determinadas. Estas variaciones perturbarían el funcionamiento de la instalación, ya que funcionaría de manera distinta para cada presión. Es por ello que debemos realizar un acondicionamiento final que estabilice esa presión en un valor fijo. Este acondicionamiento es lo que hacemos en la unidad de mantenimiento.</p>
+<p><em>Para la utilización del aire comprimido, se requiere de un proceso de purificación, regulación y engrase</em>, que se logra mediante una unidad de mantenimiento, que debe ir montada en la entrada general de los circuitos neumáticos. Esta unidad tiene los siguientes objetivos:</p>
+<ul>
+<li>Eliminar el agua condensada arrastrada por el aire a lo largo de las tuberías hacia los elementos de trabajo y dispositivos de mando.</li>
+<li>Detener las partículas sólidas que contiene el aire comprimido en suspensión.</li>
+<li>Regular la presión de utilización del aire comprimido con el fin de lubricar los elementos neumáticos.</li>
+</ul>
+<p>Así que la unidad de mantenimiento representa una combinación de los siguientes elementos:</p>
+<ul>
+<li>Filtro de aire comprimido</li>
+<li>Regulador de presión</li>
+<li>Lubricador de aire comprimido</li>
+</ul>
+<p><img alt="unidad de mantenimiento" src="imgs/unidad_mantto_desc.png" title="unidad de mantenimiento" /></p>
+<p><img alt="unidad de mantenimiento" src="imgs/unidad_mantto.png" title="unidad de mantenimiento" /></p>
+<p><img alt="unidad de mantenimiento" src="imgs/unidad_mantto2.jpeg" title="unidad de mantenimiento" /></p>
+<p><img alt="unidad de mantenimiento" src="imgs/unidad_mantto3.jpeg" title="unidad de mantenimiento" /></p>
+<h3 id="filtro">Filtro</h3>
+<p>Su misión es retener las impurezas que pudiera contener el aire procedente del depósito y que podrían deteriorar la instalación posterior.
+Está formado por un elemento filtrante, que puede ser de papel, una chapa metálica taladrada o una malla de alambre, encargado de retener las impurezas. Aquí quedan retenidas las partículas de tamaño mayor que las de la malla.
+El recipiente del filtro tiene también un diseño especial para que el aire en su recorrido realice un movimiento helicoidal que favorece que por efecto de las fuerzas centrífugas las gotas de agua y las partículas más grandes salgan proyectadas contra las paredes del filtro y sean recogidas en la parte inferior del filtro. Esta parte inferior del filtro es desmontable y periódicamente es necesario limpiarla.</p>
+<p><img alt="filtro" src="imgs/flitro.png" title="Filtro" /></p>
+<h3 id="regulador-de-presion">Regulador de presión</h3>
+<p>Mantiene la presión en su salida constante independientemente de las variaciones de presión que haya en la entrada. La presión de salida tiene que ser siempre inferior a la presión mínima del depósito.
+Como vemos en la imagen el aire pasa a través de un orificio y mediante una membrana vence la fuerza de un muelle, dependiendo de la presión la fuerza es mayor o menor mientras que la del muelle es constante. Esto provoca la mayor o menor apertura del orificio de paso, haciendo que la presión se mantenga constante aguas abajo.</p>
+<p><img alt="Regulador de presión" src="imgs/regulador_presion.png" title="Regulador de presión" /></p>
+<h3 id="lubricador">Lubricador</h3>
+<p>Es el elemento que proporciona aceite para la lubricación de la instalación. Debido al efecto Venturi absorbe aceite de un depósito y lo pulveriza en el aire de trabajo. El aceite lo añadimos para reducir rozamientos en los elementos móviles de la instalación y proteger toda ella de la oxidación.
+En este punto tendremos una caudal de aire a presión en condiciones de abastecer nuestra instalación a presión constante.</p>
+<p><img alt="lubricador" src="imgs/lubricador.png" title="Lubricador" /></p>
+<h2 id="manometro">Manómetro</h2>
+<p>Los manómetros son aparatos de control que sirven para medir la presión existente en un circuito en un momento dado.
+La presión P del circuito tiende a rectificar el muelle tubular (2), el cual mueve el sector (4) que hace girar el piñón (5) unido a la aguja indicadora (6). En la escala (7) puede leerse entonces la presión registrada. La caña (10) del aparato lleva un estrangulador (8) que amortigua el impacto de la presión sobre la aguja.</p>
+<p><img alt="Manométro" src="imgs/manometro_descr.png" title="Manométro" /></p>
+<p><img alt="Manométro" src="imgs/manometro.jpg" title="Manométro" /></p>
+<hr />
+<h2 id="ejercicios-del-capitulo-2"><a href="ejercicios2/">Ejercicios del Capítulo 2</a></h2>
+<hr />
+<ul>
+<li><a href="../">Inicio</a></li>
+<li><a href="../capitulo1/">Capítulo 1</a></li>
+<li><a href="#capítulo-2-neumática">Capítulo 2</a></li>
+<li><a href="../capitulo3/">Capítulo 3</a></li>
+<li><a href="../capitulo4/">Capítulo 4</a></li>
+<li><a href="../bibliografia/">Bibliografía</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../capitulo1/mini-test/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mini test del capítulo 1">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Mini test del capítulo 1
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="ejercicios2/" class="md-footer__link md-footer__link--next" aria-label="Next: Ejercicios del capítulo 2">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Ejercicios del capítulo 2
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
