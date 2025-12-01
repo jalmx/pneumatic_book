@@ -133,6 +133,15 @@ Vamos a realizar un para arranque de una banda transportadora con motor eléctri
 
 ![banda](video/banda_base.gif)
 
+## Inversion de giro de motor
+
+Realizar un circuito para inversion de giro de motor,
+con un boton se activa giro a la derecha y con otro boton gira a la izquierda, una mas para que detenerlo. Puede ser con boton o sistema de enclavamiento. Si esta girando para un lado, no se debe poder activar la inversion de giro, primero se debe detener para que elija el sentido.
+
+<details markdown="1">
+    <img src="imgs/inversion_giro_1.png" alt="banda transportadora giro">
+</details>
+
 ### Banda transportadora básica
 
 Vamos a realizar control de una banda transportadora y el expulsado de piezas hacia la banda.
